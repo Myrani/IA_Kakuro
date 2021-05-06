@@ -1,10 +1,10 @@
 
 import sys
 import os
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout, QGridLayout,QLabel
-from PyQt5.QtGui import QIcon,QPixmap
-from PyQt5.QtCore import pyqtSlot
-
+from PyQt5.QtWidgets import * 
+from PyQt5 import QtCore, QtGui
+from PyQt5.QtGui import * 
+from PyQt5.QtCore import * 
 class App(QWidget):
 
     def __init__(self,kakuro):
@@ -20,13 +20,24 @@ class App(QWidget):
         
         
     def initUI(self,kakuro):
+
+        self.setStyleSheet("background-color: white;")
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
-
+        self.opacity_effect = QGraphicsOpacityEffect()
+  
+        # setting opacity level
+        self.opacity_effect.setOpacity(0.1)
+  
+ 
+        
+        #self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.createGridLayout(kakuro)
 
         windowLayout = QVBoxLayout()
         windowLayout.addWidget(self.horizontalGroupBox)
+ 
+ 
         self.setLayout(windowLayout)
         self.show()
     
@@ -38,15 +49,15 @@ class App(QWidget):
         layout.setVerticalSpacing(0)
         for x in range(0,len(kakuro)):        
             for y in range(0,len(kakuro[x])):
-                if kakuro[x][y][0] == "#|#":
+                if kakuro[x][y][0] == "#|#" or kakuro[x][y][0] == "H|#" :
                     label = QLabel(self)
                     layout.addWidget(label,x,y)
-                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png)")
+                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
 
                 elif kakuro[x][y][0] == "   ":
                     label = QLabel(self)
                     layout.addWidget(label,x,y)
-                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Playable.png)")
+                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Playable.png);background-repeat: no-repeat;")
                 else:
                     layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
 

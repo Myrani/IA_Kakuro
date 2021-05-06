@@ -9,6 +9,11 @@ kakuro_projet = gridMaker(6,6)
 #Instantiation du Front_End
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    print(os.getcwd()+"/Front_End/Ressources/Void.png")
+
     App = App(kakuro_projet)
+
+
+
     sys.exit(app.exec_())
 
