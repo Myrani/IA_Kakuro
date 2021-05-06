@@ -1,5 +1,6 @@
 
 import sys
+import os
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout, QGridLayout,QLabel
 from PyQt5.QtGui import QIcon,QPixmap
 from PyQt5.QtCore import pyqtSlot
@@ -12,8 +13,8 @@ class App(QWidget):
         self.title = 'Kakuro Helper'
         self.left = 10
         self.top = 10
-        self.width = 640
-        self.height = 480
+        self.width = 250
+        self.height = 250
         self.initUI(self.kakuro)
 
         
@@ -39,12 +40,13 @@ class App(QWidget):
             for y in range(0,len(kakuro[x])):
                 if kakuro[x][y][0] == "#|#":
                     label = QLabel(self)
-                    label.setStyleSheet("background-color: black;")
                     layout.addWidget(label,x,y)
+                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png)")
+
                 elif kakuro[x][y][0] == "   ":
                     label = QLabel(self)
-                    label.setStyleSheet("background-color: white;")
                     layout.addWidget(label,x,y)
+                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Playable.png)")
                 else:
                     layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
 
