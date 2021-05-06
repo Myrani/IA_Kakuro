@@ -1,16 +1,17 @@
 def gridSmartFiller(grid):
     for line in grid:
-        state = False
+        filler ="#/#"
         for case in line:
             if case[0] != "#/#":
-
-                state = not state
-
-            elif case[0] == "#/#":
-                if state:
-                    case[0] = "***"
-                else:
+                split = case[0].split("/")
+                if split[1] == "#":
+                    filler = "#/#"
                     continue
+                else:
+                    filler = "***"
+                    continue
+            else:
+                case[0] = filler
     return grid
 
 def gridMaker(x,y):
