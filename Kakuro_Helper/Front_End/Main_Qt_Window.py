@@ -55,7 +55,7 @@ class App(QWidget):
                     label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
 
                 elif kakuro[x][y][0] == "   ":
-                    label = QLabel(self)
+                    label = QLabel(str(kakuro[x][y][1]),self)
                     layout.addWidget(label,x,y)
                     label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Playable.png);background-repeat: no-repeat;")
                 else:
