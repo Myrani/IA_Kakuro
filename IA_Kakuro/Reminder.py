@@ -3,6 +3,6 @@
 #        - Interface Graphique
 #        - Système de heatmap de recommendation
 ###
-# ELSE : - Convention de nommage 
-#      : - 
+# ELSE : - Convention de nommage à définir 
+#      : - HardStop pour smartFiller
 ###

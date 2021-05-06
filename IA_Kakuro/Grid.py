@@ -1,3 +1,8 @@
+### Ficher Relatif à la gestion de Grille backend
+
+
+
+
 ### Remplissage intelligent des espaces jouables de la gille
 def gridSmartFiller(grid):
     # Change les characters à modifier en fonction de la case actuel au besoin 
@@ -43,8 +48,3 @@ def terminalPrint(kakuro):
         for case in line:
             print("|"+str(case[0:len(case)]).replace("[","").replace("]",""),end="")
         print("")
-
-
-kakuro_projet = gridMaker(6,6)
-
-terminalPrint(kakuro_projet)
