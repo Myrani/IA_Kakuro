@@ -18,7 +18,7 @@ def gridSmartFiller(grid):
                     filler = "#|#"
                     continue
                 else:
-                    filler = "  "
+                    filler = "   "
                     continue
             else:
                 case[0] = filler

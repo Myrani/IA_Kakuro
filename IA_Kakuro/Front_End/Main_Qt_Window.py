@@ -1,7 +1,7 @@
 
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout, QGridLayout,QLabel
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon,QPixmap
 from PyQt5.QtCore import pyqtSlot
 
 class App(QWidget):
@@ -33,10 +33,20 @@ class App(QWidget):
     def createGridLayout(self,kakuro):
         self.horizontalGroupBox = QGroupBox("Kakuro")
         layout = QGridLayout()
-
+        layout.setHorizontalSpacing(0)
+        layout.setVerticalSpacing(0)
         for x in range(0,len(kakuro)):        
             for y in range(0,len(kakuro[x])):
-                layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
+                if kakuro[x][y][0] == "#|#":
+                    label = QLabel(self)
+                    label.setStyleSheet("background-color: black;")
+                    layout.addWidget(label,x,y)
+                elif kakuro[x][y][0] == "   ":
+                    label = QLabel(self)
+                    label.setStyleSheet("background-color: white;")
+                    layout.addWidget(label,x,y)
+                else:
+                    layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
 
         
         self.horizontalGroupBox.setLayout(layout)
