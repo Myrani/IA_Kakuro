@@ -2,7 +2,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout, QGridLayout,QLabel
 from PyQt5.QtGui import QIcon
-from PyQt5.QtGui import QPainter, QColor, QPen
 from PyQt5.QtCore import pyqtSlot
 
 class App(QWidget):
@@ -32,12 +31,12 @@ class App(QWidget):
     
 
     def createGridLayout(self,kakuro):
-        self.horizontalGroupBox = QGroupBox("Grid")
+        self.horizontalGroupBox = QGroupBox("Kakuro")
         layout = QGridLayout()
 
         for x in range(0,len(kakuro)):        
             for y in range(0,len(kakuro[x])):
-                layout.addWidget(QLabel(kakuro[x][y][0]),x,y)
+                layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
 
         
         self.horizontalGroupBox.setLayout(layout)

@@ -2,12 +2,11 @@
 from Back_End.Grid import *
 from Front_End.Main_Qt_Window import *
 
-
+# Génération du kakuro
 kakuro_projet = gridMaker(6,6)
+#terminalPrint(kakuro_projet)
 
-terminalPrint(kakuro_projet)
-
-
+#Instantiation du Front_End
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     App = App(kakuro_projet)
