@@ -11,7 +11,10 @@ def gridSmartFiller(grid):
         for case in line:
             if case[0] != "#/#":
                 split = case[0].split("/")
-                if split[1] == "#":
+                if split[0] == "H" and split[1] == "#":
+                    filler = "#/#"
+                
+                elif split[1] == "#":
                     filler = "#/#"
                     continue
                 else:
@@ -39,7 +42,7 @@ def gridMaker(x,y):
     grid[3][3][0] = "3/4"
     grid[4][1][0] = "#/10"
     grid[5][2][0] = "#/3"
-    
+    grid[5][5][0] = "H/#"
     return gridSmartFiller(grid)
 
 ### Print lisible pour l'homme du Kakuro dans le terminal
