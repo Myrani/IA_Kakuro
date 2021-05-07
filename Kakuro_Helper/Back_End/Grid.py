@@ -43,20 +43,23 @@ def grid_Maker(x,y):
     grid[5][5][0] = "H|#"
     return grid_Smart_Filler(grid)
 
-### Affichage lisible pour l'homme du Kakuro dans le terminal
-def terminalPrint(kakuro):
+### Fonction d'affichage lisible pour l'homme du Kakuro dans le terminal
+
+# Affiche toutes les informations back-end de la grille
+def terminalPrintFull(kakuro):
     for line in kakuro:
         for case in line:
             print("|"+str(case[0:len(case)]).replace("[","").replace("]",""),end="")
         print("")
 
-
+# Affiche toutes les informations relatives à la heatmap back-end de la grille
 def terminalPrintHeatmap(kakuro):
     for line in kakuro:
         for case in line:
             print("|"+str(case[1]).replace("[","").replace("]",""),end="")
         print("")
 
+# Affiche toutes les informations relatives aux objectifs back-end de chaque cases de la grille
 def terminalPrintObjective(kakuro):
     for line in kakuro:
         for case in line:
