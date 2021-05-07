@@ -27,7 +27,7 @@ def grid_Maker(x,y):
     # génération de la grille
     grid = []
     for x in range(0,x):
-        grid.append([["#|#",0] for y in range(0,y)])
+        grid.append([["#|#",0,[]] for y in range(0,y)])
 
     # Instructions spécifiques 
     grid[0][2][0] = "11|#"
@@ -48,4 +48,11 @@ def terminalPrint(kakuro):
     for line in kakuro:
         for case in line:
             print("|"+str(case[0:len(case)]).replace("[","").replace("]",""),end="")
+        print("")
+
+
+def terminalPrintObjective(kakuro):
+    for line in kakuro:
+        for case in line:
+            print("|"+str(case[2]).replace("[","").replace("]",""),end="")
         print("")
