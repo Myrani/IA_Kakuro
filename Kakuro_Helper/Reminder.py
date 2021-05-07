@@ -22,4 +22,5 @@
 ###
 # Spirit lifter : https://youtube.com/playlist?list=PL1cIlVeSlGoWSbxtHKeD48IDZHcmzrLjn - Hardcore & co°
 #                 https://www.youtube.com/watch?v=muxi7rmRi7c - HardDanceTrance
+#                 https://www.youtube.com/watch?v=Mb2LHcMBQtY - HardPsyTrance
 ###

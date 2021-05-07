@@ -3,6 +3,8 @@ from Back_End.Grid import *
 from Back_End.Heat_Mapping_Logic import *
 from Back_End.Possible_Values_Mapping_Logic import *
 
+from Front_End.Dictionnaire_Des_Sommes import *
+
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui

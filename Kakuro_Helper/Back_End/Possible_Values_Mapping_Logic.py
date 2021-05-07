@@ -5,7 +5,7 @@
 def objective_Propagation_Row(kakuro):
     # Double for de parcours de la grille
     
-    curent_Objective = None # Objectif à propager
+    current_Objective = None # Objectif à propager
     
     final_List = [] # Liste de tout les espaces jouables liés
     current_List = [] # Liste de l'espace jouable actuellement traité
@@ -16,18 +16,18 @@ def objective_Propagation_Row(kakuro):
 
             # S'assure que nous sommes bien dans le cas d'une colonne de contrainte
             if kakuro[i][j][0] != "#|#" and kakuro[i][j][0] != "H|#" and kakuro[i][j][0] != "   ":
-                curent_Objective = kakuro[i][j][0].split("|")[1] # Extrait l'objectif et le met dans la variable de propagation
+                current_Objective = kakuro[i][j][0].split("|")[1] # Extrait l'objectif et le met dans la variable de propagation
                 if current_List != []:
                     final_List.append(current_List)
                     current_List = []
             # Cas d'une case jouable -> stockage de l'objectif en cour de propagation si il est Set
-            elif kakuro[i][j][0] == "   " and curent_Objective != None:
+            elif kakuro[i][j][0] == "   " and current_Objective != None:
                 
-                current_List.append([i,j,curent_Objective])
+                current_List.append([i,j,current_Objective])
             
             # Cas de colisition aved un bord neutre, reset de l'objectif 
             elif kakuro[i][j][0] == "#|#" or kakuro[i][j][0] == "H|#":
-                curent_Objective = None
+                current_Objective = None
                 if current_List != []:
                     final_List.append(current_List)
                     current_List = []
@@ -44,7 +44,7 @@ def objective_Propagation_Row(kakuro):
 def objective_Propagation_Column(kakuro):
     # Double for de parcours de la grille
     
-    curent_Objective = None # Objectif à propager
+    current_Objective = None # Objectif à propager
     
     final_List = [] # Liste de tout les espaces jouables liés
     current_List = [] # Liste de l'espace jouable actuellement traité
@@ -54,18 +54,18 @@ def objective_Propagation_Column(kakuro):
 
             # S'assure que nous sommes bien dans le cas d'une colonne de contrainte
             if kakuro[j][i][0] != "#|#" and kakuro[j][i][0] != "H|#" and kakuro[j][i][0] != "   ":
-                curent_Objective = kakuro[j][i][0].split("|")[0] # Extrait l'objectif et le met dans la variable de propagation
+                current_Objective = kakuro[j][i][0].split("|")[0] # Extrait l'objectif et le met dans la variable de propagation
                 if current_List != []:
                     final_List.append(current_List)
                     current_List = []
             # Cas d'une case jouable -> stockage de l'objectif en cour de propagation si il est Set
-            elif kakuro[j][i][0] == "   " and curent_Objective != None:
+            elif kakuro[j][i][0] == "   " and current_Objective != None:
                 
-                current_List.append([j,i,curent_Objective])
+                current_List.append([j,i,current_Objective])
             
             # Cas de colisition aved un bord neutre, reset de l'objectif 
             elif kakuro[j][i][0] == "#|#" or kakuro[j][i][0] == "H|#":
-                curent_Objective = None
+                current_Objective = None
                 if current_List != []:
                     final_List.append(current_List)
                     current_List = []

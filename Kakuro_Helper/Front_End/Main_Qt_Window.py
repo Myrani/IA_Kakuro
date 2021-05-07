@@ -10,7 +10,6 @@ from PyQt5 import QtGui
 from Front_End.Divided_Label_Widget import DividedLabel
 
 
-
 class App(QtWidgets.QWidget):
 
     # init des infos basiques de la window
@@ -65,6 +64,7 @@ class App(QtWidgets.QWidget):
                 # Cas des Cases Void 
                 if kakuro[x][y][0] == "#|#" or kakuro[x][y][0] == "H|#" :
                     label = QtWidgets.QLabel(self)
+                    label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label,x,y)
                     #label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
                     label.setStyleSheet("background-color : black;")
@@ -75,13 +75,15 @@ class App(QtWidgets.QWidget):
                     #label = QLabel(str(kakuro[x][y][1]),self)
                     
                     #Version case vide
-                    label = DividedLabel(self)
+                    label = DividedLabel(kakuro[x][y][2])
                     label.setStyleSheet("background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);") # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
                     layout.addWidget(label,x,y)
                 
                 # Cas des cases de contraintes du Kakuro
                 else:
-                    layout.addWidget(QtWidgets.QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
+                    label = QtWidgets.QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#"))
+                    label.setAlignment(QtCore.Qt.AlignCenter)
+                    layout.addWidget(label,x,y)
 
         
         self.horizontalGroupBox.setLayout(layout)
