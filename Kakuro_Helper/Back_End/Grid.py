@@ -1,6 +1,4 @@
-### Ficher Relatif à la gestion de Grille backend
-
-
+### Ficher Relatif à la création de la grille backend
 
 
 ### Remplissage intelligent des espaces jouables de la gille

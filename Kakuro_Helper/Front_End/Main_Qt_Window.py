@@ -1,11 +1,17 @@
 
 import sys
 import os
-from PyQt5.QtWidgets import * 
-from PyQt5 import QtCore, QtGui
-from PyQt5.QtGui import * 
-from PyQt5.QtCore import * 
-class App(QWidget):
+
+from PyQt5 import QtWidgets
+from PyQt5 import QtCore
+from PyQt5 import QtGui
+
+
+from Front_End.Divided_Label_Widget import DividedLabel
+
+
+
+class App(QtWidgets.QWidget):
 
     # init des infos basiques de la window
     def __init__(self,kakuro):
@@ -14,8 +20,8 @@ class App(QWidget):
         self.title = 'Kakuro Helper'
         self.left = 10
         self.top = 10
-        self.width = 250
-        self.height = 250
+        self.width = 600
+        self.height = 600
         self.initUI(self.kakuro)
 
         
@@ -31,7 +37,7 @@ class App(QWidget):
         self.createGridLayout(kakuro)
 
         # Setup du design en grid 
-        windowLayout = QVBoxLayout()
+        windowLayout = QtWidgets.QVBoxLayout()
         windowLayout.addWidget(self.horizontalGroupBox) 
         self.setLayout(windowLayout)
         
@@ -42,8 +48,8 @@ class App(QWidget):
     # Coeur du setup du design en grid 
     def createGridLayout(self,kakuro):
         # grid layout + nom
-        self.horizontalGroupBox = QGroupBox("Kakuro")
-        layout = QGridLayout()
+        self.horizontalGroupBox = QtWidgets.QGroupBox(self)
+        layout = QtWidgets.QGridLayout()
         
         # Aucun espace entre les cases
         layout.setHorizontalSpacing(0)
@@ -58,19 +64,24 @@ class App(QWidget):
                 
                 # Cas des Cases Void 
                 if kakuro[x][y][0] == "#|#" or kakuro[x][y][0] == "H|#" :
-                    label = QLabel(self)
+                    label = QtWidgets.QLabel(self)
                     layout.addWidget(label,x,y)
-                    label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
+                    #label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
+                    label.setStyleSheet("background-color : black;")
                 
                 # Cas des Cases jouables
                 elif kakuro[x][y][0] == "   ":
-                    label = QLabel(str(kakuro[x][y][1]),self)
+                    ###Version avec poid en description
+                    #label = QLabel(str(kakuro[x][y][1]),self)
+                    
+                    #Version case vide
+                    label = DividedLabel(self)
                     label.setStyleSheet("background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);") # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
                     layout.addWidget(label,x,y)
                 
                 # Cas des cases de contraintes du Kakuro
                 else:
-                    layout.addWidget(QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
+                    layout.addWidget(QtWidgets.QLabel(kakuro[x][y][0].replace("|","\\").replace("H","#")),x,y)
 
         
         self.horizontalGroupBox.setLayout(layout)
