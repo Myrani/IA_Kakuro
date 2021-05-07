@@ -51,6 +51,12 @@ def terminalPrint(kakuro):
         print("")
 
 
+def terminalPrintHeatmap(kakuro):
+    for line in kakuro:
+        for case in line:
+            print("|"+str(case[1]).replace("[","").replace("]",""),end="")
+        print("")
+
 def terminalPrintObjective(kakuro):
     for line in kakuro:
         for case in line:
