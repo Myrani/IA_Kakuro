@@ -1,5 +1,3 @@
-
-from Grid import *
 #Fichier concernant la partie logique de recommendation de coup à jouer
 
 # Propagation des objectifs par ligne sur chaque cases concernées
@@ -85,10 +83,4 @@ def set_Objective_Propagation(kakuro):
     return objective_Propagation_Row(objective_Propagation_Column(kakuro))
 
 
-
-
-kakuro = set_Objective_Propagation(grid_Maker(6,6))
-
-terminalPrintObjective(kakuro)
-terminalPrintFull(kakuro)
 
