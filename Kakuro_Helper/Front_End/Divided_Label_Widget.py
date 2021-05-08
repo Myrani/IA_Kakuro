@@ -6,6 +6,7 @@ class DividedLabel(QtWidgets.QWidget):
   
     def __init__(self,specs):
         super().__init__()
+        #Dictionnaire des valeures Possible pour chaque objectif de jeu , Pb d'import à fix
         self.dictionnaire_Des_Sommes = {
             '1':[[1]],
             '2':[[2]],
@@ -21,7 +22,10 @@ class DividedLabel(QtWidgets.QWidget):
             '14':[[5,9],[6,8],[1,4,9],[1,5,8],[1,6,7],[2,3,9],[2,4,8],[2,5,7],[3,4,7],[3,5,6],[1,2,3,8],[1,2,4,7],[1,2,5,6],[1,3,4,6],[2,3,4,5]],
             '17':[[8,9],[1,7,9],[2,6,9],[2,7,8],[3,5,9],[3,6,8],[4,5,8],[4,6,7],[1,2,5,9],[1,2,6,8],[1,3,4,9],[1,3,5,8],[1,3,6,7],[1,4,5,7],[2,3,4,8],[2,3,5,7],[2,4,5,6],[1,2,3,4,7],[1,2,3,5,6]]
             }
+        # Contraintes d'analyses importées du back-end
         self.specs = specs
+
+        # Box Mettant en place la grid
         self.container = QtWidgets.QWidget()
         self.layout = QtWidgets.QVBoxLayout(self.container)
         self.setLayout(self.layout)
@@ -35,8 +39,8 @@ class DividedLabel(QtWidgets.QWidget):
         self.label.setLayout(self.labelLayout)
 
         self.possibleSetValues = self.findCommonNumberForLength(self.specs[0][0],self.specs[0][1],self.specs[1][0],self.specs[1][1])
-        print(self.possibleSetValues)
 
+        # Rempli le minilabel avec un chiffre si c'est une solution possible , sinon le laisse vide
         cpt = 1
         for i in range(0,3):
             for j in range(0,3):
@@ -55,22 +59,24 @@ class DividedLabel(QtWidgets.QWidget):
 
     def findCommonNumberForLength(self,firstNumber,firstLen,secondNumber,secondLen):
     
-        set_One = []
-        set_Two = []
+        set_One = [] # Futur set des solutions pour la contrainte de Ligne
+        set_Two = [] # Futur set des solutions pour la contrainte de Colonnes
 
+        # Tri des solutions possibles en fonction des de cases à remplir : Ligne
         for combinaison_First in self.dictionnaire_Des_Sommes[firstNumber]:
             if len(combinaison_First) == firstLen:
                 for el in combinaison_First:
                     set_One.append(el)
-    
+        
+        # Tri des solutions possibles en fonction des de cases à remplir : Colonne
         for combinaison_Second in self.dictionnaire_Des_Sommes[secondNumber]:
             if len(combinaison_Second) == secondLen:
                 for el in combinaison_Second:
                     set_Two.append(el)
-    
+        # Transformation en Set
         set_One = set(set_One)
         set_Two = set(set_Two)
         
-        print(set_One,set_Two)
+        # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
         return set_One & set_Two
   

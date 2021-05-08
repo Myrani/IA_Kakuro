@@ -19,13 +19,12 @@ kakuro_projet = set_Heat_Mapping(kakuro_projet)
 kakuro_projet = set_Objective_Propagation(kakuro_projet)
 
 
-terminalPrintHeatmap(kakuro_projet)
-terminalPrintObjective(kakuro_projet)
+
 
 #Instantiation du Front_End
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    #print(os.getcwd()+"/Front_End/Ressources/Void.png")
+    
 
     App = App(kakuro_projet)
 

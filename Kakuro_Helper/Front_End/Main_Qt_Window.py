@@ -71,13 +71,11 @@ class App(QtWidgets.QWidget):
                 
                 # Cas des Cases jouables
                 elif kakuro[x][y][0] == "   ":
-                    ###Version avec poid en description
-                    #label = QLabel(str(kakuro[x][y][1]),self)
                     
-                    #Version case vide
+                    # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     label = DividedLabel(kakuro[x][y][2])
                     label.setStyleSheet("background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);") # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
-                    layout.addWidget(label,x,y)
+                    layout.addWidget(label,x,y) # Rajout à la Grid
                 
                 # Cas des cases de contraintes du Kakuro
                 else:
