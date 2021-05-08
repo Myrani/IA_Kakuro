@@ -14,11 +14,11 @@ from Front_End.Main_Qt_Window import *
 
 
 # Génération du kakuro
-kakuro_projet = grid_Maker(6,6)
+kakuro_projet = grid_Maker(8,8)
 kakuro_projet = set_Heat_Mapping(kakuro_projet)
 kakuro_projet = set_Objective_Propagation(kakuro_projet)
 
-
+terminalPrintFull(kakuro_projet)
 
 
 #Instantiation du Front_End

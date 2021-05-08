@@ -38,9 +38,13 @@ def grid_Maker(x,y):
     grid[2][5][0] = "3|#"
     grid[3][0][0] = "#|6"
     grid[3][3][0] = "3|4"
+    grid[3][6][0] = "H|#"
     grid[4][1][0] = "#|10"
+    grid[4][6][0] = "H|#"
     grid[5][2][0] = "#|3"
     grid[5][5][0] = "H|#"
+    grid[6][3][0] = "H|#"
+    grid[6][4][0] = "H|#"
     return grid_Smart_Filler(grid)
 
 ### Fonction d'affichage lisible pour l'homme du Kakuro dans le terminal
