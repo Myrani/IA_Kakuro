@@ -15,8 +15,6 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-old_instructions = [[0, 2, "11|#"], [0, 3, "4|#"], [1, 1, "14|5"], [1, 4, "10|#"], [2, 0, "#|17"], [2, 5, "3|#"], [3, 0, "#|6"],
-                    [3, 3, "3|4"], [3, 6, "H|#"], [4, 1, "#|10"], [4, 6, "H|#"], [5, 2, "#|3"], [5, 5, "H|#"], [6, 3, "H|#"], [6, 4, "H|#"]]
 
 # Génération du kakuro de manière Dynamique
 kakuro = dynamic_Load()
