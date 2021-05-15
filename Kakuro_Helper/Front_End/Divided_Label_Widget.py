@@ -7,7 +7,6 @@ class DividedLabel(QtWidgets.QWidget):
 
     def __init__(self, specs, dictionnaire_Des_Sommes):
         super().__init__()
-        # fixed ?  Dictionnaire des valeures Possible pour chaque objectif de jeu , Pb d'import à fix
 
         # Contraintes d'analyses importées du back-end
         self.specs = specs
@@ -19,9 +18,11 @@ class DividedLabel(QtWidgets.QWidget):
 
         self.label = QtWidgets.QLabel()
         self.labelLayout = QtWidgets.QGridLayout()
+
         self.labelLayout.setHorizontalSpacing(0)
         self.labelLayout.setVerticalSpacing(0)
         self.labelLayout.setContentsMargins(0, 0, 0, 0)
+
         self.label.setLayout(self.labelLayout)
 
         self.possibleSetValues = self.findCommonNumberForLength(
