@@ -2,6 +2,8 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
+from Front_End.Content_Button import ContentButton
+
 
 class DividedLabel(QtWidgets.QWidget):
 
@@ -18,8 +20,9 @@ class DividedLabel(QtWidgets.QWidget):
 
         self.label = QtWidgets.QLabel()
         self.labelLayout = QtWidgets.QGridLayout()
+        self.labelLayout.setAlignment(QtCore.Qt.AlignCenter)
 
-        self.labelLayout.setHorizontalSpacing(0)
+        self.labelLayout.setHorizontalSpacing(8)
         self.labelLayout.setVerticalSpacing(0)
         self.labelLayout.setContentsMargins(0, 0, 0, 0)
 
@@ -33,9 +36,8 @@ class DividedLabel(QtWidgets.QWidget):
         for i in range(0, 3):
             for j in range(0, 3):
                 if cpt in self.possibleSetValues:
-                    minilabel = QtWidgets.QLabel(str(cpt))
-                    minilabel.setAlignment(QtCore.Qt.AlignCenter)
-                    self.labelLayout.addWidget(minilabel, i, j)
+                    minibutton = ContentButton(str(cpt))
+                    self.labelLayout.addWidget(minibutton, i, j)
                     cpt += 1
                 else:
                     minilabel = QtWidgets.QLabel("")
