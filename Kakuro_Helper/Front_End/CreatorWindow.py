@@ -69,9 +69,11 @@ class CreatorWindow(QtWidgets.QWidget):
 
                 # Place Holder
 
-                label = QtWidgets.QLabel(self)
-                label.setAlignment(QtCore.Qt.AlignCenter)
-                label.setStyleSheet("background-color : black;")
+                label = QtWidgets.QLabel("")
+                # label.setAlignment(QtCore.Qt.AlignCenter)
+                label.setStyleSheet(
+                    "border: solid 4px blue; background-color : white ;"
+                )
                 layout.addWidget(label, x, y)
 
         self.interfaceGroupBox.setLayout(layout)

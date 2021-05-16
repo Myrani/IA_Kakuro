@@ -14,6 +14,7 @@ class SolverWindow(QtWidgets.QWidget):
         # Setup des paramêtres basique de la fenêtre principale
         self.kakuro = kakuro
         self.dictionnaire = dictionnaire_Des_Sommes
+        self.settings = []
         self.title = 'Kakuro Helper'
         self.left = 10
         self.top = 10
@@ -46,13 +47,38 @@ class SolverWindow(QtWidgets.QWidget):
 
     def createMenuLayout(self):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
-        menuLayout = QtWidgets.QHBoxLayout()
+        menuLayout = QtWidgets.QGridLayout()
 
         solver_To_creator_BTN = QtWidgets.QPushButton(
             "To Creator's Side", self)
 
-        menuLayout.addWidget(solver_To_creator_BTN)
+        self.filter_Heat_CHK = QtWidgets.QCheckBox("Heat Map")
+        self.filter_PossibleValues_CHK = QtWidgets.QCheckBox(
+            "Valeures Possibles")
+        self.filter_X_CHK = QtWidgets.QCheckBox("Possible Filtre")
+        self.filter_Y_CHK = QtWidgets.QCheckBox("Possible Filtre")
+
+        self.filter_Heat_CHK.toggled.connect(
+            lambda: self.onChecked(self.filter_Heat_CHK, "Heat Map"))
+
+        self.filter_PossibleValues_CHK.toggled.connect(
+            lambda: self.onChecked(self.filter_PossibleValues_CHK, "Possible Values"))
+
+        menuLayout.addWidget(self.filter_Heat_CHK, 0, 0)
+        menuLayout.addWidget(self.filter_PossibleValues_CHK, 1, 0)
+        menuLayout.addWidget(self.filter_X_CHK, 0, 1)
+        menuLayout.addWidget(self.filter_Y_CHK, 1, 1)
+
+        menuLayout.addWidget(solver_To_creator_BTN, 1, 2)
         self.menuGroupBox.setLayout(menuLayout)
+
+    def onChecked(self, box, setting):
+        if box.isChecked():
+            self.settings.append(setting)
+        else:
+            self.settings.remove(setting)
+
+        print(self.settings)
 
     def createKakuroSolverLayout(self, kakuro, dictionnaire_Des_Sommes):
         # grid layout + nom
