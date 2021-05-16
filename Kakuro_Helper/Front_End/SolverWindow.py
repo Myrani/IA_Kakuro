@@ -8,21 +8,22 @@ from Front_End.Divided_Label_Widget import *
 
 
 class SolverWindow(QtWidgets.QWidget):
-    def __init__(self, kakuro, dictionnaire_Des_Sommes):
-        super(SolverWindow, self).__init__()
+    def __init__(self, kakuro, dictionnaire_Des_Sommes, filterSettings, parent=None):
+        super(SolverWindow, self).__init__(parent)
 
+        print(self.parentWidget().filterSettings)
         # Setup des paramêtres basique de la fenêtre principale
         self.kakuro = kakuro
         self.dictionnaire = dictionnaire_Des_Sommes
-        self.settings = []
+        self.filterSettings = filterSettings
         self.title = 'Kakuro Helper'
         self.left = 10
         self.top = 10
         self.width = 600
         self.height = 700
-        self.initUI(self.kakuro, self.dictionnaire)
+        self.initUI(self.kakuro, self.dictionnaire, self.filterSettings)
 
-    def initUI(self, kakuro, dictionnaire_Des_Sommes):
+    def initUI(self, kakuro, dictionnaire_Des_Sommes, filterSettings):
 
         self.setStyleSheet("background-color: white;")
         self.setWindowTitle(self.title)
@@ -58,6 +59,12 @@ class SolverWindow(QtWidgets.QWidget):
         self.filter_X_CHK = QtWidgets.QCheckBox("Possible Filtre")
         self.filter_Y_CHK = QtWidgets.QCheckBox("Possible Filtre")
 
+        for filter in self.parentWidget().filterSettings:
+            if filter == "Heat Map":
+                self.filter_Heat_CHK.setChecked(True)
+            elif filter == "Possible Values":
+                self.filter_PossibleValues_CHK.setChecked(True)
+
         self.filter_Heat_CHK.toggled.connect(
             lambda: self.onChecked(self.filter_Heat_CHK, "Heat Map"))
 
@@ -72,13 +79,13 @@ class SolverWindow(QtWidgets.QWidget):
         menuLayout.addWidget(solver_To_creator_BTN, 1, 2)
         self.menuGroupBox.setLayout(menuLayout)
 
-    def onChecked(self, box, setting):
+    def onChecked(self, box, filter):
         if box.isChecked():
-            self.settings.append(setting)
+            self.parentWidget().filterSettings.append(filter)
         else:
-            self.settings.remove(setting)
+            self.parentWidget().filterSettings.remove(filter)
 
-        print(self.settings)
+        self.parentWidget().startSolverWindow()
 
     def createKakuroSolverLayout(self, kakuro, dictionnaire_Des_Sommes):
         # grid layout + nom
@@ -108,13 +115,21 @@ class SolverWindow(QtWidgets.QWidget):
                 elif kakuro[x][y][0] == "   ":
 
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
-                    label = DividedLabel(
-                        kakuro[x][y][2], dictionnaire_Des_Sommes)
-                    # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
-                    label.setStyleSheet(
-                        "background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);")
-                    layout.addWidget(label, x, y)  # Rajout à la Grid
+                    if "Possible Values" in self.filterSettings:
+                        label = DividedLabel(
+                            kakuro[x][y][2], dictionnaire_Des_Sommes)
+                    else:
+                        label = QtWidgets.QLabel("")
 
+                    # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
+                    if "Heat Map" in self.filterSettings:
+                        label.setStyleSheet(
+                            "background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);")
+                        layout.addWidget(label, x, y)  # Rajout à la Grid
+                    else:
+                        label.setStyleSheet(
+                            "background-color :white;")
+                        layout.addWidget(label, x, y)  # Rajout à la Grid
                 # Cas des cases de contraintes du Kakuro
                 else:
                     label = QtWidgets.QLabel(
