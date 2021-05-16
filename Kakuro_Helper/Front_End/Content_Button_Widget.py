@@ -17,7 +17,6 @@ class ContentButton(QtWidgets.QWidget):
             "border : black 5px ;background: transparent;")
 
     def change_Content(self):
-        print("Content: ", self.content)
         if self.button.text() == self.content:
             self.button.setText("")
         else:

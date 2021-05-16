@@ -1,4 +1,4 @@
-# Focntion Principale du programme
+# Fonction Principale du programme
 
 import sys
 
@@ -20,8 +20,6 @@ from PyQt5 import QtGui
 
 # Génération du kakuro de manière Dynamique
 kakuro = dynamic_Load()
-
-terminalPrintFull(kakuro)
 
 
 # Instantiation du Front_End
