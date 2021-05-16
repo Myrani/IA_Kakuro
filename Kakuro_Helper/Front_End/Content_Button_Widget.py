@@ -16,8 +16,6 @@ class ContentButton(QtWidgets.QWidget):
         self.button.setStyleSheet(
             "border : black 5px ;background: transparent;")
 
-        print(content)
-
     def change_Content(self):
         print("Content: ", self.content)
         if self.button.text() == self.content:

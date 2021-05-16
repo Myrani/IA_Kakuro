@@ -1,27 +1,25 @@
-
 import sys
-import os
 
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
+from Front_End.Divided_Label_Widget import *
 
-from Front_End.Divided_Label_Widget import DividedLabel
 
-
-class App(QtWidgets.QWidget):
-
-    # init des infos basiques de la window
+class SolverWindow(QtWidgets.QWidget):
     def __init__(self, kakuro, dictionnaire_Des_Sommes):
-        super().__init__()
+        super(SolverWindow, self).__init__()
+
+        # Setup des paramêtres basique de la fenêtre principale
         self.kakuro = kakuro
+        self.dictionnaire = dictionnaire_Des_Sommes
         self.title = 'Kakuro Helper'
         self.left = 10
         self.top = 10
         self.width = 600
-        self.height = 600
-        self.initUI(self.kakuro, dictionnaire_Des_Sommes)
+        self.height = 700
+        self.initUI(self.kakuro, self.dictionnaire)
 
     def initUI(self, kakuro, dictionnaire_Des_Sommes):
 
@@ -29,21 +27,36 @@ class App(QtWidgets.QWidget):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
-        # self.setAttribute(QtCore.Qt.WA_TranslucentBackground) <-- background transparent sympa
-        self.createGridLayout(kakuro, dictionnaire_Des_Sommes)
+        # Création de la VBox Qui tiendra tout les éléments
+        self.windowLayout = QtWidgets.QGridLayout()
 
-        # Setup du design en grid
-        windowLayout = QtWidgets.QVBoxLayout()
-        windowLayout.addWidget(self.horizontalGroupBox)
-        self.setLayout(windowLayout)
+        # Génération des VBox et de leurs layout qu'on récupéra après via un attbribut de l'objet
+        self.createKakuroSolverLayout(kakuro, dictionnaire_Des_Sommes)
+        self.createMenuLayout()
+
+        # Ajout des VBoxs Crées au Layout Principal
+        self.windowLayout.addWidget(self.menuGroupBox, 0, 0, 1, 0)
+        self.windowLayout.addWidget(self.interfaceGroupBox, 1, 0, 6, 6)
+
+        # Assosiation du Layout et de fenêtre
+        self.setLayout(self.windowLayout)
 
         # Montrer le tout !
         self.show()
 
-    # Coeur du setup du design en grid
-    def createGridLayout(self, kakuro, dictionnaire_Des_Sommes):
+    def createMenuLayout(self):
+        self.menuGroupBox = QtWidgets.QGroupBox(self)
+        menuLayout = QtWidgets.QHBoxLayout()
+
+        solver_To_creator_BTN = QtWidgets.QPushButton(
+            "To Creator's Side", self)
+
+        menuLayout.addWidget(solver_To_creator_BTN)
+        self.menuGroupBox.setLayout(menuLayout)
+
+    def createKakuroSolverLayout(self, kakuro, dictionnaire_Des_Sommes):
         # grid layout + nom
-        self.horizontalGroupBox = QtWidgets.QGroupBox(self)
+        self.interfaceGroupBox = QtWidgets.QGroupBox(self)
         layout = QtWidgets.QGridLayout()
 
         # Aucun espace entre les cases
@@ -62,7 +75,7 @@ class App(QtWidgets.QWidget):
                     label = QtWidgets.QLabel(self)
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
-                    #label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
+                    # label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
                     label.setStyleSheet("background-color : black;")
 
                 # Cas des Cases jouables
@@ -83,4 +96,4 @@ class App(QtWidgets.QWidget):
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
 
-        self.horizontalGroupBox.setLayout(layout)
+        self.interfaceGroupBox.setLayout(layout)
