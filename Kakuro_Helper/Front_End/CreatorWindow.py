@@ -67,32 +67,11 @@ class CreatorWindow(QtWidgets.QWidget):
         for x in range(0, len(kakuro)):
             for y in range(0, len(kakuro[x])):
 
-                # Changement du contenu de la case en fonction des values [0] et [1] du modèle backend
+                # Place Holder
 
-                # Cas des Cases Void
-                if kakuro[x][y][0] == "#|#" or kakuro[x][y][0] == "H|#":
-                    label = QtWidgets.QLabel(self)
-                    label.setAlignment(QtCore.Qt.AlignCenter)
-                    layout.addWidget(label, x, y)
-                    # label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
-                    label.setStyleSheet("background-color : black;")
-
-                # Cas des Cases jouables
-                elif kakuro[x][y][0] == "   ":
-
-                    # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
-                    label = DividedLabel(
-                        kakuro[x][y][2], dictionnaire_Des_Sommes)
-                    # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
-                    label.setStyleSheet(
-                        "background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);")
-                    layout.addWidget(label, x, y)  # Rajout à la Grid
-
-                # Cas des cases de contraintes du Kakuro
-                else:
-                    label = QtWidgets.QLabel(
-                        kakuro[x][y][0].replace("|", "\\").replace("H", "#"))
-                    label.setAlignment(QtCore.Qt.AlignCenter)
-                    layout.addWidget(label, x, y)
+                label = QtWidgets.QLabel(self)
+                label.setAlignment(QtCore.Qt.AlignCenter)
+                label.setStyleSheet("background-color : black;")
+                layout.addWidget(label, x, y)
 
         self.interfaceGroupBox.setLayout(layout)
