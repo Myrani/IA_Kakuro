@@ -12,7 +12,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, solverKakuro, dictionnaire, parent=None):
         super(MainWindow, self).__init__(parent)
         self.solverKakuro = solverKakuro
-        self.creatorKakuro = grid_Maker__Default(6, 6, [])
+        self.creatorKakuro = grid_Maker__Default(7, 7, [])
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)
