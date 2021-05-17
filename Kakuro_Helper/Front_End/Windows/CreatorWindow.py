@@ -4,7 +4,8 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-from Front_End.Divided_Label_Widget import *
+from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 
 class CreatorWindow(QtWidgets.QWidget):
@@ -69,7 +70,7 @@ class CreatorWindow(QtWidgets.QWidget):
 
                 # Place Holder
 
-                label = QtWidgets.QLabel("")
+                label = Morphing_Label.Morphing_Label(self)
                 # label.setAlignment(QtCore.Qt.AlignCenter)
                 label.setStyleSheet(
                     "border: solid 4px blue; background-color : white ;"

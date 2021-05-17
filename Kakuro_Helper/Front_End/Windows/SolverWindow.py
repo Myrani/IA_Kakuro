@@ -4,7 +4,8 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-from Front_End.Divided_Label_Widget import *
+from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 
 class SolverWindow(QtWidgets.QWidget):
@@ -116,7 +117,7 @@ class SolverWindow(QtWidgets.QWidget):
 
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     if "Possible Values" in self.filterSettings:
-                        label = DividedLabel(
+                        label = Divided_Label_Widget.DividedLabel(
                             kakuro[x][y][2], dictionnaire_Des_Sommes)
                     else:
                         label = QtWidgets.QLabel("")

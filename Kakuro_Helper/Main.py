@@ -9,9 +9,9 @@ from Back_End.Dictionnaire_Des_Sommes import *
 from Back_End.Saving_Logic import *
 
 
-from Front_End.MainWindow import *
-from Front_End.SolverWindow import *
-from Front_End.CreatorWindow import *
+from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
+
 
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
@@ -26,6 +26,6 @@ kakuro = dynamic_Load()
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
-    MainWindow = MainWindow(kakuro, dictionnaire_Des_Sommes)
+    MainWindow = MainWindow.MainWindow(kakuro, dictionnaire_Des_Sommes)
 
     sys.exit(app.exec_())

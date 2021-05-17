@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-from Front_End.Content_Button_Widget import ContentButton
+from Front_End.Widgets.Content_Button_Widget import ContentButton
 
 
 class DividedLabel(QtWidgets.QWidget):

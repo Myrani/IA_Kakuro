@@ -1,8 +1,9 @@
 import sys
 
 from PyQt5 import QtWidgets
-from Front_End.SolverWindow import *
-from Front_End.CreatorWindow import *
+
+from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -15,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startSolverWindow()
 
     def startSolverWindow(self):
-        self.solverWindow = SolverWindow(
+        self.solverWindow = SolverWindow.SolverWindow(
             self.kakuro, self.dictionnaire, self.filterSettings, parent=self)
         self.setWindowTitle("Helper's Side")
         self.setCentralWidget(self.solverWindow)
@@ -25,7 +26,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
 
     def startCreatorWindow(self):
-        self.creatorWindow = CreatorWindow(self.kakuro, self.dictionnaire)
+        self.creatorWindow = CreatorWindow.CreatorWindow(
+            self.kakuro, self.dictionnaire)
         self.setWindowTitle("Creator's Side")
         self.setCentralWidget(self.creatorWindow)
         self.creatorWindow.menuGroupBox.children()[1].clicked.connect(
