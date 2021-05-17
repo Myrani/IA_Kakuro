@@ -9,20 +9,20 @@ from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morph
 
 
 class CreatorWindow(QtWidgets.QWidget):
-    def __init__(self, kakuro, dictionnaire_Des_Sommes):
-        super(CreatorWindow, self).__init__()
+    def __init__(self, kakuro, parent=None):
+        super(CreatorWindow, self).__init__(parent)
 
+        print(kakuro)
         # Setup des paramêtres basique de la fenêtre principale
         self.kakuro = kakuro
-        self.dictionnaire = dictionnaire_Des_Sommes
-        self.title = 'Kakuro Helper'
+        self.title = ''
         self.left = 10
         self.top = 10
         self.width = 600
         self.height = 700
-        self.initUI(self.kakuro, self.dictionnaire)
+        self.initUI(self.kakuro)
 
-    def initUI(self, kakuro, dictionnaire_Des_Sommes):
+    def initUI(self, kakuro):
 
         self.setStyleSheet("background-color: white;")
         self.setWindowTitle(self.title)
@@ -32,7 +32,7 @@ class CreatorWindow(QtWidgets.QWidget):
         self.windowLayout = QtWidgets.QGridLayout()
 
         # Génération des VBox et de leurs layout qu'on récupéra après via un attbribut de l'objet
-        self.createKakuroSolverLayout(kakuro, dictionnaire_Des_Sommes)
+        self.createKakuroCreatorLayout(kakuro)
         self.createMenuLayout()
 
         # Ajout des VBoxs Crées au Layout Principal
@@ -54,7 +54,7 @@ class CreatorWindow(QtWidgets.QWidget):
         menuLayout.addWidget(solver_To_creator_BTN)
         self.menuGroupBox.setLayout(menuLayout)
 
-    def createKakuroSolverLayout(self, kakuro, dictionnaire_Des_Sommes):
+    def createKakuroCreatorLayout(self, kakuro):
         # grid layout + nom
         self.interfaceGroupBox = QtWidgets.QGroupBox(self)
         layout = QtWidgets.QGridLayout()
@@ -68,12 +68,11 @@ class CreatorWindow(QtWidgets.QWidget):
         for x in range(0, len(kakuro)):
             for y in range(0, len(kakuro[x])):
 
-                # Place Holder
-
-                label = Morphing_Label.Morphing_Label(self)
+                label = Morphing_Label.Morphing_Label(
+                    x, y, self.kakuro, parent=self)
                 # label.setAlignment(QtCore.Qt.AlignCenter)
                 label.setStyleSheet(
-                    "border: solid 4px blue; background-color : white ;"
+                    "border: solid ;"
                 )
                 layout.addWidget(label, x, y)
 

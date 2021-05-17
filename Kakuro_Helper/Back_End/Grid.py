@@ -33,8 +33,9 @@ def grid_Maker__Default(x, y, liste_Instructions):
         grid.append([["#|#", 0, []] for y in range(0, y)])
 
     # Application des instructions
-    for instruction in liste_Instructions:
-        grid[instruction[0]][instruction[1]][0] = instruction[2]
+    if len(liste_Instructions) > 0:
+        for instruction in liste_Instructions:
+            grid[instruction[0]][instruction[1]][0] = instruction[2]
 
     # Renvoit du tout
     return grid_Smart_Filler(grid)
