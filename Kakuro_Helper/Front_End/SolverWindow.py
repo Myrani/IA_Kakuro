@@ -56,8 +56,8 @@ class SolverWindow(QtWidgets.QWidget):
         self.filter_Heat_CHK = QtWidgets.QCheckBox("Heat Map")
         self.filter_PossibleValues_CHK = QtWidgets.QCheckBox(
             "Valeures Possibles")
-        self.filter_X_CHK = QtWidgets.QCheckBox("Possible Filtre")
-        self.filter_Y_CHK = QtWidgets.QCheckBox("Possible Filtre")
+        # self.filter_X_CHK = QtWidgets.QCheckBox("Possible Filtre")
+        # self.filter_Y_CHK = QtWidgets.QCheckBox("Possible Filtre")
 
         for filter in self.parentWidget().filterSettings:
             if filter == "Heat Map":
@@ -73,8 +73,8 @@ class SolverWindow(QtWidgets.QWidget):
 
         menuLayout.addWidget(self.filter_Heat_CHK, 0, 0)
         menuLayout.addWidget(self.filter_PossibleValues_CHK, 1, 0)
-        menuLayout.addWidget(self.filter_X_CHK, 0, 1)
-        menuLayout.addWidget(self.filter_Y_CHK, 1, 1)
+        # menuLayout.addWidget(self.filter_X_CHK, 0, 1)
+        # menuLayout.addWidget(self.filter_Y_CHK, 1, 1)
 
         menuLayout.addWidget(solver_To_creator_BTN, 1, 2)
         self.menuGroupBox.setLayout(menuLayout)

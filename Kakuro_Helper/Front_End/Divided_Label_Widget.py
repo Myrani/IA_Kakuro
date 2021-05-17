@@ -22,8 +22,8 @@ class DividedLabel(QtWidgets.QWidget):
         self.labelLayout = QtWidgets.QGridLayout()
         self.labelLayout.setAlignment(QtCore.Qt.AlignCenter)
 
-        self.labelLayout.setHorizontalSpacing(8)
-        self.labelLayout.setVerticalSpacing(0)
+        self.labelLayout.setHorizontalSpacing(-5)
+        self.labelLayout.setVerticalSpacing(-5)
         self.labelLayout.setContentsMargins(0, 0, 0, 0)
 
         self.label.setLayout(self.labelLayout)
@@ -40,7 +40,7 @@ class DividedLabel(QtWidgets.QWidget):
                     self.labelLayout.addWidget(minibutton, i, j)
                     cpt += 1
                 else:
-                    minilabel = QtWidgets.QLabel("")
+                    minilabel = QtWidgets.QLabel("   ")
                     minilabel.setAlignment(QtCore.Qt.AlignCenter)
                     self.labelLayout.addWidget(minilabel, i, j)
                     cpt += 1
