@@ -17,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def startSolverWindow(self):
         self.solverWindow = SolverWindow(
             self.kakuro, self.dictionnaire, self.filterSettings, parent=self)
-        self.setWindowTitle("Solver's Side")
+        self.setWindowTitle("Helper's Side")
         self.setCentralWidget(self.solverWindow)
         # print(self.solverWindow.menuGroupBox.children())
         self.solverWindow.menuGroupBox.children()[-1].clicked.connect(

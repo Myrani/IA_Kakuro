@@ -48,7 +48,7 @@ class CreatorWindow(QtWidgets.QWidget):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
         menuLayout = QtWidgets.QHBoxLayout()
 
-        solver_To_creator_BTN = QtWidgets.QPushButton("To Solver's Side", self)
+        solver_To_creator_BTN = QtWidgets.QPushButton("To Helper's Side", self)
 
         menuLayout.addWidget(solver_To_creator_BTN)
         self.menuGroupBox.setLayout(menuLayout)
