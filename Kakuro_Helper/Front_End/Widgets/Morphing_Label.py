@@ -12,7 +12,7 @@ class Morphing_Label(QtWidgets.QWidget):
 
         # Attributs pour le changement de couleures
         self.caseColors = ["black", "white", "red"]
-        self.caseTypes = ["#|#", "  | ", "X|X"]
+        self.caseTypes = ["#|#", " | ", "X|X"]
         # Changement de l'index en fonction de la valeur trouvé dans le kakuro back-end
         self.currentState = self.caseTypes.index(kakuro[x][y][0])
         # + Stockage des indices de la case actuelle
@@ -53,7 +53,7 @@ class Morphing_Label(QtWidgets.QWidget):
             self.valueFormLeft.setFixedSize(15, 15)
             # Modifie dans le Back-end les valeures + Refresh la page
             self.valueFormLeft.textChanged.connect(
-                lambda: self.updateCaseValue(self.valueFormLeft.text()+"|"+self.valueFormRight.text()))
+                lambda: self.updateCaseType(0, self.valueFormLeft.text()+"|"+self.valueFormRight.text()))
 
             # Fixe la Taille ....
             self.valueFormRight.setSizePolicy(
@@ -61,7 +61,7 @@ class Morphing_Label(QtWidgets.QWidget):
             self.valueFormRight.setFixedSize(15, 15)
             # Modifie dans le Back-end les valeures + Refresh la page
             self.valueFormRight.textChanged.connect(
-                lambda: self.updateCaseValue(self.valueFormLeft.text()+"|"+self.valueFormRight.text()))
+                lambda: self.updateCaseType(0, self.valueFormLeft.text()+"|"+self.valueFormRight.text()))
 
             # Ajoute le tout au Layout du menu
             self.inputMenuLayout.addWidget(self.valueFormLeft)
@@ -94,10 +94,10 @@ class Morphing_Label(QtWidgets.QWidget):
 
         # Reliage à une fonction mettant à jour le contenu de currentState +changement du kakuro back-end+ Refresh de la page
         self.buttonPrecedent.clicked.connect(
-            lambda: self.updateCaseType(-1, self.caseTypes[self.currentState]))
+            lambda: self.updateCaseType(-1))
 
         self.buttonNext.clicked.connect(
-            lambda: self.updateCaseType(1, self.caseTypes[self.currentState]))
+            lambda: self.updateCaseType(1))
 
         # Rajout a Layout du menu
         self.swapMenuLayout.addWidget(self.buttonPrecedent)
@@ -108,7 +108,8 @@ class Morphing_Label(QtWidgets.QWidget):
 
         self.layout.addWidget(self.swapMenu)
 
-    def updateCaseType(self, value, userInput):
+    def updateCaseType(self, value, userInput=None):
+        print(value, userInput)
         # En fonction du bouton +1 ou -1 au currentState (Index)
         self.currentState += value
 
@@ -120,17 +121,20 @@ class Morphing_Label(QtWidgets.QWidget):
         else:
             pass
 
+        print(self.caseTypes[self.currentState])
         # Stockage de la nouvelle valeure en fonction de l'index dans le kakuro back-end
         # se trouvant dans la MainWindow
-        self.nativeParentWidget(
-        ).creatorKakuro[self.x][self.y][0] = self.caseTypes[self.currentState]
+        if userInput != None:
+            self.nativeParentWidget(
+            ).creatorKakuro[self.x][self.y][0] = self.caseTypes[self.currentState]
+            self.nativeParentWidget(
+            ).creatorKakuro[self.x][self.y][1] = userInput
 
+        else:
+            self.nativeParentWidget(
+            ).creatorKakuro[self.x][self.y][0] = self.caseTypes[self.currentState]
+            self.nativeParentWidget(
+            ).creatorKakuro[self.x][self.y][1] = self.caseTypes[self.currentState]
         # Refresh la page et activant la fonction de création de PageCreateur de MainWindow !
-        self.updateCaseValue(userInput)
+
         self.nativeParentWidget().startCreatorWindow()
-
-    def updateCaseValue(self, value):
-        self.nativeParentWidget().creatorKakuro[self.x][self.y][1] = value
-
-    def onLineEdit(self, value):
-        print(value)

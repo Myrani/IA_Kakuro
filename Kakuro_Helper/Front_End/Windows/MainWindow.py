@@ -33,6 +33,6 @@ class MainWindow(QtWidgets.QMainWindow):
             self.creatorKakuro, parent=self)
         self.setWindowTitle("Creator's Side")
         self.setCentralWidget(self.creatorWindow)
-        self.creatorWindow.menuGroupBox.children()[1].clicked.connect(
+        self.creatorWindow.menuGroupBox.children()[-1].clicked.connect(
             self.startSolverWindow)
         self.show()

@@ -7,12 +7,15 @@ from PyQt5 import QtGui
 from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
+from Back_End.Saving_Logic import *
+from Back_End.Grid import terminalPrintFull
+
 
 class CreatorWindow(QtWidgets.QWidget):
     def __init__(self, kakuro, parent=None):
         super(CreatorWindow, self).__init__(parent)
 
-        print(kakuro)
+        terminalPrintFull(kakuro)
         # Setup des paramêtres basique de la fenêtre principale
         self.kakuro = kakuro
         self.title = ''
@@ -36,8 +39,8 @@ class CreatorWindow(QtWidgets.QWidget):
         self.createMenuLayout()
 
         # Ajout des VBoxs Crées au Layout Principal
-        self.windowLayout.addWidget(self.menuGroupBox, 0, 0, 1, 0)
-        self.windowLayout.addWidget(self.interfaceGroupBox, 1, 0, 6, 6)
+        self.windowLayout.addWidget(self.interfaceGroupBox, 0, 0, 6, 6)
+        self.windowLayout.addWidget(self.menuGroupBox, 6, 0, 6, 6)
 
         # Assosiation du Layout et de fenêtre
         self.setLayout(self.windowLayout)
@@ -49,9 +52,15 @@ class CreatorWindow(QtWidgets.QWidget):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
         menuLayout = QtWidgets.QHBoxLayout()
 
+        saveKakuro = QtWidgets.QPushButton("Save Current Kakuro", self)
         solver_To_creator_BTN = QtWidgets.QPushButton("To Helper's Side", self)
 
+        saveKakuro.clicked.connect(lambda: push_Creator(
+            self.nativeParentWidget().creatorKakuro))
+
+        menuLayout.addWidget(saveKakuro)
         menuLayout.addWidget(solver_To_creator_BTN)
+
         self.menuGroupBox.setLayout(menuLayout)
 
     def createKakuroCreatorLayout(self, kakuro):

@@ -113,7 +113,7 @@ class SolverWindow(QtWidgets.QWidget):
                     label.setStyleSheet("background-color : black;")
 
                 # Cas des Cases jouables
-                elif kakuro[x][y][0] == "   ":
+                elif kakuro[x][y][0] == " | ":
 
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     if "Possible Values" in self.filterSettings:

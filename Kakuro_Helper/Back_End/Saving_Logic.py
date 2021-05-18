@@ -49,3 +49,27 @@ def dynamic_Load():
     elif isinstance(grille, list):
         print("[Save Detected] : Loading saved Kakuro")
         return grille
+
+# Partie de logique de la fenêtre de création
+
+
+def push_Creator(kakuro):
+    modifiedKakuro = extract_user_kakuro(kakuro)
+    terminalPrintFull(modifiedKakuro)
+    mofifiedKakuro = set_Heat_Mapping(modifiedKakuro)
+    terminalPrintFull(modifiedKakuro)
+    modifiedKakuro = set_Objective_Propagation(modifiedKakuro)
+    terminalPrintFull(modifiedKakuro)
+    with open('Save_Creator_Result/save.pkl', 'wb') as save_instruction:
+        pickle.dump(modifiedKakuro, save_instruction)
+
+    return None
+
+
+def extract_user_kakuro(kakuro):
+    kakuroToSave = []
+    for x in range(0, len(kakuro)):
+        kakuroToSave.append([[kakuro[x][y][1], 0, []]
+                            for y in range(0, len(kakuro[x]))])
+
+    return kakuroToSave

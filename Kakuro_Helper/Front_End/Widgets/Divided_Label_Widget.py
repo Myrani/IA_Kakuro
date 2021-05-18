@@ -13,6 +13,7 @@ class DividedLabel(QtWidgets.QWidget):
         # Contraintes d'analyses importées du back-end
         self.specs = specs
 
+        print(self.specs)
         # Box Mettant en place la grid
         self.container = QtWidgets.QWidget()
         self.layout = QtWidgets.QVBoxLayout(self.container)
@@ -29,7 +30,7 @@ class DividedLabel(QtWidgets.QWidget):
         self.label.setLayout(self.labelLayout)
 
         self.possibleSetValues = self.findCommonNumberForLength(
-            self.specs[0][0], self.specs[0][1], self.specs[1][0], self.specs[1][1], dictionnaire_Des_Sommes)
+            dictionnaire_Des_Sommes, self.specs)
 
         # Rempli le minilabel avec un chiffre si c'est une solution possible , sinon le laisse vide
         cpt = 1
@@ -47,25 +48,29 @@ class DividedLabel(QtWidgets.QWidget):
 
         self.layout.addWidget(self.label)
 
-    def findCommonNumberForLength(self, firstNumber, firstLen, secondNumber, secondLen, dictionnaire_Des_Sommes):
+    def findCommonNumberForLength(self, dictionnaire_Des_Sommes, specs):
 
         set_One = []  # Futur set des solutions pour la contrainte de Ligne
         set_Two = []  # Futur set des solutions pour la contrainte de Colonnes
 
         # Tri des solutions possibles en fonction des de cases à remplir : Ligne
-        for combinaison_First in dictionnaire_Des_Sommes[int(firstNumber)]:
-            if len(combinaison_First) == firstLen:
+        for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
+            if len(combinaison_First) == specs[0][1]:
                 for el in combinaison_First:
                     set_One.append(el)
 
         # Tri des solutions possibles en fonction des de cases à remplir : Colonne
-        for combinaison_Second in dictionnaire_Des_Sommes[int(secondNumber)]:
-            if len(combinaison_Second) == secondLen:
-                for el in combinaison_Second:
-                    set_Two.append(el)
+        if len(specs) > 1:
+            for combinaison_Second in dictionnaire_Des_Sommes[int(specs[1][0])]:
+                if len(combinaison_Second) == int(specs[1][1]):
+                    for el in combinaison_Second:
+                        set_Two.append(el)
         # Transformation en Set
         set_One = set(set_One)
         set_Two = set(set_Two)
 
         # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
-        return set_One & set_Two
+        if len(specs) > 1:
+            return set_One & set_Two
+        else:
+            return set_One
