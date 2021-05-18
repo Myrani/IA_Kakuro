@@ -2,7 +2,7 @@ import sys
 
 from PyQt5 import QtWidgets
 
-from Back_End.Grid import grid_Maker__Default
+from Back_End.Grid import grid_Maker__Creator
 
 from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
@@ -12,7 +12,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, solverKakuro, dictionnaire, parent=None):
         super(MainWindow, self).__init__(parent)
         self.solverKakuro = solverKakuro
-        self.creatorKakuro = grid_Maker__Default(7, 7, [])
+        self.creatorKakuro = grid_Maker__Creator(7, 7, [])
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)

@@ -25,6 +25,20 @@ def grid_Smart_Filler(grid):
 
 # Génération d'une grille vide et la remplie avec une liste d'instructions précises
 
+def grid_Maker__Creator(x, y, liste_Instructions):
+    # Génération de la grille
+    grid = []
+    for x in range(0, x):
+        grid.append([["#|#", "#|#", []] for y in range(0, y)])
+
+    # Application des instructions
+    if len(liste_Instructions) > 0:
+        for instruction in liste_Instructions:
+            grid[instruction[0]][instruction[1]][0] = instruction[2]
+
+    # Renvoit du tout
+    return grid_Smart_Filler(grid)
+
 
 def grid_Maker__Default(x, y, liste_Instructions):
     # Génération de la grille
