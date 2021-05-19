@@ -26,7 +26,7 @@ class SolverWindow(QtWidgets.QWidget):
 
     def initUI(self, kakuro, dictionnaire_Des_Sommes, filterSettings):
 
-        self.setStyleSheet("background-color: white;")
+        self.setStyleSheet("background-color: rgba(34,34,34,255);")
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
@@ -110,7 +110,7 @@ class SolverWindow(QtWidgets.QWidget):
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
                     # label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
-                    label.setStyleSheet("background-color : black;")
+                    label.setStyleSheet("background-color : rgba(20,20,20,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255); border-radius: 7px;")
 
                 # Cas des Cases jouables
                 elif kakuro[x][y][0] == " | ":
@@ -125,11 +125,11 @@ class SolverWindow(QtWidgets.QWidget):
                     # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
                     if "Heat Map" in self.filterSettings:
                         label.setStyleSheet(
-                            "background-color : rgb("+str(255-int(kakuro[x][y][1]))+",0,0);")
+                            "background-color : rgba(0,200,"+str(200-int(kakuro[x][y][1]))+",175); border-radius: 7px;")
                         layout.addWidget(label, x, y)  # Rajout à la Grid
                     else:
                         label.setStyleSheet(
-                            "background-color :white;")
+                            "background-color :rgba(34,34,34,255);")
                         layout.addWidget(label, x, y)  # Rajout à la Grid
                 # Cas des cases de contraintes du Kakuro
                 else:

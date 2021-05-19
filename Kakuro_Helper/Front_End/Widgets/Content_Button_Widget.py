@@ -14,7 +14,7 @@ class ContentButton(QtWidgets.QWidget):
         self.button = QtWidgets.QPushButton(self.content, self)
         self.button.pressed.connect(self.change_Content)
         self.button.setStyleSheet(
-            "border-style: solid;border-color:black ;background: transparent;")
+            "border-style: solid; background-color: rgba(34,34,34,255); border-color:black ;background: transparent;")
         self.button.setGeometry(QtCore.QRect(0, 0, 10, 15))
 
     def change_Content(self):
