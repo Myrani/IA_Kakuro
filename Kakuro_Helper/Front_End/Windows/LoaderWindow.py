@@ -27,7 +27,7 @@ class LoaderWindow(QtWidgets.QWidget):
         self.menuSelectionBox.setLayout(self.menuLayout)
 
         for save in get_All_Saves():
-            generatedButton = LoadeButton(save, parent=self)
+            generatedButton = LoaderButton(save, parent=self)
             print(generatedButton.filename)
             self.menuLayout.addWidget(generatedButton)
 
