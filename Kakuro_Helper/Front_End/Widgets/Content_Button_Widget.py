@@ -5,7 +5,7 @@ from PyQt5 import QtGui
 import sys
 
 
-class ContentButton(QtWidgets.QWidget):
+class ContentButton(QtWidgets.QPushButton):
 
     def __init__(self, content):
         super().__init__()

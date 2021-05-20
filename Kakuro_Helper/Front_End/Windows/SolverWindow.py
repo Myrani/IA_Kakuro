@@ -51,6 +51,8 @@ class SolverWindow(QtWidgets.QWidget):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
         menuLayout = QtWidgets.QGridLayout()
 
+        solver_To_loader_BTN = QtWidgets.QPushButton(
+            "Reload an another Kakuro", self)
         solver_To_creator_BTN = QtWidgets.QPushButton(
             "To Creator's Side", self)
 
@@ -77,6 +79,7 @@ class SolverWindow(QtWidgets.QWidget):
         # menuLayout.addWidget(self.filter_X_CHK, 0, 1)
         # menuLayout.addWidget(self.filter_Y_CHK, 1, 1)
 
+        menuLayout.addWidget(solver_To_loader_BTN, 0, 2)
         menuLayout.addWidget(solver_To_creator_BTN, 1, 2)
         self.menuGroupBox.setLayout(menuLayout)
 
@@ -110,7 +113,8 @@ class SolverWindow(QtWidgets.QWidget):
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
                     # label.setStyleSheet("background-image : url("+os.getcwd()+"/Front_End/Ressources/Void.png);background-repeat: no-repeat;")
-                    label.setStyleSheet("background-color : rgba(20,20,20,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255); border-radius: 7px;")
+                    label.setStyleSheet(
+                        "background-color : rgba(20,20,20,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255); border-radius: 7px;")
 
                 # Cas des Cases jouables
                 elif kakuro[x][y][0] == " | ":

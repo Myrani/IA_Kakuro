@@ -10,6 +10,8 @@ from Back_End.Grid import terminalPrintFull
 
 
 class LoaderWindow(QtWidgets.QWidget):
+
+    # Initialisation Basique
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.container = QtWidgets.QWidget()
@@ -22,17 +24,17 @@ class LoaderWindow(QtWidgets.QWidget):
         self.createSelectionMenu()
 
     def createSelectionMenu(self):
+
+        # Initialisation du menu
         self.menuSelectionBox = QtWidgets.QGroupBox(self)
-        self.menuLayout = QtWidgets.QGridLayout()
+        self.menuLayout = QtWidgets.QVBoxLayout()
         self.menuSelectionBox.setLayout(self.menuLayout)
 
+        # Rajoute un LoaderButton au Layout menu pour chaque fichier présent dans le dossier Save/
         for save in get_All_Saves():
             generatedButton = LoaderButton(save, parent=self)
             print(generatedButton.filename)
             self.menuLayout.addWidget(generatedButton)
 
+        # Le rajoute au container principal
         self.layout.addWidget(self.menuSelectionBox)
-
-    def overrideSolverKakuro(self, grille):
-        terminalPrintFull(grille)
-        self.parentWidget().solverKakuro = grille
