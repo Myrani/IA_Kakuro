@@ -54,10 +54,11 @@ class DividedLabel(QtWidgets.QWidget):
         set_Two = []  # Futur set des solutions pour la contrainte de Colonnes
 
         # Tri des solutions possibles en fonction des de cases à remplir : Ligne
-        for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
-            if len(combinaison_First) == specs[0][1]:
-                for el in combinaison_First:
-                    set_One.append(el)
+        if len(specs) == 1:
+            for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
+                if len(combinaison_First) == specs[0][1]:
+                    for el in combinaison_First:
+                        set_One.append(el)
 
         # Tri des solutions possibles en fonction des de cases à remplir : Colonne
         if len(specs) > 1:
@@ -72,5 +73,7 @@ class DividedLabel(QtWidgets.QWidget):
         # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
         if len(specs) > 1:
             return set_One & set_Two
-        else:
+        elif len(specs) == 1:
             return set_One
+        else:
+            return []
