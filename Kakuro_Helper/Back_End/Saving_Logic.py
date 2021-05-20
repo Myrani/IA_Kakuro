@@ -1,11 +1,13 @@
 import pickle
+import os
+
 from Back_End.Heat_Mapping_Logic import *
 from Back_End.Possible_Values_Mapping_Logic import *
 from Back_End.Grid import *
 
 
 # Fonction d'ouverte de sauvegarde intelligente
-def load_Save():
+def load_Default_Save():
     # Essaie de load un fichier de sauvegarde présent dans le dossier /Save local
     try:
         grille = []
@@ -22,6 +24,13 @@ def load_Save():
 # Override / Créer un ficher Save.pkl pour y stocker le kakuro passé en paramètre
 
 
+def load_Kakuro_From_File(filename):
+    with open('Save/'+filename, 'rb') as save_grille:
+        grille = pickle.load(save_grille)
+
+    return grille
+
+
 def push_Save(kakuro):
 
     with open('Save/save.pkl', 'wb') as save_instruction:
@@ -32,7 +41,7 @@ def push_Save(kakuro):
 
 def dynamic_Load():
     # Regarge si un ficher save est disponible
-    grille = load_Save()
+    grille = load_Default_Save()
 
     # Si aucun fichier n'est trouvé Créer un kakuro par défault
     if grille == None:
@@ -73,3 +82,16 @@ def extract_user_kakuro(kakuro):
                             for y in range(0, len(kakuro[x]))])
 
     return kakuroToSave
+
+
+# Partie logique de la fenêtre de Load du kakuro
+
+
+def get_All_Saves():
+    list_of_files = []
+
+    for root, dirs, files in os.walk("Save/"):
+        for file in files:
+            list_of_files.append(file)
+
+    return list_of_files

@@ -18,15 +18,10 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 
 
-# Génération du kakuro de manière Dynamique
-kakuro = dynamic_Load()
-terminalPrintFull(kakuro)
-
-
 # Instantiation du Front_End
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
-    MainWindow = MainWindow.MainWindow(kakuro, dictionnaire_Des_Sommes)
+    MainWindow = MainWindow.MainWindow(dictionnaire_Des_Sommes)
 
     sys.exit(app.exec_())
