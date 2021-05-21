@@ -26,9 +26,20 @@ def heat_Mapping_Column(kakuro, weigth):
             if kakuro[j][i][0] == " | ":  # si case libre -> alors ajout
                 free_spots.append([j, i])
 
-        # Attribution des poids en fonction du nombres de cases libres dans chaque colonne ; dans le [1] de les cases correspondantes du kakuro
-        for spot in free_spots:
-            kakuro[spot[0]][spot[1]][1] += weigth/len(free_spots)  # à opti
+            else:
+                # Attribution des poids en fonction du nombres de cases libres dans chaque colonne ; dans le [1] de les cases correspondantes du kakuro
+                for spot in free_spots:
+                    kakuro[spot[0]][spot[1]][1] += weigth / \
+                        len(free_spots)  # à opti
+
+                free_spots = []
+
+        if len(free_spots) != 0:
+            for spot in free_spots:
+                kakuro[spot[0]][spot[1]][1] += weigth / \
+                    len(free_spots)  # à opti
+
+            free_spots = []
 
     return kakuro
 

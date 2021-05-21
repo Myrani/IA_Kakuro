@@ -14,7 +14,9 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(parent)
 
         self.solverKakuro = []
-        self.creatorKakuro = grid_Maker__Creator(7, 7, [])
+        self.creatorKakuroDimensions = [7, 7]
+        self.creatorKakuro = grid_Maker__Creator(
+            self.creatorKakuroDimensions[0], self.creatorKakuroDimensions[1], [])
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)

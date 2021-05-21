@@ -8,7 +8,7 @@ from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 from Back_End.Saving_Logic import *
-from Back_End.Grid import terminalPrintFull
+from Back_End.Grid import terminalPrintFull, grid_Maker__Creator
 
 
 class CreatorWindow(QtWidgets.QWidget):
@@ -50,7 +50,34 @@ class CreatorWindow(QtWidgets.QWidget):
 
     def createMenuLayout(self):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
-        menuLayout = QtWidgets.QHBoxLayout()
+        menuLayout = QtWidgets.QGridLayout()
+
+        self.menuWidthSelection = QtWidgets.QGroupBox(self)
+        menuWidthSelectionLayout = QtWidgets.QHBoxLayout()
+        self.menuWidthSelection.setLayout(menuWidthSelectionLayout)
+
+        self.dimmensions = self.nativeParentWidget().creatorKakuroDimensions
+
+        self.x_Creator_setting = QtWidgets.QLineEdit(
+            str(self.dimmensions[0]), self)
+        self.y_Creator_setting = QtWidgets.QLineEdit(
+            str(self.dimmensions[1]), self)
+
+        self.x_Creator_setting.textChanged.connect(
+            lambda: self.updateCreatorKakuroDimensions(self.x_Creator_setting.text(), self.y_Creator_setting.text()))
+        self.y_Creator_setting.textChanged.connect(
+            lambda: self.updateCreatorKakuroDimensions(self.x_Creator_setting.text(), self.y_Creator_setting.text()))
+
+        self.x_Creator_setting.setSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        self.x_Creator_setting.setFixedSize(45, 15)
+
+        self.y_Creator_setting.setSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        self.y_Creator_setting.setFixedSize(45, 15)
+
+        menuWidthSelectionLayout.addWidget(self.x_Creator_setting)
+        menuWidthSelectionLayout.addWidget(self.y_Creator_setting)
 
         saveKakuro = QtWidgets.QPushButton("Save Current Kakuro", self)
         solver_To_creator_BTN = QtWidgets.QPushButton("To Helper's Side", self)
@@ -58,10 +85,18 @@ class CreatorWindow(QtWidgets.QWidget):
         saveKakuro.clicked.connect(lambda: push_Creator(
             self.nativeParentWidget().creatorKakuro))
 
-        menuLayout.addWidget(saveKakuro)
-        menuLayout.addWidget(solver_To_creator_BTN)
+        menuLayout.addWidget(self.menuWidthSelection, 0, 0, 2, 2)
+        menuLayout.addWidget(saveKakuro, 2, 0, 3, 1)
+        menuLayout.addWidget(solver_To_creator_BTN, 2, 1, 3, 1)
 
         self.menuGroupBox.setLayout(menuLayout)
+
+    def updateCreatorKakuroDimensions(self, x, y):
+        x = int(x)
+        y = int(y)
+        self.nativeParentWidget().creatorKakuroDimensions = [x, y]
+        self.nativeParentWidget().creatorKakuro = grid_Maker__Creator(x, y, [])
+        self.nativeParentWidget().startCreatorWindow()
 
     def createKakuroCreatorLayout(self, kakuro):
         # grid layout + nom
