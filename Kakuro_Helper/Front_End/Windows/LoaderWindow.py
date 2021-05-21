@@ -5,7 +5,7 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 
 from Front_End.Widgets.Loader_Button_Widget import LoaderButton
-from Back_End.Saving_Logic import get_All_Saves, load_Kakuro_From_File
+from Back_End.Saving_Logic import get_All_Saves, load_Kakuro_From_File, dynamic_Load
 from Back_End.Grid import terminalPrintFull
 
 
@@ -31,10 +31,20 @@ class LoaderWindow(QtWidgets.QWidget):
         self.menuSelectionBox.setLayout(self.menuLayout)
 
         # Rajoute un LoaderButton au Layout menu pour chaque fichier présent dans le dossier Save/
-        for save in get_All_Saves():
-            generatedButton = LoaderButton(save, parent=self)
-            print(generatedButton.filename)
-            self.menuLayout.addWidget(generatedButton)
+        saves = get_All_Saves()
+
+        if len(saves) > 0:
+            for save in saves:
+                generatedButton = LoaderButton(save, parent=self)
+                print(generatedButton.filename)
+                self.menuLayout.addWidget(generatedButton)
+        else:
+            defaultButton = QtWidgets.QPushButton("Kakuro par défault", self)
+            defaultButton.clicked.connect(self.loadDefaultKakuro)
 
         # Le rajoute au container principal
         self.layout.addWidget(self.menuSelectionBox)
+
+    def loadDefaultKakuro(self):
+        self.nativeParentWidget().solverKakuro = dynamic_Load()
+        self.nativeParentWidget().startSolverWindow()
