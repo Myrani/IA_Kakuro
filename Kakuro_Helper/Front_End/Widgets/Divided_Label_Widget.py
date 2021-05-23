@@ -3,6 +3,7 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 
 from Front_End.Widgets.Content_Button_Widget import ContentButton
+from Back_End.Grid import terminalPrintFull
 
 
 class DividedLabel(QtWidgets.QWidget):
@@ -52,7 +53,7 @@ class DividedLabel(QtWidgets.QWidget):
 
         set_One = []  # Futur set des solutions pour la contrainte de Ligne
         set_Two = []  # Futur set des solutions pour la contrainte de Colonnes
-
+        print(set_One == [])
         # Tri des solutions possibles en fonction des de cases à remplir : Ligne
         if len(specs) == 1:
             for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
@@ -61,19 +62,31 @@ class DividedLabel(QtWidgets.QWidget):
                         set_One.append(el)
 
         # Tri des solutions possibles en fonction des de cases à remplir : Colonne
-        if len(specs) > 1:
+        elif len(specs) > 1:
+
+            for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
+                if len(combinaison_First) == specs[0][1]:
+                    for el in combinaison_First:
+                        set_One.append(el)
+
             for combinaison_Second in dictionnaire_Des_Sommes[int(specs[1][0])]:
                 if len(combinaison_Second) == int(specs[1][1]):
                     for el in combinaison_Second:
                         set_Two.append(el)
+
         # Transformation en Set
         set_One = set(set_One)
         set_Two = set(set_Two)
 
         # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
-        if len(specs) > 1:
+        if set_One != set([]) and set_Two != set([]):
+            print(set_One)
+            print(set_Two)
+            print("Case Double specs", set_One & set_Two)
             return set_One & set_Two
-        elif len(specs) == 1:
+
+        elif set_One != [] and set_Two == set([]):
+            print("Case solo specs", set_One)
             return set_One
         else:
             return []

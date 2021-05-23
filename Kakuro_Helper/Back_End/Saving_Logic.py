@@ -6,6 +6,13 @@ from Back_End.Possible_Values_Mapping_Logic import *
 from Back_End.Grid import *
 
 
+# Fonction pour load le dictionnaire de sommes
+
+def load_Sums():
+    with open('Back_End/dictionnaire.pkl', 'rb') as sums:
+        return pickle.load(sums)
+
+
 # Fonction d'ouverte de sauvegarde intelligente
 def load_Default_Save():
     # Essaie de load un fichier de sauvegarde présent dans le dossier /Save local

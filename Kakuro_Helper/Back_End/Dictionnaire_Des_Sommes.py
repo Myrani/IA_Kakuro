@@ -1,21 +1,9 @@
-dictionnaire_Des_Sommes = {
-    1: [[1]],
-    2: [[2]],
-    3: [[1, 2]],
-    4: [[1, 3]],
-    5: [[1, 4], [2, 3]],
-    6: [[1, 5], [1, 2, 3], [2, 4]],
-    7: [[1, 6], [1, 2, 4], [2, 5], [3, 4]],
-    8: [[1, 7], [2, 6], [3, 5], [1, 2, 5], [1, 3, 4]],
-    9: [[1, 8], [2, 7], [3, 6], [4, 5], [1, 2, 6], [1, 3, 5], [2, 3, 4]],
-    10: [[1, 9], [2, 8], [3, 7], [4, 6], [1, 2, 7], [1, 3, 6], [1, 4, 5], [2, 3, 5], [1, 2, 3, 4]],
-    11: [[2, 9], [3, 8], [4, 7], [5, 6], [1, 2, 8], [1, 3, 7], [1, 4, 6], [2, 3, 6], [2, 4, 5], [1, 2, 3, 5]],
-    14: [[5, 9], [6, 8], [1, 4, 9], [1, 5, 8], [1, 6, 7], [2, 3, 9], [2, 4, 8], [2, 5, 7], [3, 4, 7], [3, 5, 6], [1, 2, 3, 8], [1, 2, 4, 7], [1, 2, 5, 6], [1, 3, 4, 6], [2, 3, 4, 5]],
-    17: [[8, 9], [1, 7, 9], [2, 6, 9], [2, 7, 8], [3, 5, 9], [3, 6, 8], [4, 5, 8], [4, 6, 7], [1, 2, 5, 9], [1, 2, 6, 8], [1, 3, 4, 9], [1, 3, 5, 8], [1, 3, 6, 7], [1, 4, 5, 7], [2, 3, 4, 8], [2, 3, 5, 7], [2, 4, 5, 6], [1, 2, 3, 4, 7], [1, 2, 3, 5, 6]]
-}
+import pickle
+
+# Ancienne version de la fonction présente dans Divided_Label
 
 
-def findCommonNumberForLength(firstNumber, firstLen, secondNumber, secondLen):
+def findCommonNumberForLength(dictionnaire_Des_Sommes, firstNumber, firstLen, secondNumber, secondLen):
 
     set_One = []
     set_Two = []
@@ -34,3 +22,33 @@ def findCommonNumberForLength(firstNumber, firstLen, secondNumber, secondLen):
     set_Two = set(set_Two)
 
     return set_One & set_Two
+
+
+def generateDictionnaire():
+    dictionnaire_Des_Sommes = {}
+
+    for i in range(0, 46):
+        dictionnaire_Des_Sommes[i] = []
+    # Personnes ne devrai avoir à faire ça
+    for a in range(1, 10):
+        for b in range(1, 10):
+            for c in range(1, 10):
+                for d in range(1, 10):
+                    for e in range(1, 10):
+                        for f in range(1, 10):
+                            for g in range(1, 10):
+                                for h in range(1, 10):
+                                    for i in range(1, 10):
+                                        current_set = set(
+                                            [a, b, c, d, e, f, g, h, i])
+                                        if current_set not in dictionnaire_Des_Sommes[sum(current_set)]:
+                                            dictionnaire_Des_Sommes[sum(
+                                                current_set)].append(current_set)
+
+    for el in dictionnaire_Des_Sommes:
+        print(el, dictionnaire_Des_Sommes[el])
+
+    with open('dictionnaire.pkl', 'wb') as dictionnaire:
+        pickle.dump(dictionnaire_Des_Sommes, dictionnaire)
+
+    return None

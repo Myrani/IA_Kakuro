@@ -22,6 +22,6 @@ from PyQt5 import QtGui
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
-    MainWindow = MainWindow.MainWindow(dictionnaire_Des_Sommes)
+    MainWindow = MainWindow.MainWindow(load_Sums())
 
     sys.exit(app.exec_())
