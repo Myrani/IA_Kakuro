@@ -89,8 +89,8 @@ class Morphing_Label(QtWidgets.QWidget):
         self.swapMenuLayout = QtWidgets.QHBoxLayout()
         self.swapMenu.setLayout(self.swapMenuLayout)
 
-        self.buttonPrecedent = QtWidgets.QPushButton("<-")
-        self.buttonNext = QtWidgets.QPushButton("->")
+        self.buttonPrecedent = QtWidgets.QPushButton("←")
+        self.buttonNext = QtWidgets.QPushButton("→")
 
         # Reliage à une fonction mettant à jour le contenu de currentState +changement du kakuro back-end+ Refresh de la page
         self.buttonPrecedent.clicked.connect(
