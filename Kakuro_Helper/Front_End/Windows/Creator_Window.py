@@ -4,11 +4,11 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Windows import Creator_Window, Main_Window, Solver_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
-from Back_End.Saving_Logic import *
-from Back_End.Grid import terminalPrintFull, grid_Maker__Creator
+from Back_End.Logic.Saving_Logic import *
+from Back_End.Logic.Grid_Logic import terminalPrintFull, grid_Maker__Creator
 
 
 class CreatorWindow(QtWidgets.QWidget):
@@ -23,9 +23,9 @@ class CreatorWindow(QtWidgets.QWidget):
         self.top = 10
         self.width = 600
         self.height = 700
-        self.initUI(self.kakuro)
+        self.init_UI(self.kakuro)
 
-    def initUI(self, kakuro):
+    def init_UI(self, kakuro):
 
         self.setStyleSheet("background-color: white;")
         self.setWindowTitle(self.title)
@@ -35,8 +35,8 @@ class CreatorWindow(QtWidgets.QWidget):
         self.windowLayout = QtWidgets.QGridLayout()
 
         # Génération des VBox et de leurs layout qu'on récupéra après via un attbribut de l'objet
-        self.createKakuroCreatorLayout(kakuro)
-        self.createMenuLayout()
+        self.create_kakuro_creator_layout(kakuro)
+        self.create_menu_layout()
 
         # Ajout des VBoxs Crées au Layout Principal
         self.windowLayout.addWidget(self.interfaceGroupBox, 0, 0, 6, 6)
@@ -48,7 +48,7 @@ class CreatorWindow(QtWidgets.QWidget):
         # Montrer le tout !
         self.show()
 
-    def createMenuLayout(self):
+    def create_menu_layout(self):
         self.menuGroupBox = QtWidgets.QGroupBox(self)
         menuLayout = QtWidgets.QGridLayout()
 
@@ -58,26 +58,26 @@ class CreatorWindow(QtWidgets.QWidget):
 
         self.dimmensions = self.nativeParentWidget().creatorKakuroDimensions
 
-        self.x_Creator_setting = QtWidgets.QLineEdit(
+        self.x_creator_setting = QtWidgets.QLineEdit(
             str(self.dimmensions[0]), self)
-        self.y_Creator_setting = QtWidgets.QLineEdit(
+        self.y_creator_setting = QtWidgets.QLineEdit(
             str(self.dimmensions[1]), self)
 
-        self.x_Creator_setting.textChanged.connect(
-            lambda: self.updateCreatorKakuroDimensions(self.x_Creator_setting.text(), self.y_Creator_setting.text()))
-        self.y_Creator_setting.textChanged.connect(
-            lambda: self.updateCreatorKakuroDimensions(self.x_Creator_setting.text(), self.y_Creator_setting.text()))
+        self.x_creator_setting.textChanged.connect(
+            lambda: self.update_creator_kakuro_dimensions(self.x_creator_setting.text(), self.y_creator_setting.text()))
+        self.y_creator_setting.textChanged.connect(
+            lambda: self.update_creator_kakuro_dimensions(self.x_creator_setting.text(), self.y_creator_setting.text()))
 
-        self.x_Creator_setting.setSizePolicy(
+        self.x_creator_setting.setSizePolicy(
             QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        self.x_Creator_setting.setFixedSize(45, 15)
+        self.x_creator_setting.setFixedSize(45, 15)
 
-        self.y_Creator_setting.setSizePolicy(
+        self.y_creator_setting.setSizePolicy(
             QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        self.y_Creator_setting.setFixedSize(45, 15)
+        self.y_creator_setting.setFixedSize(45, 15)
 
-        menuWidthSelectionLayout.addWidget(self.x_Creator_setting)
-        menuWidthSelectionLayout.addWidget(self.y_Creator_setting)
+        menuWidthSelectionLayout.addWidget(self.x_creator_setting)
+        menuWidthSelectionLayout.addWidget(self.y_creator_setting)
 
         saveKakuro = QtWidgets.QPushButton("Save Current Kakuro", self)
         solver_To_creator_BTN = QtWidgets.QPushButton("To Helper's Side", self)
@@ -91,14 +91,14 @@ class CreatorWindow(QtWidgets.QWidget):
 
         self.menuGroupBox.setLayout(menuLayout)
 
-    def updateCreatorKakuroDimensions(self, x, y):
+    def update_creator_kakuro_dimensions(self, x, y):
         x = int(x)
         y = int(y)
         self.nativeParentWidget().creatorKakuroDimensions = [x, y]
         self.nativeParentWidget().creatorKakuro = grid_Maker__Creator(x, y, [])
         self.nativeParentWidget().startCreatorWindow()
 
-    def createKakuroCreatorLayout(self, kakuro):
+    def create_kakuro_creator_layout(self, kakuro):
         # grid layout + nom
         self.interfaceGroupBox = QtWidgets.QGroupBox(self)
         layout = QtWidgets.QGridLayout()

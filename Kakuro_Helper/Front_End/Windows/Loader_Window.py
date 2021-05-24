@@ -5,8 +5,8 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 
 from Front_End.Widgets.Loader_Button_Widget import LoaderButton
-from Back_End.Saving_Logic import get_All_Saves, load_Kakuro_From_File, dynamic_Load
-from Back_End.Grid import terminalPrintFull
+from Back_End.Logic.Saving_Logic import get_All_Saves, load_Kakuro_From_File, dynamic_Load
+from Back_End.Logic.Grid_Logic import terminalPrintFull
 
 
 class LoaderWindow(QtWidgets.QWidget):

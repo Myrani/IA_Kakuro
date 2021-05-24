@@ -2,14 +2,14 @@
 
 import sys
 
-from Back_End.Grid import *
-from Back_End.Heat_Mapping_Logic import *
-from Back_End.Possible_Values_Mapping_Logic import *
-from Back_End.Dictionnaire_Des_Sommes import *
-from Back_End.Saving_Logic import *
+from Back_End.Logic.Grid_Logic import *
+from Back_End.Logic.Heat_Mapping_Logic import *
+from Back_End.Logic.Possible_Values_Mapping_Logic import *
+from Back_End.Logic.Dictionnaire_Des_Sommes import *
+from Back_End.Logic.Saving_Logic import *
 
 
-from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Windows import Creator_Window, Main_Window, Solver_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 
@@ -22,6 +22,6 @@ from PyQt5 import QtGui
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
-    MainWindow = MainWindow.MainWindow(load_Sums())
+    MainWindow = Main_Window.MainWindow(load_Sums())
 
     sys.exit(app.exec_())

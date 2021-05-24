@@ -2,10 +2,10 @@ import sys
 
 from PyQt5 import QtWidgets
 
-from Back_End.Grid import grid_Maker__Creator
-from Back_End.Saving_Logic import get_All_Saves
+from Back_End.Logic.Grid_Logic import grid_Maker__Creator
+from Back_End.Logic.Saving_Logic import get_All_Saves
 
-from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow, LoaderWindow
+from Front_End.Windows import Creator_Window, Main_Window, Solver_Window, Loader_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 
@@ -25,7 +25,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startLoaderWindow()
 
     def startSolverWindow(self):
-        self.solverWindow = SolverWindow.SolverWindow(
+        self.solverWindow = Solver_Window.SolverWindow(
             self.solverKakuro, self.dictionnaire, self.filterSettings, parent=self)
         self.setWindowTitle("Helper's Side")
         self.setCentralWidget(self.solverWindow)
@@ -38,7 +38,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
 
     def startCreatorWindow(self):
-        self.creatorWindow = CreatorWindow.CreatorWindow(
+        self.creatorWindow = Creator_Window.CreatorWindow(
             self.creatorKakuro, parent=self)
         self.setWindowTitle("Creator's Side")
         self.setCentralWidget(self.creatorWindow)
@@ -47,7 +47,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
 
     def startLoaderWindow(self):
-        self.loaderWindow = LoaderWindow.LoaderWindow(parent=self)
+        self.loaderWindow = Loader_Window.LoaderWindow(parent=self)
         self.setWindowTitle("Kakuro Loader")
         self.setCentralWidget(self.loaderWindow)
 

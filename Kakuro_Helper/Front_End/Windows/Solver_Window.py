@@ -4,7 +4,7 @@ from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 
-from Front_End.Windows import CreatorWindow, MainWindow, SolverWindow
+from Front_End.Windows import Creator_Window, Main_Window, Solver_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
 

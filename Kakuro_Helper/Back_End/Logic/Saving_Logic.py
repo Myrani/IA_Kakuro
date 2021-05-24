@@ -1,15 +1,15 @@
 import pickle
 import os
 
-from Back_End.Heat_Mapping_Logic import *
-from Back_End.Possible_Values_Mapping_Logic import *
-from Back_End.Grid import *
+from Back_End.Logic.Heat_Mapping_Logic import *
+from Back_End.Logic.Possible_Values_Mapping_Logic import *
+from Back_End.Logic.Grid_Logic import *
 
 
 # Fonction pour load le dictionnaire de sommes
 
 def load_Sums():
-    with open('Back_End/dictionnaire.pkl', 'rb') as sums:
+    with open('Back_End/Ressources/sums.pkl', 'rb') as sums:
         return pickle.load(sums)
 
 

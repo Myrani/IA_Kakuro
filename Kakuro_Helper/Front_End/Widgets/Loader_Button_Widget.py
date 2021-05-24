@@ -4,7 +4,7 @@ from PyQt5 import QtGui
 
 import sys
 
-from Back_End.Saving_Logic import load_Kakuro_From_File
+from Back_End.Logic.Saving_Logic import load_Kakuro_From_File
 
 
 class LoaderButton(QtWidgets.QPushButton):
