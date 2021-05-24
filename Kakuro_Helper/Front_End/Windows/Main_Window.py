@@ -20,8 +20,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)
-        self.setStyleSheet(
-            "color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: none;")
+        self.setStyleSheet("color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: none;")
         self.startLoaderWindow()
 
     def startSolverWindow(self):
@@ -30,7 +29,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowTitle("Helper's Side")
         self.setCentralWidget(self.solverWindow)
         self.setStyleSheet(
-            "color: rgba(200, 200, 200, 255);; background-color : rgba(30,30,30,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255);")
+            "color: rgba(200, 200, 200, 255); background-color : rgba(30,30,30,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255);")
         self.solverWindow.menuGroupBox.children()[-2].clicked.connect(
             self.startLoaderWindow)
         self.solverWindow.menuGroupBox.children()[-1].clicked.connect(

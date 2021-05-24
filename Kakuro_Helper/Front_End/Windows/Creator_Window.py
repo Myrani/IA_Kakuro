@@ -27,7 +27,7 @@ class CreatorWindow(QtWidgets.QWidget):
 
     def init_UI(self, kakuro):
 
-        self.setStyleSheet("background-color: white;")
+        self.setStyleSheet("text-align: center; color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: solid; border-width: 2px; border-color: rgba(45,45,45,255); border-radius: 7px")
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 

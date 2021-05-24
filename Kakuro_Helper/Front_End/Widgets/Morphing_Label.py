@@ -11,8 +11,8 @@ class Morphing_Label(QtWidgets.QWidget):
         super(Morphing_Label, self).__init__(parent)
 
         # Attributs pour le changement de couleures
-        self.caseColors = ["black", "white", "red"]
-        self.caseTypes = ["#|#", " | ", "X|X"]
+        self.caseColors = ["rgba(15,15,15,255)", "rgba(34,34,34,255)", "rgba(15,80,60,255)"]
+        self.caseTypes = ["#|#", " | ", "_|_"]
         # Changement de l'index en fonction de la valeur trouvé dans le kakuro back-end
         self.currentState = self.caseTypes.index(kakuro[x][y][0])
         # + Stockage des indices de la case actuelle
@@ -29,7 +29,7 @@ class Morphing_Label(QtWidgets.QWidget):
 
         # Box Permettant l'entrée de contraintes par l'utilisateur
 
-        if self.nativeParentWidget().creatorKakuro[self.x][self.y][0] == 'X|X':
+        if self.nativeParentWidget().creatorKakuro[self.x][self.y][0] == '_|_':
 
             self.inputMenu = QtWidgets.QGroupBox(self)
             self.inputMenuLayout = QtWidgets.QHBoxLayout()
@@ -89,8 +89,8 @@ class Morphing_Label(QtWidgets.QWidget):
         self.swapMenuLayout = QtWidgets.QHBoxLayout()
         self.swapMenu.setLayout(self.swapMenuLayout)
 
-        self.buttonPrecedent = QtWidgets.QPushButton("<")
-        self.buttonNext = QtWidgets.QPushButton(">")
+        self.buttonPrecedent = QtWidgets.QPushButton("<-")
+        self.buttonNext = QtWidgets.QPushButton("->")
 
         # Reliage à une fonction mettant à jour le contenu de currentState +changement du kakuro back-end+ Refresh de la page
         self.buttonPrecedent.clicked.connect(
