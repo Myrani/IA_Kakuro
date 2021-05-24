@@ -12,9 +12,7 @@ class DividedLabel(QtWidgets.QWidget):
         super().__init__()
 
         # Contraintes d'analyses importées du back-end
-        self.specs = specs
 
-        print(self.specs)
         # Box Mettant en place la grid
         self.container = QtWidgets.QWidget()
         self.layout = QtWidgets.QVBoxLayout(self.container)
@@ -30,9 +28,7 @@ class DividedLabel(QtWidgets.QWidget):
 
         self.label.setLayout(self.labelLayout)
 
-        self.possibleSetValues = self.findCommonNumberForLength(
-            dictionnaire_Des_Sommes, self.specs)
-
+        self.possibleSetValues = specs
         # Rempli le minilabel avec un chiffre si c'est une solution possible , sinon le laisse vide
         cpt = 1
         for i in range(0, 3):
@@ -48,45 +44,3 @@ class DividedLabel(QtWidgets.QWidget):
                     cpt += 1
 
         self.layout.addWidget(self.label)
-
-    def findCommonNumberForLength(self, dictionnaire_Des_Sommes, specs):
-
-        set_One = []  # Futur set des solutions pour la contrainte de Ligne
-        set_Two = []  # Futur set des solutions pour la contrainte de Colonnes
-        print(set_One == [])
-        # Tri des solutions possibles en fonction des de cases à remplir : Ligne
-        if len(specs) == 1:
-            for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
-                if len(combinaison_First) == specs[0][1]:
-                    for el in combinaison_First:
-                        set_One.append(el)
-
-        # Tri des solutions possibles en fonction des de cases à remplir : Colonne
-        elif len(specs) > 1:
-
-            for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
-                if len(combinaison_First) == specs[0][1]:
-                    for el in combinaison_First:
-                        set_One.append(el)
-
-            for combinaison_Second in dictionnaire_Des_Sommes[int(specs[1][0])]:
-                if len(combinaison_Second) == int(specs[1][1]):
-                    for el in combinaison_Second:
-                        set_Two.append(el)
-
-        # Transformation en Set
-        set_One = set(set_One)
-        set_Two = set(set_Two)
-
-        # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
-        if set_One != set([]) and set_Two != set([]):
-            print(set_One)
-            print(set_Two)
-            print("Case Double specs", set_One & set_Two)
-            return set_One & set_Two
-
-        elif set_One != [] and set_Two == set([]):
-            print("Case solo specs", set_One)
-            return set_One
-        else:
-            return []

@@ -1,28 +1,5 @@
 import pickle
 
-# Ancienne version de la fonction présente dans Divided_Label
-
-
-def findCommonNumberForLength(dictionnaire_Des_Sommes, firstNumber, firstLen, secondNumber, secondLen):
-
-    set_One = []
-    set_Two = []
-
-    for combinaison_First in dictionnaire_Des_Sommes[firstNumber]:
-        if len(combinaison_First) == firstLen:
-            for el in combinaison_First:
-                set_One.append(el)
-
-    for combinaison_Second in dictionnaire_Des_Sommes[secondNumber]:
-        if len(combinaison_Second) == secondLen:
-            for el in combinaison_Second:
-                set_Two.append(el)
-
-    set_One = set(set_One)
-    set_Two = set(set_Two)
-
-    return set_One & set_Two
-
 
 def generateDictionnaire():
     dictionnaire_Des_Sommes = {}

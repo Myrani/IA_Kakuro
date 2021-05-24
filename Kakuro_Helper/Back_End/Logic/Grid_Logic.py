@@ -44,7 +44,7 @@ def grid_Maker__Default(x, y, liste_Instructions):
     # Génération de la grille
     grid = []
     for x in range(0, x):
-        grid.append([["#|#", 0, []] for y in range(0, y)])
+        grid.append([["#|#", 0, [], []] for y in range(0, y)])
 
     # Application des instructions
     if len(liste_Instructions) > 0:
@@ -63,6 +63,13 @@ def grid_Maker__Save(save=None):
 # Fonction d'affichage lisible pour l'homme du Kakuro dans le terminal
 
 # Affiche toutes les informations back-end de la grille
+
+
+def terminalPrintFullRaw(kakuro):
+    for line in kakuro:
+        for case in line:
+            print("|"+str(case[0:len(case)]), end="")
+        print("")
 
 
 def terminalPrintFull(kakuro):

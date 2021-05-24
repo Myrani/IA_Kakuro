@@ -2,7 +2,7 @@ import pickle
 import os
 
 from Back_End.Logic.Heat_Mapping_Logic import *
-from Back_End.Logic.Possible_Values_Mapping_Logic import *
+from Back_End.Logic.Possible_Values_Mapping_Logic import set_Objective_Propagation, set_Possible_Values_Mapping
 from Back_End.Logic.Grid_Logic import *
 
 
@@ -71,11 +71,13 @@ def dynamic_Load():
 
 def push_Creator(kakuro):
     modifiedKakuro = extract_user_kakuro(kakuro)
-    terminalPrintFull(modifiedKakuro)
+    terminalPrintFullRaw(modifiedKakuro)
     mofifiedKakuro = set_Heat_Mapping(modifiedKakuro)
-    terminalPrintFull(modifiedKakuro)
+    terminalPrintFullRaw(modifiedKakuro)
     modifiedKakuro = set_Objective_Propagation(modifiedKakuro)
-    terminalPrintFull(modifiedKakuro)
+    terminalPrintFullRaw(modifiedKakuro)
+    mofifiedKakuro = set_Possible_Values_Mapping(modifiedKakuro)
+    terminalPrintFullRaw(modifiedKakuro)
     with open('Save_Creator_Result/save.pkl', 'wb') as save_instruction:
         pickle.dump(modifiedKakuro, save_instruction)
 
@@ -85,7 +87,7 @@ def push_Creator(kakuro):
 def extract_user_kakuro(kakuro):
     kakuroToSave = []
     for x in range(0, len(kakuro)):
-        kakuroToSave.append([[kakuro[x][y][1], 0, []]
+        kakuroToSave.append([[kakuro[x][y][1], 0, [], []]
                             for y in range(0, len(kakuro[x]))])
 
     return kakuroToSave
