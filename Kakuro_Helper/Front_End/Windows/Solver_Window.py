@@ -129,7 +129,7 @@ class SolverWindow(QtWidgets.QWidget):
                     # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
                     if "Heat Map" in self.filterSettings:
                         label.setStyleSheet(
-                            "background-color : rgba(255,80,0,"+str(20+int(kakuro[x][y][1]))+"); border-radius: 7px;")
+                            "background-color : rgba(255,80,0,"+str(int(kakuro[x][y][1]))+"); border-radius: 7px;")
                         layout.addWidget(label, x, y)  # Rajout à la Grid
                     else:
                         label.setStyleSheet(
