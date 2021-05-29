@@ -8,7 +8,7 @@ from Back_End.Logic.Grid_Logic import terminalPrintFull
 
 class DividedLabel(QtWidgets.QWidget):
 
-    def __init__(self, possibleValues, constraints, x, y):
+    def __init__(self, possibleValues, constraints, selected, x, y):
         super().__init__()
 
         # Contraintes d'analyses importées du back-end
@@ -16,6 +16,8 @@ class DividedLabel(QtWidgets.QWidget):
         # Box Mettant en place la grid
         self.x = x
         self.y = y
+        self.selected = selected
+
         self.container = QtWidgets.QWidget()
         self.layout = QtWidgets.QVBoxLayout(self.container)
         self.setLayout(self.layout)
@@ -37,7 +39,12 @@ class DividedLabel(QtWidgets.QWidget):
         for i in range(0, 3):
             for j in range(0, 3):
                 if cpt in self.possibleSetValues:
-                    minibutton = ContentButton(str(cpt), self.x, self.y, True)
+                    if cpt in self.selected:
+                        minibutton = ContentButton(
+                            str(cpt), self.x, self.y, True)
+                    else:
+                        minibutton = ContentButton(
+                            str(cpt), self.x, self.y, False)
                     self.labelLayout.addWidget(minibutton, i, j)
                     cpt += 1
                 else:

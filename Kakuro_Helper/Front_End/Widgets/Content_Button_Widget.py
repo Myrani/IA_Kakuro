@@ -18,13 +18,22 @@ class ContentButton(QtWidgets.QPushButton):
         self.button.setStyleSheet(
             "border-style: solid; background-color: rgba(34,34,34,255); border-color:black ;background: transparent;")
         self.button.setGeometry(QtCore.QRect(0, 0, 10, 15))
+        if self.selected:
+            self.button.setStyleSheet("color:red;")
 
     def change_Content(self):
+        if not self.selected:
 
-        self.start_add_constraint_propagation(
-            self.x, self.y, int(self.content))
-
-    # Add Constraint
+            # Add Constraint
+            self.nativeParentWidget().solverKakuro[self.x][self.y][5].append(
+                int(self.content))
+            self.start_add_constraint_propagation(
+                self.x, self.y, int(self.content))
+        if self.selected:
+            self.nativeParentWidget().solverKakuro[self.x][self.y][5].remove(
+                int(self.content))
+            self.start_remove_constraint_propagation(
+                self.x, self.y, int(self.content))
 
     def propagate_add_constraint_up(self,  x, y, constraint):
         try:
@@ -82,37 +91,57 @@ class ContentButton(QtWidgets.QPushButton):
 
 # Remove Constraint
 
-    def propagate_remove_constraint_up(self, x, y, constraint):
-        if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-            self.nativeParentWidget().solverKakuro[x][y][4].remove(constraint)
-            self.propagate_remove_constraint_up(x-1, y, constraint)
-        else:
+    def propagate_remove_constraint_up(self,  x, y, constraint):
+        try:
+            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
+                self.nativeParentWidget(
+                ).solverKakuro[x][y][4].remove(constraint)
+                self.propagate_add_constraint_up(x-1, y, constraint)
+            else:
+                return None
+        except:
             return None
 
     def propagate_remove_constraint_down(self, x, y, constraint):
-        if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-            self.nativeParentWidget().solverKakuro[x][y][4].remove(constraint)
-            self.propagate_remove_constraint_down(x+1, y, constraint)
-        else:
+        try:
+            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
+                self.nativeParentWidget(
+                ).solverKakuro[x][y][4].remove(constraint)
+                self.propagate_add_constraint_down(x+1, y, constraint)
+            else:
+                return None
+        except:
             return None
 
     def propagate_remove_constraint_rigth(self, x, y, constraint):
-        if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-            self.nativeParentWidget().solverKakuro[x][y][4].remove(constraint)
-            self.propagate_remove_constraint_rigth(x, y+1, constraint)
-        else:
+        try:
+            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
+                self.nativeParentWidget(
+                ).solverKakuro[x][y][4].append(constraint)
+                self.propagate_remove_constraint_rigth(x, y+1, constraint)
+            else:
+                return None
+        except:
             return None
 
     def propagate_remove_constraint_left(self, x, y, constraint):
-        if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-            self.nativeParentWidget().solverKakuro[x][y][4].remove(constraint)
-            self.propagate_remove_constraint_left(x, y-1, constraint)
-        else:
+
+        try:
+            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
+                self.nativeParentWidget(
+                ).solverKakuro[x][y][4].remove(constraint)
+                self.propagate_add_constraint_left(x, y-1, constraint)
+            else:
+                return None
+        except:
             return None
 
-    def start_remove_constraint_propagation(self, kakuro, x, y, constraint):
+    def start_remove_constraint_propagation(self, x, y, constraint):
         self.propagate_remove_constraint_down(x+1, y, constraint)
         self.propagate_remove_constraint_up(x-1, y, constraint)
         self.propagate_remove_constraint_rigth(x, y+1, constraint)
         self.propagate_remove_constraint_left(x, y-1, constraint)
+
+        self.nativeParentWidget().startSolverWindow()
+
         return None

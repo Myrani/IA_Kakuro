@@ -125,7 +125,7 @@ class SolverWindow(QtWidgets.QWidget):
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     if "Possible Values" in self.filterSettings:
                         label = Divided_Label_Widget.DividedLabel(
-                            kakuro[x][y][3], kakuro[x][y][4], x, y)
+                            kakuro[x][y][3], kakuro[x][y][4], kakuro[x][y][5], x, y)
                     else:
                         label = QtWidgets.QLabel("")
 
