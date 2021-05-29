@@ -2,7 +2,7 @@ import sys
 
 from PyQt5 import QtWidgets
 
-from Back_End.Logic.Grid_Logic import grid_Maker__Creator
+from Back_End.Logic.Grid_Logic import grid_Maker__Creator, terminalPrintFullRaw
 from Back_End.Logic.Saving_Logic import get_All_Saves
 
 from Front_End.Windows import Creator_Window, Main_Window, Solver_Window, Loader_Window
@@ -20,7 +20,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)
-        self.setStyleSheet("color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: none;")
+        self.setStyleSheet(
+            "color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: none;")
         self.startLoaderWindow()
 
     def startSolverWindow(self):
@@ -34,6 +35,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.startLoaderWindow)
         self.solverWindow.menuGroupBox.children()[-1].clicked.connect(
             self.startCreatorWindow)
+        terminalPrintFullRaw(self.solverKakuro)
         self.show()
 
     def startCreatorWindow(self):

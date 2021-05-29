@@ -7,6 +7,8 @@ from PyQt5 import QtGui
 from Front_End.Windows import Creator_Window, Main_Window, Solver_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
+from Back_End.Logic.Grid_Logic import terminalPrintFull
+
 
 class SolverWindow(QtWidgets.QWidget):
     def __init__(self, kakuro, dictionnaire_Des_Sommes, filterSettings, parent=None):
@@ -52,7 +54,7 @@ class SolverWindow(QtWidgets.QWidget):
         menuLayout = QtWidgets.QGridLayout()
 
         solver_To_loader_BTN = QtWidgets.QPushButton(
-            "Reload an another Kakuro", self)
+            "Reload an other Kakuro", self)
         solver_To_creator_BTN = QtWidgets.QPushButton(
             "To Creator's Side", self)
 
@@ -102,6 +104,7 @@ class SolverWindow(QtWidgets.QWidget):
 
         # Rajout des cases en fonction du kakuro backend fourni à l'instatiation !!
         # Double for pour parcour des cases
+        terminalPrintFull(kakuro)
         for x in range(0, len(kakuro)):
             for y in range(0, len(kakuro[x])):
 
@@ -122,7 +125,7 @@ class SolverWindow(QtWidgets.QWidget):
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     if "Possible Values" in self.filterSettings:
                         label = Divided_Label_Widget.DividedLabel(
-                            kakuro[x][y][3], dictionnaire_Des_Sommes)
+                            kakuro[x][y][3], kakuro[x][y][4], x, y)
                     else:
                         label = QtWidgets.QLabel("")
 

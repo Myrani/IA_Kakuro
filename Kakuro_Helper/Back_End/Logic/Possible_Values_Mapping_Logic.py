@@ -26,6 +26,7 @@ def objective_Propagation_Row(kakuro):
             # S'assure que nous sommes bien dans le cas d'une colonne de contrainte
             if kakuro[i][j][0] != "#|#" and kakuro[i][j][0] != "H|#" and kakuro[i][j][0] != " | ":
                 # Extrait l'objectif et le met dans la variable de propagation
+                print(kakuro[i][j][0].split("|"))
                 current_Objective = kakuro[i][j][0].split("|")[1]
                 if current_List != []:
                     final_List.append(current_List)
@@ -90,7 +91,7 @@ def objective_Propagation_Column(kakuro):
     return kakuro
 
 
-# Execute la double propagation des objectif sur le kakuro
+# Execute la double propagation des objectifs sur le kakuro
 def set_Objective_Propagation(kakuro):
     return objective_Propagation_Row(objective_Propagation_Column(kakuro))
 

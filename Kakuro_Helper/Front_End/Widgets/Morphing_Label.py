@@ -11,8 +11,9 @@ class Morphing_Label(QtWidgets.QWidget):
         super(Morphing_Label, self).__init__(parent)
 
         # Attributs pour le changement de couleures
-        self.caseColors = ["rgba(15,15,15,255)", "rgba(34,34,34,255)", "rgba(15,80,60,255)"]
-        self.caseTypes = ["#|#", " | ", "_|_"]
+        self.caseColors = ["rgba(15,15,15,255)",
+                           "rgba(34,34,34,255)", "rgba(15,80,60,255)"]
+        self.caseTypes = ["#|#", " | ", "X|X"]
         # Changement de l'index en fonction de la valeur trouvé dans le kakuro back-end
         self.currentState = self.caseTypes.index(kakuro[x][y][0])
         # + Stockage des indices de la case actuelle
@@ -29,7 +30,7 @@ class Morphing_Label(QtWidgets.QWidget):
 
         # Box Permettant l'entrée de contraintes par l'utilisateur
 
-        if self.nativeParentWidget().creatorKakuro[self.x][self.y][0] == '_|_':
+        if self.nativeParentWidget().creatorKakuro[self.x][self.y][0] == 'X|X':
 
             self.inputMenu = QtWidgets.QGroupBox(self)
             self.inputMenuLayout = QtWidgets.QHBoxLayout()

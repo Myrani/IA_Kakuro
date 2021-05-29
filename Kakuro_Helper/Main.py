@@ -5,7 +5,6 @@ import sys
 from Back_End.Logic.Grid_Logic import *
 from Back_End.Logic.Heat_Mapping_Logic import *
 from Back_End.Logic.Possible_Values_Mapping_Logic import *
-from Back_End.Logic.Dictionnaire_Des_Sommes import *
 from Back_End.Logic.Saving_Logic import *
 
 

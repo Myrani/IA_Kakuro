@@ -8,12 +8,14 @@ from Back_End.Logic.Grid_Logic import terminalPrintFull
 
 class DividedLabel(QtWidgets.QWidget):
 
-    def __init__(self, specs, dictionnaire_Des_Sommes):
+    def __init__(self, possibleValues, constraints, x, y):
         super().__init__()
 
         # Contraintes d'analyses importées du back-end
 
         # Box Mettant en place la grid
+        self.x = x
+        self.y = y
         self.container = QtWidgets.QWidget()
         self.layout = QtWidgets.QVBoxLayout(self.container)
         self.setLayout(self.layout)
@@ -28,13 +30,14 @@ class DividedLabel(QtWidgets.QWidget):
 
         self.label.setLayout(self.labelLayout)
 
-        self.possibleSetValues = specs
+        self.possibleSetValues = set(
+            [value for value in possibleValues if value not in constraints])
         # Rempli le minilabel avec un chiffre si c'est une solution possible , sinon le laisse vide
         cpt = 1
         for i in range(0, 3):
             for j in range(0, 3):
                 if cpt in self.possibleSetValues:
-                    minibutton = ContentButton(str(cpt))
+                    minibutton = ContentButton(str(cpt), self.x, self.y, True)
                     self.labelLayout.addWidget(minibutton, i, j)
                     cpt += 1
                 else:
