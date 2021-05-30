@@ -96,10 +96,11 @@ class ContentButton(QtWidgets.QPushButton):
             if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
                 self.nativeParentWidget(
                 ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_add_constraint_up(x-1, y, constraint)
+                self.propagate_remove_constraint_up(x-1, y, constraint)
             else:
                 return None
-        except:
+        except Exception as e:
+            print(e)
             return None
 
     def propagate_remove_constraint_down(self, x, y, constraint):
@@ -107,7 +108,7 @@ class ContentButton(QtWidgets.QPushButton):
             if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
                 self.nativeParentWidget(
                 ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_add_constraint_down(x+1, y, constraint)
+                self.propagate_remove_constraint_down(x+1, y, constraint)
             else:
                 return None
         except:
@@ -130,7 +131,7 @@ class ContentButton(QtWidgets.QPushButton):
             if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
                 self.nativeParentWidget(
                 ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_add_constraint_left(x, y-1, constraint)
+                self.propagate_remove_constraint_left(x, y-1, constraint)
             else:
                 return None
         except:

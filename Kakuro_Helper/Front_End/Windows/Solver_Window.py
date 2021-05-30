@@ -104,7 +104,7 @@ class SolverWindow(QtWidgets.QWidget):
 
         # Rajout des cases en fonction du kakuro backend fourni à l'instatiation !!
         # Double for pour parcour des cases
-        terminalPrintFull(kakuro)
+
         for x in range(0, len(kakuro)):
             for y in range(0, len(kakuro[x])):
 
