@@ -117,7 +117,7 @@ class ContentButton(QtWidgets.QPushButton):
         try:
             if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
                 self.nativeParentWidget(
-                ).solverKakuro[x][y][4].append(constraint)
+                ).solverKakuro[x][y][4].remove(constraint)
                 self.propagate_remove_constraint_rigth(x, y+1, constraint)
             else:
                 return None
