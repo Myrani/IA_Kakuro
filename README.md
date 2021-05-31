@@ -1,10 +1,4 @@
-# IA_Kakuro
-
-
-
-
-# A logical helper to assist you into your daily kakuro solving !
-
+#Kakuro Helper , a logical helper to assist you into your daily kakuro solving !
 
 What do you need ?
   - Python 3
