@@ -71,13 +71,57 @@ Le projet est divisé en deux grosses parties, la première est le back-en et se
 Le code présent dans le répertoire back-end constitue le cœur du logiciel. Il correspond aux méthodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". Il s'agit du travail en arrière plan que l'utilisateur ne verra pas et qui sera utilisé par la partie front-end pour interagir avec l'utilisateur.
 Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
 Le back-end est constitué de deux sous parties : la partie Logic et les Ressources qui pourront être utilisées. \\ \\
-La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources necessaires au bon fonctionenemtn du back-end (dictionnaire des sommes).
-\section{Logic}
-Dans cette partie nous verrons les différentes fonctions que contient la partie Logic. 
+La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources nécessaires au bon fonctionnement du back-end (dictionnaire des sommes).
 
-\subsection{La création de la grille}
-Le fichier Grid$\_$Logic.py est le fichier Python qui va permettre de créer la grille de Kakuro.\\
-La méthode grid$\_$Maker$\_$Creator permet de créer une grille vide et la rempli avec une liste d'instructions.
+ 
+
+\subsection{Grid$\_$Logic: la création de la grille}
+Le fichier Grid$\_$Logic.py est le fichier Python qui va permettre de créer la grille de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
+La méthode grid$\_$Maker$\_$Creator permet de créer une grille vide et la rempli avec une liste d'instructions. \\
+Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
+\newpage
+Il y a six types de case : \\ \\
+\begin{enumerate}
+\item[] Case jouable/non jouable
+\item[] Case de type "heat" (utilisée pour la heat map qui sera détaillée plus loin)
+\item[] Liste des objectifs de la case
+\item[] Liste des valeurs possibles de la case
+\item[] Liste des valeures Contraintes
+\item[] Case sélectionnée
+\end{enumerate} 
+
+\subsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
+
+Le fichier Heat$\_$Mapping$\_$Logic.py contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera colorée. \\
+Pour ce faire, dans le tableau une valeur sera attribuée en fonction du nombre de cases libres dans chaque lignes de la grille. Cette valeur est un poids, plus elle est élevée et plus la case sera colorée sur l'interface graphique.  \\ \\
+
+Le fichier est constitué des fonctions suivantes : \\
+\begin{itemize}
+
+\item[]heat$\_$Mapping$\_$Row : elle permet de parcourir les cases via un double for, quand elle trouve des cases libres dans  une ligne elle incrémente le poids. \\
+
+\item[]heat$\_$Mapping$\_$Column : même fonctionnement que la fonction ci-dessus mais parcours dans le sens des colonnes. \\
+
+\item[]Set$\_$Heat$\_$Mapping : permet de définir le poids de bases et de retourner le Kakuro coloré.\\
+\end{itemize}
+
+\subsection{Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}
+Le fichier Possible$\_$Values$\_$Mapping$\_$Logic.py permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides la recommandation de chiffres à placer. \\ \\
+C'est l'un des fichier le plus important car il contient la fonction qui permet de charger la ressource sums.pkl. \\ \\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \newpage
 Voici un exemple pour illustrer ce travail : 
 \begin{figure}[ht]
