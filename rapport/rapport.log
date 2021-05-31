@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  31 MAY 2021 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  31 MAY 2021 19:23
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -413,12 +413,17 @@ go-unicaen.jpg>] (rapport.toc)
 \openout4 = `rapport.toc'.
 
  [0]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
@@ -431,7 +436,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 \newpage
+l.67 \newpage
               [1]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
@@ -500,7 +505,7 @@ Package rerunfilecheck Info: File `rapport.out' has not changed.
 Here is how much of TeX's memory you used:
  12596 strings out of 479334
  191199 string characters out of 2857084
- 681835 words of memory out of 3000000
+ 683143 words of memory out of 3000000
  29877 multiletter control sequences out of 15000+200000
  414454 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -516,7 +521,7 @@ ts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-Output written on rapport.pdf (8 pages, 221404 bytes).
+Output written on rapport.pdf (8 pages, 221657 bytes).
 PDF statistics:
  366 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)

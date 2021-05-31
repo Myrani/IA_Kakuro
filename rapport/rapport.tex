@@ -55,20 +55,20 @@
 
 \section{Introduction}
 Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
-Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu.
+Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
+Pour réaliser ce projet, nous avons choisi de le réaliser en Python, langage que nous maitrisions et qui nous offre un large panel de possibilités que cela soit pour réaliser les différentes fonctions dont nous avions besoin mais aussi pour les choix d'interfaces graphiques que nous avions à notre disposition grâce à ce langage. 
 \section{Utilisation du programme}
 Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro Helper$ et lancer la commande :
 \begin{lstlisting}[language=bash]
   $ python3 Main.py
 \end{lstlisting}
-Il faut évidemment avoir au préalable installé Python 3 sur votre machine. Du moment que python est installé, le logiciel peut fonctionner aussi bien sous un Linux que sous Windows.
+Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ainsi que PyQt5, l'interface graphique que nous avons utilisés. Si ces dépendances sont installées, le logiciel devrait fonctionner sur Linux, Winwows et Mac Os.
 
 \newpage
 \section{Conception du programme}
-Pour commencer, nous avons choisi de partir sur le langage Python pour réaliser ce projet.
-Ce dernier est agencé de sorte à ce que nous aillons chacun notre partie du projet : le back-end et le front-end. Voici les détails de ces deux parties.
+Le projet est divisé en deux grosses paeties, la première est le back-en et se trouve dans le répertoire du même nom. La deuxième est le front-end et se trouve elle aussi dans un répertoire qui porte son nom.
 \subsection{Back-end}
-
+Le code présent dans le repertoire back-end constitue le coeur du logiciel. Il correspond aux methodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". 
 Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
 Dans notre projet le back-end va permettre d'effectuer les actions suivantes : créer une grille (prédéfinie ou bien grâce au front-end), associer à cette grille une "heat map", y associer les valeurs possible et retirer certaines valeurs restantes lorsque l'on va sélectionner des valeurs. 
 \newpage
