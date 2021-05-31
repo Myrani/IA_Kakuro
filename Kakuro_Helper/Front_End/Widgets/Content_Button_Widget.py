@@ -22,126 +22,123 @@ class ContentButton(QtWidgets.QPushButton):
             self.button.setStyleSheet("color:red;")
 
     def change_Content(self):
+
+        self.kakuro_solver_ref = self.nativeParentWidget().solverKakuro
+
         if not self.selected:
 
             # Add Constraint
-            self.nativeParentWidget().solverKakuro[self.x][self.y][5].append(
+            self.kakuro_solver_ref[self.x][self.y][5].append(
                 int(self.content))
             self.start_add_constraint_propagation(
-                self.x, self.y, int(self.content))
+                self.kakuro_solver_ref, self.x, self.y, int(self.content))
         if self.selected:
-            self.nativeParentWidget().solverKakuro[self.x][self.y][5].remove(
+            self.kakuro_solver_ref[self.x][self.y][5].remove(
                 int(self.content))
             self.start_remove_constraint_propagation(
-                self.x, self.y, int(self.content))
+                self.kakuro_solver_ref, self.x, self.y, int(self.content))
 
-    def propagate_add_constraint_up(self,  x, y, constraint):
+    def propagate_add_constraint_up(self, kakuro, x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].append(constraint)
-                self.propagate_add_constraint_up(x-1, y, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].append(constraint)
+                self.propagate_add_constraint_up(kakuro, x-1, y, constraint)
             else:
                 return None
         except:
             return None
 
-    def propagate_add_constraint_down(self, x, y, constraint):
+    def propagate_add_constraint_down(self, kakuro, x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].append(constraint)
-                self.propagate_add_constraint_down(x+1, y, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].append(constraint)
+                self.propagate_add_constraint_down(kakuro, x+1, y, constraint)
             else:
                 return None
         except:
             return None
 
-    def propagate_add_constraint_rigth(self, x, y, constraint):
+    def propagate_add_constraint_rigth(self, kakuro, x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].append(constraint)
-                self.propagate_add_constraint_rigth(x, y+1, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].append(constraint)
+                self.propagate_add_constraint_rigth(kakuro, x, y+1, constraint)
             else:
                 return None
         except:
             return None
 
-    def propagate_add_constraint_left(self, x, y, constraint):
+    def propagate_add_constraint_left(self, kakuro, x, y, constraint):
 
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].append(constraint)
-                self.propagate_add_constraint_left(x, y-1, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].append(constraint)
+                self.propagate_add_constraint_left(kakuro, x, y-1, constraint)
             else:
                 return None
         except:
             return None
 
-    def start_add_constraint_propagation(self, x, y, constraint):
-        self.propagate_add_constraint_down(x+1, y, constraint)
-        self.propagate_add_constraint_up(x-1, y, constraint)
-        self.propagate_add_constraint_rigth(x, y+1, constraint)
-        self.propagate_add_constraint_left(x, y-1, constraint)
+    def start_add_constraint_propagation(self, kakuro, x, y, constraint):
+        self.propagate_add_constraint_down(kakuro, x+1, y, constraint)
+        self.propagate_add_constraint_up(kakuro, x-1, y, constraint)
+        self.propagate_add_constraint_rigth(kakuro, x, y+1, constraint)
+        self.propagate_add_constraint_left(kakuro, x, y-1, constraint)
 
         self.nativeParentWidget().startSolverWindow()
         return None
 
 # Remove Constraint
 
-    def propagate_remove_constraint_up(self,  x, y, constraint):
+    def propagate_remove_constraint_up(self, kakuro,  x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_remove_constraint_up(x-1, y, constraint)
-            else:
-                return None
-        except Exception as e:
-            print(e)
-            return None
-
-    def propagate_remove_constraint_down(self, x, y, constraint):
-        try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_remove_constraint_down(x+1, y, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].remove(constraint)
+                self.propagate_remove_constraint_up(kakuro, x-1, y, constraint)
             else:
                 return None
         except:
             return None
 
-    def propagate_remove_constraint_rigth(self, x, y, constraint):
+    def propagate_remove_constraint_down(self, kakuro, x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_remove_constraint_rigth(x, y+1, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].remove(constraint)
+                self.propagate_remove_constraint_down(
+                    kakuro, x+1, y, constraint)
             else:
                 return None
         except:
             return None
 
-    def propagate_remove_constraint_left(self, x, y, constraint):
-
+    def propagate_remove_constraint_rigth(self, kakuro, x, y, constraint):
         try:
-            if self.nativeParentWidget().solverKakuro[x][y][0] == " | ":
-                self.nativeParentWidget(
-                ).solverKakuro[x][y][4].remove(constraint)
-                self.propagate_remove_constraint_left(x, y-1, constraint)
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].remove(constraint)
+                self.propagate_remove_constraint_rigth(
+                    kakuro, x, y+1, constraint)
             else:
                 return None
         except:
             return None
 
-    def start_remove_constraint_propagation(self, x, y, constraint):
-        self.propagate_remove_constraint_down(x+1, y, constraint)
-        self.propagate_remove_constraint_up(x-1, y, constraint)
-        self.propagate_remove_constraint_rigth(x, y+1, constraint)
-        self.propagate_remove_constraint_left(x, y-1, constraint)
+    def propagate_remove_constraint_left(self, kakuro, x, y, constraint):
+
+        try:
+            if kakuro[x][y][0] == " | ":
+                kakuro[x][y][4].remove(constraint)
+                self.propagate_remove_constraint_left(
+                    kakuro, x, y-1, constraint)
+            else:
+                return None
+        except:
+            return None
+
+    def start_remove_constraint_propagation(self, kakuro, x, y, constraint):
+        self.propagate_remove_constraint_down(kakuro, x+1, y, constraint)
+        self.propagate_remove_constraint_up(kakuro, x-1, y, constraint)
+        self.propagate_remove_constraint_rigth(kakuro, x, y+1, constraint)
+        self.propagate_remove_constraint_left(kakuro, x, y-1, constraint)
 
         self.nativeParentWidget().startSolverWindow()
 
