@@ -68,9 +68,12 @@ Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ain
 \section{Conception du programme}
 Le projet est divisé en deux grosses paeties, la première est le back-en et se trouve dans le répertoire du même nom. La deuxième est le front-end et se trouve elle aussi dans un répertoire qui porte son nom.
 \subsection{Back-end}
-Le code présent dans le repertoire back-end constitue le coeur du logiciel. Il correspond aux methodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". 
+Le code présent dans le répertoire back-end constitue le cœur du logiciel. Il correspond aux méthodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". Il s'agit du travail en arrière plan que l'utilisateur ne verra pas et qui sera utilisé par la partie front-end pour interagir avec l'utilisateur.
 Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
-Dans notre projet le back-end va permettre d'effectuer les actions suivantes : créer une grille (prédéfinie ou bien grâce au front-end), associer à cette grille une "heat map", y associer les valeurs possible et retirer certaines valeurs restantes lorsque l'on va sélectionner des valeurs. 
+Le back-end est constitué de deux sous parties : la partie Logic et les Ressources qui pourront être utilisées. \\ \\
+La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources necessaires au bon fonctionenemtn du back-end (dictionnaire des sommes).
+\subsection{Logic}
+Dans cette partie nous verrons les différentes fonctions que contient la partie Logic. 
 \newpage
 Voici un exemple pour illustrer ce travail : 
 \begin{figure}[ht]
