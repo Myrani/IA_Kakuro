@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  25 MAY 2021 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  31 MAY 2021 17:44
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -273,37 +273,73 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
 
+(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen158
+\captionmargin@=\dimen159
+\captionwidth=\dimen160
+\caption@tempdima=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count280
+\c@continuedfloat=\count281
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count282
+\sf@farskip=\skip50
+\sf@captopadj=\dimen165
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\c@subfigure=\count283
+\c@subfigure@save=\count284
+\c@lofdepth=\count285
+\c@subtable=\count286
+\c@subtable@save=\count287
+\c@lotdepth=\count288
+\sf@top=\skip53
+\sf@bottom=\skip54
+)
 (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count280
+\l__color_backend_stack_int=\count289
 \l__pdf_internal_box=\box49
 ) (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Info: Redefining \degres on input line 12.
-LaTeX Info: Redefining \dots on input line 12.
-LaTeX Info: Redefining \up on input line 12.
-Package hyperref Info: Link coloring OFF on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Redefining \degres on input line 13.
+LaTeX Info: Redefining \dots on input line 13.
+LaTeX Info: Redefining \up on input line 13.
+Package hyperref Info: Link coloring OFF on input line 13.
 
 (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -315,32 +351,32 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count281
+\c@section@level=\count290
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
  (rapport.out) (rapport.out)
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 12.
+(lastpage)             ! on input line 13.
 
 (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen158
+\scratchcounter=\count291
+\scratchdimen=\dimen166
 \scratchbox=\box50
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen159
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen167
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks21
 )
 (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -349,23 +385,26 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count288
-<./ressources/logo-unicaen.jpg, id=19, 1080.035pt x 609.27625pt>
+\c@lstlisting=\count297
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+<./ressources/logo-unicaen.jpg, id=27, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
-Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 19.
+Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 20.
 (pdftex.def)             Requested size: 216.00317pt x 121.85309pt.
 
-Overfull \hbox (48.82138pt too wide) in paragraph at lines 18--20
+Overfull \hbox (48.82138pt too wide) in paragraph at lines 19--21
 |  []  
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 22.
 [1
 
 {C:/Users/Miste/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./ressources/lo
@@ -374,44 +413,112 @@ go-unicaen.jpg>] (rapport.toc)
 \openout4 = `rapport.toc'.
 
  [0]
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
-AED: lastpage setting LastPage
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 \end{document}
-                    [1] (rapport.aux)
+l.66 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+[2]
+<./ressources/retrait.png, id=61, 102.3825pt x 271.0125pt>
+File: ./ressources/retrait.png Graphic file (type png)
+<use ./ressources/retrait.png>
+Package pdftex.def Info: ./ressources/retrait.png  used on input line 78.
+(pdftex.def)             Requested size: 51.19112pt x 135.5059pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+[3 <./ressources/retrait.png>]
+<./ressources/helperside.png, id=68, 528.47438pt x 626.34pt>
+File: ./ressources/helperside.png Graphic file (type png)
+<use ./ressources/helperside.png>
+Package pdftex.def Info: ./ressources/helperside.png  used on input line 93.
+(pdftex.def)             Requested size: 211.386pt x 250.53156pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+
+ []
+
+[4 <./ressources/helperside.png>]
+<./ressources/heatmap.png, id=74, 528.47438pt x 626.34pt>
+File: ./ressources/heatmap.png Graphic file (type png)
+<use ./ressources/heatmap.png>
+Package pdftex.def Info: ./ressources/heatmap.png  used on input line 103.
+(pdftex.def)             Requested size: 179.67891pt x 212.95277pt.
+<./ressources/valPoss.png, id=75, 528.47438pt x 626.34pt>
+File: ./ressources/valPoss.png Graphic file (type png)
+<use ./ressources/valPoss.png>
+Package pdftex.def Info: ./ressources/valPoss.png  used on input line 105.
+(pdftex.def)             Requested size: 179.67891pt x 212.95277pt.
+ [5 <./ressources/heatmap.png> <./ressources/valPoss.png>]
+<./ressources/creator.png, id=85, 528.47438pt x 626.34pt>
+File: ./ressources/creator.png Graphic file (type png)
+<use ./ressources/creator.png>
+Package pdftex.def Info: ./ressources/creator.png  used on input line 113.
+(pdftex.def)             Requested size: 211.386pt x 250.53156pt.
+ 
+AED: lastpage setting LastPage
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+[6 <./ressources/creator.png>] (rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 42CD71621B0A9CDE5A2017E304DD2DE9;526.
+(rerunfilecheck)             Checksum: AC3D5676689479A42E89EDE1C263DE4A;812.
  ) 
 Here is how much of TeX's memory you used:
- 11199 strings out of 479334
- 164281 string characters out of 2857084
- 665166 words of memory out of 3000000
- 28510 multiletter control sequences out of 15000+200000
- 413691 words of font info for 46 fonts, out of 3000000 for 9000
+ 12596 strings out of 479334
+ 191199 string characters out of 2857084
+ 681835 words of memory out of 3000000
+ 29877 multiletter control sequences out of 15000+200000
+ 414454 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,7n,74p,724b,1108s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Miste/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-Output written on rapport.pdf (3 pages, 145794 bytes).
+ 71i,9n,79p,487b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+1000.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\eccc1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+Output written on rapport.pdf (8 pages, 221404 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

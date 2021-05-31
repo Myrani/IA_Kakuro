@@ -7,6 +7,7 @@
 \usepackage{lastpage}
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{subfig}
 
 
 \begin{document}
@@ -53,26 +54,69 @@
 
 
 \section{Introduction}
-Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en Frnace que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps.  \\ Source : Wikipedia
-
+Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
+Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu.
 \section{Utilisation du programme}
-Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro_Helper$ et lancer la commande :
+Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro Helper$ et lancer la commande :
 \begin{lstlisting}[language=bash]
-  $python3 Main.py
+  $ python3 Main.py
 \end{lstlisting}
+Il faut évidemment avoir au préalable installé Python 3 sur votre machine. Du moment que python est installé, le logiciel peut fonctionner aussi bien sous un Linux que sous Windows.
 
-
+\newpage
 \section{Conception du programme}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros mauris, mollis et pretium sit amet, vulputate vel magna. Curabitur ac dolor felis. Pellentesque ut turpis posuere, consequat est eu, eleifend turpis. Maecenas tincidunt, felis at volutpat ornare, turpis dolor dapibus arcu, vitae ullamcorper erat lacus ut lectus. Pellentesque ornare quis tellus ac dapibus. Nunc congue mollis lacus in hendrerit. Maecenas justo sem, gravida mattis nulla a, ornare porttitor quam. Cras molestie, nulla convallis congue cursus, mi ex blandit turpis, non pharetra arcu quam at mauris. Nullam velit massa, luctus eget elit ut, ultricies volutpat sapien. Quisque blandit sem felis, non varius enim blandit quis.
-%\begin{figure}[ht]
-%  \begin{center}
-%    \includegraphics[width=\textwidth]{./ressources/taquin.png} 
-%  \end{center}
-%  \caption{Diagrammes de packages du programme}
-%\end{figure}
+Pour commencer, nous avons choisi de partir sur le langage Python pour réaliser ce projet.
+Ce dernier est agencé de sorte à ce que nous aillons chacun notre partie du projet : le back-end et le front-end. Voici les détails de ces deux parties.
+\subsection{Back-end}
 
-Pellentesque ornare quis tellus ac dapibus. Nunc congue mollis lacus in hendrerit. Maecenas justo sem, gravida mattis nulla a, ornare porttitor quam. Cras molestie, nulla convallis congue cursus, mi ex blandit turpis, non pharetra arcu quam at mauris. Nullam velit massa, luctus eget elit ut, ultricies volutpat sapien.
-\subsection{Modèle}
+Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
+Dans notre projet le back-end va permettre d'effectuer les actions suivantes : créer une grille (prédéfinie ou bien grâce au front-end), associer à cette grille une "heat map", y associer les valeurs possible et retirer certaines valeurs restantes lorsque l'on va sélectionner des valeurs. 
+\newpage
+Voici un exemple pour illustrer ce travail : 
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[scale=0.5]{./ressources/retrait.png} 
+  \end{center}
+  \caption{Avant et après avoir sélectionné le nombre 5 dans une ligne}
+\end{figure} 
 
+On voit que lorsque l'on sélectionne le nombre 5, il est retiré des nombres disponibles car il ne peut apparaître qu'une fois dans une ligne. \\ \\
+Pour ce qui est de la "heat map" (coloration des cases), elle permet de colorer si on le souhaite les cases qui nous paraissent les plus intéressantes à jouer. Plus la case est foncée, plus elle est intéressante car permettant de débloquer d'autres cases après cette dernière. \\ \\
+Enfin, on peut créer sa propre grille via le front-end et le back-end se permettra de la sauvegarder et de la ré-ouvrir si on le souhaite. 
+\newpage
+\subsection{Front-end}
+Le front-end permet l'affichage de la grille et permet à l'utilisateur d'interagir avec le back-end. Il s'agit d'une interface graphique. \\ Cette dernière est réalisée grâce au module PyQt. Le front-end va récupérer les information du back-end et les interpréter et les afficher de manière "lisible" afin que l'utilisateur puisse y avoir accès. \\ \\
+Le front-end est divisé en plusieurs fenêtres, la première, celle qui accueille l'utilisateur, permet de sélectionner la grille de kakuro souhaitée. Une fois la grille sélectionnée la fenêtre "helper's side" s'affiche. \\ \\ 
+Cette fenêtre est peut-être la plus importante du sujet, elle pemret d'avoir accès aux fonctions du back-end les plus importantes de ce logiciel d'aide à la résolution de kakuro. \\
+ \begin{figure}[ht]
+  \begin{center}
+    \includegraphics[scale=0.4]{./ressources/helperside.png} 
+  \end{center}
+  \caption{La grille affichée par l'interface graphique}
+\end{figure}
 
+\newpage
+Les cases du haut servent à afficher les différentes options disponibles  : la heat map et l'affichage des valeurs possibles. 
+
+\begin{figure}[ht]
+  \centering
+  \subfloat[Heat map]{\includegraphics[scale=0.34]{./ressources/heatmap.png}}
+  \qquad
+  \subfloat[Valeurs possibles]{\includegraphics[scale=0.34]{./ressources/valPoss.png}}
+  \caption{Exemple des options disponibles}
+\end{figure}
+\newpage
+La dernière fenêtre est celle de création de grille. elle permet de créer sa propre grille si l'on veut utiliser le logiciel pour une grille spécifique. 
+
+ \begin{figure}[ht]
+  \begin{center}
+    \includegraphics[scale=0.4]{./ressources/creator.png} 
+  \end{center}
+  \caption{L'outil d'édition de grille}
+\end{figure}
+Pour ce qui est du style de l'interface graphique, nous avons opté pour un design simple et sombre afin d'avoir un logiciel au visuel épuré et lisible. 
+\section{Éventuelles améliorations}
+Ce logiciel n'est pas parfait et au vu du temps que nous avions pour le réaliser, nous n'avons pas eu le temps d'y intégrer toutes les options que nous aurions voulu. \\
+Par exemple, nous aurions pu mettre un bouton de résolution automatique d'une grille dans le cas où un utilisateur souhaiterai vérifier le bon remplissage d'une grille. \\
 \end{document}
+

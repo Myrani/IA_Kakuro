@@ -1,0 +1,57 @@
+
+pb 11 en 4 cases
+une de ces 4 cases vaut 3
+--> pb 8 en 3 cases
+
+Ce qui existait avant = 0
+
+Rapport
+
+1. 
+Visualisation d'une grille - Interface graphique
+
+2. 
+Associer à chaque case un ensemble de valeurs possibles en tenant compte des valeurs des sommes
+
+"Coloration d'une case en fonction du nombre de ses valeurs possibles"
+plus c'est clair plus c'est intéressant/facile à jouer car "plus c'est foncé, plus i y a de valeurs possibles"
+
+pb de 11 en 4 cases -> On cherche toutes les décompositions possibles de 11 en 4 nombres différents.
+
+TODO éventuel
+3. choisir la valeur d'une case et réduire
+
+
+CSP (Constraint satisfation Problem)
+
+- des inconnues x1, x2, ..xn (cases)
+- un domaine pour chacune des variables
+par exemple domaine de x1 est {3, 4, 5}
+--> la case x1 a comme valeurs possibles 
+{3, 4, 5}
+- contraintes sur inconnues/variables
+x1+x3+x5=11
+3 cases consécutives dont la somme est 11
+en plus x1, x3 et x5 doivent avoir des valeurs différentes
+allDifferent[x1, x3, x5]
+
+si on appelle x1 la case tout en hau à gauche,
+- dans l'absolu elle peut avoir n'importe quelle valeur entre 1 et 9 
+- mais son domaine réduit eest {1,2,3}
+
+x1 de domaine {1,2}
+x2 de domaine {1,2,3}
+et x1≠x2
+aucune reduction possible dans les CSP 
+
+x1 de domaine {1,2}
+x2 de domaine {1,2}
+aucune reduction possible dans les CSP
+
+
+x1 de domaine {1,2}
+x2 de domaine {2}
+et la contrainte x1≠x2
+On enlève la vaeur 2 du domaine de x1
+
+
