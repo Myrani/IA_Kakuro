@@ -58,22 +58,26 @@ Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est or
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
 Pour réaliser ce projet, nous avons choisi de le réaliser en Python, langage que nous maitrisions et qui nous offre un large panel de possibilités que cela soit pour réaliser les différentes fonctions dont nous avions besoin mais aussi pour les choix d'interfaces graphiques que nous avions à notre disposition grâce à ce langage. 
 \section{Utilisation du programme}
-Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro Helper$ et lancer la commande :
+Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro$\_$Helper$ et lancer la commande :
 \begin{lstlisting}[language=bash]
   $ python3 Main.py
 \end{lstlisting}
 Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ainsi que PyQt5, l'interface graphique que nous avons utilisés. Si ces dépendances sont installées, le logiciel devrait fonctionner sur Linux, Winwows et Mac Os.
 
 \newpage
-\section{Conception du programme}
-Le projet est divisé en deux grosses paeties, la première est le back-en et se trouve dans le répertoire du même nom. La deuxième est le front-end et se trouve elle aussi dans un répertoire qui porte son nom.
-\subsection{Back-end}
+\section{Conception du programme : Back-end}
+Le projet est divisé en deux grosses parties, la première est le back-en et se trouve dans le répertoire du même nom. La deuxième est le front-end et se trouve elle aussi dans un répertoire qui porte son nom.
+\\ \\
 Le code présent dans le répertoire back-end constitue le cœur du logiciel. Il correspond aux méthodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". Il s'agit du travail en arrière plan que l'utilisateur ne verra pas et qui sera utilisé par la partie front-end pour interagir avec l'utilisateur.
 Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
 Le back-end est constitué de deux sous parties : la partie Logic et les Ressources qui pourront être utilisées. \\ \\
 La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources necessaires au bon fonctionenemtn du back-end (dictionnaire des sommes).
-\subsection{Logic}
+\section{Logic}
 Dans cette partie nous verrons les différentes fonctions que contient la partie Logic. 
+
+\subsection{La création de la grille}
+Le fichier Grid$\_$Logic.py est le fichier Python qui va permettre de créer la grille de Kakuro.\\
+La méthode grid$\_$Maker$\_$Creator permet de créer une grille vide et la rempli avec une liste d'instructions.
 \newpage
 Voici un exemple pour illustrer ce travail : 
 \begin{figure}[ht]
