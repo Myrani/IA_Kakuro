@@ -5,5 +5,6 @@
 \contentsline {subsection}{\numberline {3.1}Grid$\_$Logic: la création de la grille}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Heat$\_$Mapping$\_$Logic : coloration d'une grille}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Front-end}{6}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Éventuelles améliorations}{8}{section.4}%
+\contentsline {subsection}{\numberline {3.4}Saving$\_$Logic : le fichier de sauvegarde}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Front-end}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Éventuelles améliorations}{9}{section.4}%

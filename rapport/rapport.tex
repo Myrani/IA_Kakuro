@@ -56,13 +56,13 @@
 \section{Introduction}
 Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
-Pour réaliser ce projet, nous avons choisi de le réaliser en Python, langage que nous maitrisions et qui nous offre un large panel de possibilités que cela soit pour réaliser les différentes fonctions dont nous avions besoin mais aussi pour les choix d'interfaces graphiques que nous avions à notre disposition grâce à ce langage. 
+Pour réaliser ce projet, nous avons choisi de l'écrire en Python, langage que nous maitrisions et qui nous offre un large panel de possibilités que cela soit pour réaliser les différentes fonctions dont nous avions besoin mais aussi pour les choix d'interfaces graphiques que nous avions à notre disposition grâce à ce langage. 
 \section{Utilisation du programme}
 Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro$\_$Helper$ et lancer la commande :
 \begin{lstlisting}[language=bash]
   $ python3 Main.py
 \end{lstlisting}
-Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ainsi que PyQt5, l'interface graphique que nous avons utilisés. Si ces dépendances sont installées, le logiciel devrait fonctionner sur Linux, Winwows et Mac Os.
+Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ainsi que PyQt5 et pickle, l'interface graphique que nous avons utilisés. Si ces dépendances sont installées, le logiciel devrait fonctionner sur Linux, Winwows et Mac Os.
 
 \newpage
 \section{Conception du programme : Back-end}
@@ -76,8 +76,8 @@ La partie Logic contient les fonctions du logiciel et la partie Ressources conti
  
 
 \subsection{Grid$\_$Logic: la création de la grille}
-Le fichier Grid$\_$Logic.py est le fichier Python qui va permettre de créer la grille de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
-La méthode grid$\_$Maker$\_$Creator permet de créer une grille vide et la rempli avec une liste d'instructions. \\
+Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de créer la grille de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
+La méthode $grid$\_$Maker$\_$Creator$ permet de créer une grille vide et la rempli avec une liste d'instructions. \\
 Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
 \newpage
 Il y a six types de case : \\ \\
@@ -92,30 +92,41 @@ Il y a six types de case : \\ \\
 
 \subsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
 
-Le fichier Heat$\_$Mapping$\_$Logic.py contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera colorée. \\
+Le fichier $Heat$\_$Mapping$\_$Logic.py$ contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera colorée. \\
 Pour ce faire, dans le tableau une valeur sera attribuée en fonction du nombre de cases libres dans chaque lignes de la grille. Cette valeur est un poids, plus elle est élevée et plus la case sera colorée sur l'interface graphique.  \\ \\
 
 Le fichier est constitué des fonctions suivantes : \\
 \begin{itemize}
 
-\item[]heat$\_$Mapping$\_$Row : elle permet de parcourir les cases via un double for, quand elle trouve des cases libres dans  une ligne elle incrémente le poids. \\
+\item[]$heat$\_$Mapping$\_$Row$ : elle permet de parcourir les cases via un double for, quand elle trouve des cases libres dans  une ligne elle incrémente le poids. \\
 
-\item[]heat$\_$Mapping$\_$Column : même fonctionnement que la fonction ci-dessus mais parcours dans le sens des colonnes. \\
+\item[]$heat$\_$Mapping$\_$Column$ : même fonctionnement que la fonction ci-dessus mais parcours dans le sens des colonnes. \\
 
-\item[]Set$\_$Heat$\_$Mapping : permet de définir le poids de bases et de retourner le Kakuro coloré.\\
+\item[]$Set$\_$Heat$\_$Mapping$ : permet de définir le poids de bases et de retourner le Kakuro coloré.\\
 \end{itemize}
 
 \subsection{Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}
-Le fichier Possible$\_$Values$\_$Mapping$\_$Logic.py permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides la recommandation de chiffres à placer. \\ \\
+Le fichier $Possible$\_$Values$\_$Mapping$\_$Logic.py$ permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides la recommandation de chiffres à placer. \\ \\
 C'est l'un des fichier le plus important car il contient la fonction qui permet de charger la ressource sums.pkl. \\ \\
 
-Les fonctions objective$\_$Propagation$\_$Row et objective$\_$Propagation$\_$Row permettent de parcourir la grille (verticalement et horizontalement) et permettent d'attribuer des valeurs dans le Kakuro en fonction des lignes. 
+Les fonctions $objective$\_$Propagation$\_$Row$ et $objective$\_$Propagation$\_$Row$ permettent de parcourir la grille (verticalement et horizontalement) et permettent d'attribuer des valeurs dans le Kakuro en fonction des lignes. \\
+Ces deux fonctions sont executées par la methode $set$\_$Objective$\_$Propagation$. \\ \\
+Quant à la méthode $findCommonNumberForLenght$, elle permet de créer deux tableaux constitué des solutions possibles à la résolution d'une ligne de Kakuro et ce en parcourant la grille horizontalement et verticalement. Cette méthode est appelée dans $set$\_$Possible$\_$Values$\_$Mapping$. 
 
+\subsection{Saving$\_$Logic : le fichier de sauvegarde}
+Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro serait impossible car c'est ce fichier qui permet de les gérer. \\
+Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$.  \\
+Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\
+La méthode $push$\_$Save$ permet d'écrire un fichier au format $.pkl$ du nom de $save.pkl$. \\ \\
+\newpage
+La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante : \\
+\begin{enumerate}
+\item[-] Vérifie si un fichier "save" est disponible\\
+\item[-] Si aucun fichier n'est trouvé alors un Kakuro dit "basique" est crée (il s'agit d'un Kakuro tout prêt fait). \\
+\item[-] En revanche, si un fichier "save" est trouvé, alors on le charge.\\
+\end{enumerate}
 
-
-
-
-
+$get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichiers présents dans le dossier $Saves$.
 
 
 
