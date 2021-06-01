@@ -28,7 +28,7 @@
 \begin{minipage}{\textwidth}
 	\begin{flushright} \huge
 		\center
-		Compléments de POO
+		Projet de substitution
 	\end{flushright}
 \end{minipage}\\[1cm]
 \textsc{\large }\\[1cm]
@@ -137,7 +137,7 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 \newpage
 \section{Conception du programme : Front-end}
 Dans notre logiciel, le front-end sert d'interface homme-machine afin de proposer une grille simple et de permettre à l'utilisateur d'interagir avec cette dernière via des boutons notamment. \\ \\
-L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette dernière est divisée en plusieurs fenêtres (que l'on appellera windows, de leur nom en anglais et dans les fichiers) et qui permettront d'exécuter des tâches spécifiques que nous détaillerons plus loin. \\ \\
+L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette dernière est divisée en plusieurs fenêtres (constituées de widgets) (que l'on appellera windows, de leur nom en anglais et dans les fichiers) et qui permettront d'exécuter des tâches spécifiques que nous détaillerons plus loin. \\ \\
 Voici la liste de ces fenêtres : \\
 
 \begin{enumerate}
@@ -148,9 +148,46 @@ Enfin, c'est dans la partie $Front$\_$End$ que l'on trouve les dossiers de sauve
 \end{enumerate}
 
 Pour ce qui est du style de l'interface graphique nous avons opté pour un design simple et sombre (pour préserver le confort des yeux) qui permet de se concentrer sur la grille et les fonctionnalités proposées. On a donc une palette de couleurs allant du gris foncé au gris clair et du orange pastel pour la heat map.
+\newpage
+\subsection{Main$\_$Window : initialisation de l'IU}
 
-\subsection{Main$\_$Window}
-\subsection{Solver$\_$Window}
+$Main$\_$Window.py$ est le fichier qui va permettre d'initialiser l'interface graphique. Il importe le back-end ainsi que toues les windows et évidement les modules nécessaires au bon fonctionnement de $PyQt$. \\  \\
+Dans cette classe il y a quatres grandes méthodes : \\
+\begin{enumerate}
+\item[-] $\_$init$\_$ 
+\item[-] startSolverWindow  
+\item[-] startCreatorWindow 
+\item[-] startLoaderWindow \\
+\end{enumerate}
+Voici les détails de ces méthodes : \\ \\
+La méthode $\_$init$\_$ permet de paramétrer l'interface graphique et d'appeler le back-end. On y trouves les paramètres les plus importants comme la taille de la fenêtre, l'appel du dictionnaire et de la grille de Kakuro, les paramètres de styles généraux ainsi que le lancement de la fenetre $LoaderWindow$. \\ \\
+
+$startSolverWindow$, $startCreatorWindow$ et $startLoaderWindow$, comme leur nom l'indique clairement, permettent de lancer les fenêtre de résolution de grilles, de création de grilles ainsi que la fenêtre de choix de grille. \\ \\
+
+Le fichier $Main$\_$Window.py$ est donc la base de l'interface graphique, nous allons maintenant détailler les trois autres window ainsi que les widgets qu'elles utilisent. 
+
+\newpage
+
+
+\subsection{Solver$\_$Window : la fenêtre principale}
+
+Si l'on ne devait garder qu'une seule fenêtre pour ce logiciel, ce serait evidemment la fenêtre $Solver$\_$Window$. En effet il s'agit de la fenêtre centrale de l'application, celle qui propose les outils d'aide à la résolution de grilles de Kakuro. \\
+L'affichage de la fenêtre est simple : en tête un menu permettant de choisir ou non l'affichage de la heat map et/ou des valeurs possible ainsi que la possibilité de charger un autre Kakuro et de se rendre sur la page de création de grilles. \\ \\
+
+Pour ce qui est du code au sein de $Solver$\_$Window.py$, il est agencé de la manière suivante : \\ 
+\begin{itemize}
+\item[-] Un constructeur 
+\item[-] Une fonction d'initialisation de la fenêtre qui appelle les widgets nécessaires
+\item[-] Une méthode $createMenuLayout$ qui permet de créer le menu de la tête de fenêtre
+\item[-] Ainsi que la plus grosse méthode : $createKakuroSolverLayout$ qui permet de créer la grille centrale et d'y interagir. \\
+\end{itemize}
+
+$createKakuroSolverLayout$ est la méthode qui permet l'affichage de la grille au milieu de la fenêtre et qui permet d'appeler les fonctions d'aide fournies par le back-end. \\
+Elle permet d'afficher la grille, d'afficher la heat map et de fournir les valeurs possibles dans les cases à jouer. Cette méthode contient aussi les styles de la grille et de la heat map. \\
+Pour cette dernière nous avons utilisé un code couleur assez subtil : le $rgba$, ce dernière nous permet de gérer les traditionnelles valeurs rouge, vert, bleu mais aussi l'opacité des couleurs, ce dernier paramètre est particulièrement utile lors de l'utilisation de la heat map car on peut profiter du poids de chaque case pour adapter l'opacité de la couleur et donc l'intensité de la heat map. \\ 
+
+
+
 \subsection{Loader$\_$Window}
 \subsection{Creator$\_$Window}
 \subsection{Dossiers de sauvegardes}
