@@ -136,6 +136,18 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 
 \newpage
 \section{Conception du programme : Front-end}
+Dans notre logiciel, le front-end sert d'interface homme-machine afin de proposer une grille simple et de permettre à l'utilisateur d'interagir avec cette dernière via des boutons notamment. \\ \\
+L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette dernière est divisée en plusieurs fenêtres (que l'on appellera windows, de leur nom en anglais et dans les fichiers) et qui permettront d'exécuter des tâches spécifiques que nous détaillerons plus loin. \\ \\
+Voici la liste de ces fenêtres : \\
+
+\begin{enumerate}
+\item[-] Une fenêtre d'accueil permettant de sélectionner une grille  \\
+\item[-] Une fenêtre de jeu permettant d'avoir accès aux options d'aide à la résolution de la grille de Kakuro que l'on aura sélectionné. \\
+\item[-] Une fenêtre de création de grille qui permettra de créer et sauvegarder sa propre grille de Kakuro. \\
+Enfin, c'est dans la partie $Front$\_$End$ que l'on trouve les dossiers de sauvegardes, à savoir $Save$ et $Save$\_$Creator$\_$Result$. \\
+\end{enumerate}
+
+Pour ce qui est du style de l'interface graphique nous avons opté pour un design simple et sombre (pour préserver le confort des yeux) qui permet de se concentrer sur la grille et les fonctionnalités proposées. On a donc une palette de couleurs allant du gris foncé au gris clair et du orange pastel pour la heat map.
 
 \subsection{Main$\_$Window}
 \subsection{Solver$\_$Window}
@@ -143,11 +155,12 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 \subsection{Creator$\_$Window}
 \subsection{Dossiers de sauvegardes}
 
-\section{Le logiciel final}
+\section{Le logiciel dans son ensemble}
 \section{Améliorations possibles}
 
 
 \section{Annexes}
+
 
 
 \end{document}
