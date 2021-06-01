@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  1 JUN 2021 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  1 JUN 2021 10:58
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -389,7 +389,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./ressources/logo-unicaen.jpg, id=39, 1080.035pt x 609.27625pt>
+<./ressources/logo-unicaen.jpg, id=67, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 20.
@@ -623,88 +623,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
  []
 
 [5]
-<./ressources/retrait.png, id=91, 102.3825pt x 271.0125pt>
-File: ./ressources/retrait.png Graphic file (type png)
-<use ./ressources/retrait.png>
-Package pdftex.def Info: ./ressources/retrait.png  used on input line 141.
-(pdftex.def)             Requested size: 51.19112pt x 135.5059pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 140.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
-
- []
-
-[6 <./ressources/retrait.png>]
-<./ressources/helperside.png, id=98, 528.47438pt x 626.34pt>
-File: ./ressources/helperside.png Graphic file (type png)
-<use ./ressources/helperside.png>
-Package pdftex.def Info: ./ressources/helperside.png  used on input line 156.
-(pdftex.def)             Requested size: 211.386pt x 250.53156pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--160
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 140.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--160
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
 
- []
 
-[7 <./ressources/helperside.png>]
-<./ressources/heatmap.png, id=104, 528.47438pt x 626.34pt>
-File: ./ressources/heatmap.png Graphic file (type png)
-<use ./ressources/heatmap.png>
-Package pdftex.def Info: ./ressources/heatmap.png  used on input line 166.
-(pdftex.def)             Requested size: 179.67891pt x 212.95277pt.
-<./ressources/valPoss.png, id=105, 528.47438pt x 626.34pt>
-File: ./ressources/valPoss.png Graphic file (type png)
-<use ./ressources/valPoss.png>
-Package pdftex.def Info: ./ressources/valPoss.png  used on input line 168.
-(pdftex.def)             Requested size: 179.67891pt x 212.95277pt.
- [8 <./ressources/heatmap.png> <./ressources/valPoss.png>]
-<./ressources/creator.png, id=114, 528.47438pt x 626.34pt>
-File: ./ressources/creator.png Graphic file (type png)
-<use ./ressources/creator.png>
-Package pdftex.def Info: ./ressources/creator.png  used on input line 176.
-(pdftex.def)             Requested size: 211.386pt x 250.53156pt.
- 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 143.
+
+
 AED: lastpage setting LastPage
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
-
- []
-
-[9 <./ressources/creator.png>] (rapport.aux)
+[6] (rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 4E1133297FBD96A3D296F9FAFFEEC02B;1993.
+(rerunfilecheck)             Checksum: 7BC09A408697B91A99279E910EE3F3F2;3000.
  ) 
 Here is how much of TeX's memory you used:
- 12615 strings out of 479334
- 191446 string characters out of 2857084
- 684211 words of memory out of 3000000
- 29888 multiletter control sequences out of 15000+200000
- 416132 words of font info for 51 fonts, out of 3000000 for 9000
+ 12579 strings out of 479334
+ 190560 string characters out of 2857084
+ 684212 words of memory out of 3000000
+ 29861 multiletter control sequences out of 15000+200000
+ 415369 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,9n,79p,487b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1000.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\eccc1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Miste\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-Output written on rapport.pdf (11 pages, 252402 bytes).
+ 71i,7n,79p,487b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+Output written on rapport.pdf (8 pages, 192596 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 429 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

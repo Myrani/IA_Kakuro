@@ -135,51 +135,20 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 
 
 \newpage
-Voici un exemple pour illustrer ce travail : 
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[scale=0.5]{./ressources/retrait.png} 
-  \end{center}
-  \caption{Avant et après avoir sélectionné le nombre 5 dans une ligne}
-\end{figure} 
+\section{Conception du programme : Front-end}
 
-On voit que lorsque l'on sélectionne le nombre 5, il est retiré des nombres disponibles car il ne peut apparaître qu'une fois dans une ligne. \\ \\
-Pour ce qui est de la "heat map" (coloration des cases), elle permet de colorer si on le souhaite les cases qui nous paraissent les plus intéressantes à jouer. Plus la case est foncée, plus elle est intéressante car permettant de débloquer d'autres cases après cette dernière. \\ \\
-Enfin, on peut créer sa propre grille via le front-end et le back-end se permettra de la sauvegarder et de la ré-ouvrir si on le souhaite. 
-\newpage
-\subsection{Front-end}
-Le front-end permet l'affichage de la grille et permet à l'utilisateur d'interagir avec le back-end. Il s'agit d'une interface graphique. \\ Cette dernière est réalisée grâce au module PyQt. Le front-end va récupérer les information du back-end et les interpréter et les afficher de manière "lisible" afin que l'utilisateur puisse y avoir accès. \\ \\
-Le front-end est divisé en plusieurs fenêtres, la première, celle qui accueille l'utilisateur, permet de sélectionner la grille de kakuro souhaitée. Une fois la grille sélectionnée la fenêtre "helper's side" s'affiche. \\ \\ 
-Cette fenêtre est peut-être la plus importante du sujet, elle pemret d'avoir accès aux fonctions du back-end les plus importantes de ce logiciel d'aide à la résolution de kakuro. \\
- \begin{figure}[ht]
-  \begin{center}
-    \includegraphics[scale=0.4]{./ressources/helperside.png} 
-  \end{center}
-  \caption{La grille affichée par l'interface graphique}
-\end{figure}
+\subsection{Main$\_$Window}
+\subsection{Solver$\_$Window}
+\subsection{Loader$\_$Window}
+\subsection{Creator$\_$Window}
+\subsection{Dossiers de sauvegardes}
 
-\newpage
-Les cases du haut servent à afficher les différentes options disponibles  : la heat map et l'affichage des valeurs possibles. 
+\section{Le logiciel final}
+\section{Améliorations possibles}
 
-\begin{figure}[ht]
-  \centering
-  \subfloat[Heat map]{\includegraphics[scale=0.34]{./ressources/heatmap.png}}
-  \qquad
-  \subfloat[Valeurs possibles]{\includegraphics[scale=0.34]{./ressources/valPoss.png}}
-  \caption{Exemple des options disponibles}
-\end{figure}
-\newpage
-La dernière fenêtre est celle de création de grille. elle permet de créer sa propre grille si l'on veut utiliser le logiciel pour une grille spécifique. 
 
- \begin{figure}[ht]
-  \begin{center}
-    \includegraphics[scale=0.4]{./ressources/creator.png} 
-  \end{center}
-  \caption{L'outil d'édition de grille}
-\end{figure}
-Pour ce qui est du style de l'interface graphique, nous avons opté pour un design simple et sombre afin d'avoir un logiciel au visuel épuré et lisible. 
-\section{Éventuelles améliorations}
-Ce logiciel n'est pas parfait et au vu du temps que nous avions pour le réaliser, nous n'avons pas eu le temps d'y intégrer toutes les options que nous aurions voulu. \\
-Par exemple, nous aurions pu mettre un bouton de résolution automatique d'une grille dans le cas où un utilisateur souhaiterai vérifier le bon remplissage d'une grille. \\
+\section{Annexes}
+
+
 \end{document}
 
