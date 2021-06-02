@@ -120,10 +120,11 @@ Ces deux fonctions sont executées par la methode $set$\_$Objective$\_$Propagati
 Quant à la méthode $findCommonNumberForLenght$, elle permet de créer deux sets constitué des solutions possibles à la résolution d'une case en prenant en compte les objectifs et longueurs de chaque contraintes. \\ \\ Le tout étant appelé dans $set$\_$Possible$\_$Values$\_$Mapping$ retournant un kakuro avec toutes les valeures possibles attribuées à chaque cases. 
 
 \subsubsection{Saving$\_$Logic : la gestion de sauvegardes}
-Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro serait impossible car c'est ce fichier qui permet de les gérer. \\
-Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$, qui est simplement un dump mémoire de l'objet voulut.  \\
-Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\
+Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro serait impossible car c'est ce fichier qui permet de les gérer. \\ \\
+Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$, qui est simplement un dump mémoire de l'objet voulut.  \\ \\
+Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\ \\
 La méthode $push$\_$Save$ permet d'écrire un fichier au format $.pkl$ du nom de $save.pkl$. \\ \\
+La méthode $push\_Creator$ qui permet d'extraire le kakuro  actuel du createur puis d'attribuer une heatmap et les valeures possibles sur chaques cases pour ensuite le stocker sous le nom save.pkl dale fichier Save Creator Result. \\ \\ 
 La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante : \\
 \begin{enumerate}
 \item[-] Vérifie si un fichier "save" est disponible\\
