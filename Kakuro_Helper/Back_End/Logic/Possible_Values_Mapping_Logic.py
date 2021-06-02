@@ -1,7 +1,7 @@
 import pickle
 # Fichier concernant la partie logique de recommendation de coup à jouer
 
-from Back_End.Logic.Saving_Logic import load_Sums
+#from Back_End.Logic.Saving_Logic import load_Sums
 
 # Propagation des objectifs par ligne sur chaque cases concernées
 
