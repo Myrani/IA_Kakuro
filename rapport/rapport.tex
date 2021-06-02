@@ -1,8 +1,8 @@
-\documentclass[12pt]{article}
+\documentclass[french,12pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+\usepackage{babel}
 \usepackage{hyperref}
 \usepackage{lastpage}
 \usepackage{graphicx}
@@ -10,8 +10,10 @@
 \usepackage{subfig}
 
 
+
 \begin{document}
 \begin{titlepage}
+
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \setlength{\topmargin}{0in}
 \begin{minipage}{0.4\textwidth}
@@ -149,10 +151,9 @@ Voici la liste de ces fenêtres : \\
 
 Pour ce qui est du style de l'interface graphique nous avons opté pour un design simple et sombre (pour préserver le confort des yeux) qui permet de se concentrer sur la grille et les fonctionnalités proposées. On a donc une palette de couleurs allant du gris foncé au gris clair et du orange pastel pour la heat map.
 \newpage
-\subsection{Main$\_$Window : initialisation de l'IU}
+\subsection{Main$\_$Window : La base de L'UI}
 
-$Main$\_$Window.py$ est le fichier qui va permettre d'initialiser l'interface graphique. Il importe le back-end ainsi que toues les windows et évidement les modules nécessaires au bon fonctionnement de $PyQt$. \\  \\
-Dans cette classe il y a quatres grandes méthodes : \\
+$Main$\_$Window.py$ est le fichier qui va permettre d'initialiser la fenêtre principale qui contiendra toutes les variables importantes du côté back-end pour la session actuelle et hébergera aussi la logique de navigation entre chaque fenêtre, en effet ,sous PyQt5, le changement dynamique d'une fenêtre n'est pas supporté avec l'achitecture de base, c'est un initialisant un widget "Central" qu'on viendra override, puis ré-affchier que nous sommes arrivés à une interface dynamiqe. \\
 \begin{enumerate}
 	\item[-] $\_$init$\_$ 
 	\item[-] startSolverWindow  
@@ -160,13 +161,13 @@ Dans cette classe il y a quatres grandes méthodes : \\
 	\item[-] startLoaderWindow \\
 \end{enumerate}
 Voici les détails de ces méthodes : \\ \\
-La méthode $\_$init$\_$ permet de paramétrer l'interface graphique et d'appeler le back-end. On y trouves les paramètres les plus importants comme la taille de la fenêtre, l'appel du dictionnaire et de la grille de Kakuro, les paramètres de styles généraux ainsi que le lancement de la fenetre $LoaderWindow$. \\ \\
+La méthode $\_$init$\_$ permet de paramétrer l'interface graphique et d'instancier les variables back-end. On y trouves les paramètres les plus importants comme la taille de la fenêtre, les kakuros logiques,le dictionnaire des sommes, les paramètres de styles généraux ainsi que le premièr apel à méthode d'instanciation de la fenêtre Loader, qui sera le point de départ pour l'utilisateur. \\ \\
 
-$startSolverWindow$, $startCreatorWindow$ et $startLoaderWindow$, comme leur nom l'indique clairement, permettent de lancer les fenêtre de résolution de grilles, de création de grilles ainsi que la fenêtre de choix de grille. \\ \\
+$startSolverWindow$, $startCreatorWindow$ et $startLoaderWindow$, comme leur nom l'indique clairement, permettent de d'instancier les widgets des fenêtres de résolution de grilles, de création de grilles ainsi que la fenêtre de choix de grille et d'override le central widget avec le contenu venant d'être créer. \\ \\
 
 Le fichier $Main$\_$Window.py$ est donc la base de l'interface graphique, nous allons maintenant détailler les trois autres window ainsi que les widgets qu'elles utilisent. 
 
-\newpage
+
 
 
 \subsection{Solver$\_$Window : la fenêtre principale}
@@ -178,8 +179,8 @@ Pour ce qui est du code au sein de $Solver$\_$Window.py$, il est agencé de la m
 \begin{itemize}
 	\item[-] Un constructeur 
 	\item[-] Une fonction d'initialisation de la fenêtre qui appelle les widgets 				nécessaires
-	\item[-] Une méthode $createMenuLayout$ qui permet de créer le menu de la tête de 			fenêtre
-	\item[-] Ainsi que la plus grosse méthode : $createKakuroSolverLayout$ qui permet de 		créer la grille centrale et d'y interagir. \\
+	\item[-] Une méthode $createMenuLayout$ qui permet de créer le menu de sélection de filtres et de navigation
+	\item[-] Ainsi que la plus grosse méthode : $createKakuroSolverLayout$ qui permet de créer la grille centrale. \\
 \end{itemize}
 
 $createKakuroSolverLayout$ est la méthode qui permet l'affichage de la grille au milieu de la fenêtre et qui permet d'appeler les fonctions d'aide fournies par le back-end. \\

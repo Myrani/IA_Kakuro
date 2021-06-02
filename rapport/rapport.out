@@ -1,21 +1,21 @@
-\BOOKMARK [1][-]{section.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000t\000i\000o\000n}{}% 1
-\BOOKMARK [1][-]{section.2}{\376\377\000U\000t\000i\000l\000i\000s\000a\000t\000i\000o\000n\000\040\000d\000u\000\040\000p\000r\000o\000g\000r\000a\000m\000m\000e}{}% 2
-\BOOKMARK [1][-]{section.3}{\376\377\000C\000o\000n\000c\000e\000p\000t\000i\000o\000n\000\040\000d\000u\000\040\000p\000r\000o\000g\000r\000a\000m\000m\000e\000\040\000:\000\040\000B\000a\000c\000k\000-\000e\000n\000d}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{\376\377\000G\000r\000i\000d\000\137\000L\000o\000g\000i\000c\000:\000\040\000l\000a\000\040\000c\000r\000\351\000a\000t\000i\000o\000n\000\040\000d\000e\000\040\000l\000a\000\040\000g\000r\000i\000l\000l\000e}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{\376\377\000H\000e\000a\000t\000\137\000M\000a\000p\000p\000i\000n\000g\000\137\000L\000o\000g\000i\000c\000\040\000:\000\040\000c\000o\000l\000o\000r\000a\000t\000i\000o\000n\000\040\000d\000'\000u\000n\000e\000\040\000g\000r\000i\000l\000l\000e}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{\376\377\000P\000o\000s\000s\000i\000b\000l\000e\000\137\000V\000a\000l\000u\000e\000s\000\137\000M\000a\000p\000p\000i\000n\000g\000\137\000L\000o\000g\000i\000c\000\040\000:\000\040\000g\000u\000i\000d\000e\000\040\000d\000u\000\040\000r\000e\000m\000p\000l\000i\000s\000s\000a\000g\000e\000\040\000d\000e\000s\000\040\000c\000a\000s\000e\000s}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.4}{\376\377\000S\000a\000v\000i\000n\000g\000\137\000L\000o\000g\000i\000c\000\040\000:\000\040\000l\000e\000\040\000f\000i\000c\000h\000i\000e\000r\000\040\000d\000e\000\040\000s\000a\000u\000v\000e\000g\000a\000r\000d\000e}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{\376\377\000C\000o\000n\000c\000e\000p\000t\000i\000o\000n\000\040\000d\000u\000\040\000p\000r\000o\000g\000r\000a\000m\000m\000e\000\040\000:\000\040\000F\000r\000o\000n\000t\000-\000e\000n\000d}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{\376\377\000M\000a\000i\000n\000\137\000W\000i\000n\000d\000o\000w\000\040\000:\000\040\000i\000n\000i\000t\000i\000a\000l\000i\000s\000a\000t\000i\000o\000n\000\040\000d\000e\000\040\000l\000'\000I\000U}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{\376\377\000S\000o\000l\000v\000e\000r\000\137\000W\000i\000n\000d\000o\000w\000\040\000:\000\040\000l\000a\000\040\000f\000e\000n\000\352\000t\000r\000e\000\040\000p\000r\000i\000n\000c\000i\000p\000a\000l\000e}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.3}{\376\377\000L\000o\000a\000d\000e\000r\000\137\000W\000i\000n\000d\000o\000w\000,\000\040\000p\000a\000g\000e\000\040\000d\000e\000\040\000c\000h\000a\000r\000g\000e\000m\000e\000n\000t\000\040\000d\000e\000\040\000g\000r\000i\000l\000l\000e\000s}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.4}{\376\377\000C\000r\000e\000a\000t\000o\000r\000\137\000W\000i\000n\000d\000o\000w}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.5}{\376\377\000W\000i\000d\000g\000e\000t\000s\000\040\000u\000t\000i\000l\000i\000s\000\351\000s}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.5.1}{\376\377\000C\000o\000n\000t\000e\000n\000t\000\137\000B\000u\000t\000t\000o\000n\000\137\000W\000i\000d\000g\000e\000t}{subsection.4.5}% 14
-\BOOKMARK [3][-]{subsubsection.4.5.2}{\376\377\000D\000i\000v\000i\000d\000e\000d\000\137\000L\000a\000b\000e\000l\000\137\000W\000i\000d\000g\000e\000t}{subsection.4.5}% 15
-\BOOKMARK [3][-]{subsubsection.4.5.3}{\376\377\000L\000o\000a\000d\000e\000r\000\137\000B\000u\000t\000t\000o\000n\000\137\000W\000i\000d\000g\000e\000t}{subsection.4.5}% 16
-\BOOKMARK [3][-]{subsubsection.4.5.4}{\376\377\000M\000o\000r\000p\000h\000i\000n\000g\000\137\000L\000a\000b\000e\000l}{subsection.4.5}% 17
-\BOOKMARK [2][-]{subsection.4.6}{\376\377\000D\000o\000s\000s\000i\000e\000r\000s\000\040\000d\000e\000\040\000s\000a\000u\000v\000e\000g\000a\000r\000d\000e\000s}{section.4}% 18
-\BOOKMARK [1][-]{section.5}{\376\377\000L\000e\000\040\000l\000o\000g\000i\000c\000i\000e\000l\000\040\000d\000a\000n\000s\000\040\000s\000o\000n\000\040\000e\000n\000s\000e\000m\000b\000l\000e}{}% 19
-\BOOKMARK [1][-]{section.6}{\376\377\000A\000m\000\351\000l\000i\000o\000r\000a\000t\000i\000o\000n\000s\000\040\000p\000o\000s\000s\000i\000b\000l\000e\000s}{}% 20
-\BOOKMARK [1][-]{section.7}{\376\377\000A\000n\000n\000e\000x\000e\000s}{}% 21
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Utilisation du programme}{}% 2
+\BOOKMARK [1][-]{section.3}{Conception du programme : Back-end}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Grid\137Logic: la cr\351ation de la grille}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Heat\137Mapping\137Logic : coloration d'une grille}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Possible\137Values\137Mapping\137Logic : guide du remplissage des cases}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Saving\137Logic : le fichier de sauvegarde}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Conception du programme : Front-end}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Main\137Window : La base de L'UI}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Solver\137Window : la fen\352tre principale}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Loader\137Window, page de chargement de grilles}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Creator\137Window}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.5}{Widgets utilis\351s}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Content\137Button\137Widget}{subsection.4.5}% 14
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Divided\137Label\137Widget}{subsection.4.5}% 15
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Loader\137Button\137Widget}{subsection.4.5}% 16
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Morphing\137Label}{subsection.4.5}% 17
+\BOOKMARK [2][-]{subsection.4.6}{Dossiers de sauvegardes}{section.4}% 18
+\BOOKMARK [1][-]{section.5}{Le logiciel dans son ensemble}{}% 19
+\BOOKMARK [1][-]{section.6}{Am\351liorations possibles}{}% 20
+\BOOKMARK [1][-]{section.7}{Annexes}{}% 21

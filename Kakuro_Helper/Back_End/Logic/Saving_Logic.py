@@ -38,6 +38,7 @@ def load_Kakuro_From_File(filename):
     return grille
 
 
+# Permet d'écrire le kakuro en paramètre dans un fichier pkl
 def push_Save(kakuro):
 
     with open('Save/save.pkl', 'wb') as save_instruction:

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="109.745 136.127 903.589 711.729" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="square" id="id2125430722">
+            <rect x="130.7448107448105" y="548.1855921855918" width="231.1666666666675" height="231.1666666666675" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id219903381">
+            <rect x="416.33333333333303" y="157.1271367521366" width="248.55128205128312" height="248.55128205128312" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id520610042">
+            <rect x="754.3333333333336" y="533.8386752136755" width="237.99999999999955" height="237.99999999999955" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="square" id="id570339062">
+            <rect x="430.69696969697105" y="602.1892135642161" width="224.66666666666532" height="224.66666666666532" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id899896034">
+            <polyline points="438.5974025974034,320.07367632367675 226.59740259740303,546.9308191808201 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1120793590">
+            <polyline points="656.3636363636369,726.9659090909095 754.5454545454554,681.511363636364 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1028804196" fill="black" latexdraw:position="bl">
+            <text x="480.0000000000007" y="194.2386363636365">Main Window</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id879651431">
+            <rect x="439.357142857143" y="230.67857142857136" width="202.5" height="151.07142857142904" latexdraw:borderPos="outer" stroke="black" stroke-width="2.0" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id484940883" fill="black" latexdraw:position="bl">
+            <text x="480.0" y="264.1785714285718">Central Widget</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1197874251">
+            <polyline points="361.42857142857156,715.6071428571431 434.28571428571445,748.4642857142862 " stroke="black" stroke-width="2.0" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1266223956" fill="black" latexdraw:position="bl">
+            <text x="175.71428571428598" y="582.7500000000005">Loader Window</text>
+        </g>
+        <g latexdraw:type="text" id="id1005784959" fill="black" latexdraw:position="bl">
+            <text x="478.5714285714285" y="634.1785714285718">Solver Window</text>
+        </g>
+        <g latexdraw:type="text" id="id856719886" fill="black" latexdraw:position="bl">
+            <text x="798.5714285714288" y="575.6071428571429">Creator Window</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:caption>Architecture Logique</latexdraw:caption>
+            <latexdraw:centreHoriz>false</latexdraw:centreHoriz>
+            <latexdraw:positionVert/>
+            <latexdraw:zoom>0.6999999999999997</latexdraw:zoom>
+            <latexdraw:vpx>0.478</latexdraw:vpx>
+            <latexdraw:vpy>0.518</latexdraw:vpy>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

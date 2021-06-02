@@ -29,7 +29,7 @@ class ContentButton(QtWidgets.QPushButton):
         # Si le boutton n'est pas sélectionné , alors rajoute une contrainte en haut,bas,droite et à gauche de la case actuelle
         if not self.selected:
 
-            # rajoute le bouton à la liste des values préssée sur cette case
+            # rajoute le bouton à la liste des values préssées sur cette case
             self.kakuro_solver_ref[self.x][self.y][5].append(
                 int(self.content))
 

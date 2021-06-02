@@ -1,4 +1,4 @@
-\babel@toc {french}{}
+\babel@toc {nil}{}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {section}{\numberline {2}Utilisation du programme}{1}{section.2}%
 \contentsline {section}{\numberline {3}Conception du programme : Back-end}{2}{section.3}%
@@ -6,17 +6,17 @@
 \contentsline {subsection}{\numberline {3.2}Heat$\_$Mapping$\_$Logic : coloration d'une grille}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}{4}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Saving$\_$Logic : le fichier de sauvegarde}{4}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Conception du programme : Front-end}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Main$\_$Window : initialisation de l'IU}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Solver$\_$Window : la fenêtre principale}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Loader$\_$Window, page de chargement de grilles}{9}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Creator$\_$Window}{9}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Widgets utilisés}{11}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Content$\_$Button$\_$Widget}{11}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Divided$\_$Label$\_$Widget}{12}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Loader$\_$Button$\_$Widget}{12}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Morphing$\_$Label}{12}{subsubsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.6}Dossiers de sauvegardes}{12}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Le logiciel dans son ensemble}{13}{section.5}%
-\contentsline {section}{\numberline {6}Améliorations possibles}{13}{section.6}%
-\contentsline {section}{\numberline {7}Annexes}{14}{section.7}%
+\contentsline {section}{\numberline {4}Conception du programme : Front-end}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Main$\_$Window : La base de L'UI}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Solver$\_$Window : la fenêtre principale}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Loader$\_$Window, page de chargement de grilles}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Creator$\_$Window}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Widgets utilisés}{12}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Content$\_$Button$\_$Widget}{12}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Divided$\_$Label$\_$Widget}{13}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Loader$\_$Button$\_$Widget}{13}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Morphing$\_$Label}{13}{subsubsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.6}Dossiers de sauvegardes}{13}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Le logiciel dans son ensemble}{14}{section.5}%
+\contentsline {section}{\numberline {6}Améliorations possibles}{14}{section.6}%
+\contentsline {section}{\numberline {7}Annexes}{15}{section.7}%
