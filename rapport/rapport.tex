@@ -58,7 +58,7 @@
 \section{Introduction}
 Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
-Pour réaliser ce projet, nous avons choisi Python, langage permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenter avec cette librairie, nous avons fait un gain de temps majeur sur le temps de dévellopement avec ces choix.
+Pour réaliser ce projet, nous avons choisi le langage Python, permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenter avec cette librairie, nous avons fait un gain de temps majeur sur le temps de dévellopement avec ces choix.
 \section{Guide d'utilisation du programme}
 Afin d'éxecuter le logiciel il faut avoir installé :
 \begin{enumerate}
@@ -74,33 +74,32 @@ Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kaku
 
 \newpage
 \section{Conception du programme : Back-end}
-Le projet est divisé en deux grosses parties, la première est le back-en et se trouve dans le répertoire du même nom. La deuxième est le front-end et se trouve elle aussi dans un répertoire qui porte son nom.
-\\ \\
-Le code présent dans le répertoire back-end constitue le cœur du logiciel. Il correspond aux méthodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". Il s'agit du travail en arrière plan que l'utilisateur ne verra pas et qui sera utilisé par la partie front-end pour interagir avec l'utilisateur.
-Le back-end correspond à la partie que l'utilisateur ne verra pas, il s'agit du travail en arrière plan que le front-end va afficher à l'utilisateur. \\ \\ 
+Le code présent dans le répertoire back-end constitue le cœur logique du logiciel. Il correspond aux méthodes qui vont permettre de créer un grille, y associer des valeurs à jouer ou  encore une "heat map". Il s'agit du travail en arrière plan que l'utilisateur ne verra pas et qui sera utilisé par la partie front-end pour interagir avec l'utilisateur.
+\\ \\ 
 Le back-end est constitué de deux sous parties : la partie Logic et les Ressources qui pourront être utilisées. \\ \\
-La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources nécessaires au bon fonctionnement du back-end (dictionnaire des sommes).
+La partie Logic contient les fonctions de calcul des filtres et la gestion des sauvegrdes du logiciel et la partie Ressources contient les ressources nécessaires au bon fonctionnement du back-end,pour l'instant uniquement le  dictionnaire des sommes .
 
  
 \subsection{Logique}
 \subsubsection{Grid$\_$Logic: la création de la grille}
 Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de gérer la création des grilles de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
-La méthode $grid$\_$Maker$\_$Creator$ permet de créer une grille vide et la rempli avec une liste d'instructions. \\
-Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
+Dans notre logiciel, une grille classique par défault est constituée de 7 fois 7 cases soit 49 cases, chaque case logique est en fait une liste s'étantant sur 6 éléments . \\
+
 \newpage
-Il y a six éléments stockés dans une case : \\ \\
+Il y a six éléments stockés dans une case : \\
 \begin{enumerate}
-\item[-] Case jouable/non jouable
-\item[-] Case de type "heat" (utilisée pour la heat map qui sera détaillée plus loin)
-\item[-] Liste des objectifs de la case
-\item[-] Liste des valeurs possibles de la case
-\item[-] Liste des valeures Contraintes
-\item[-] Cases sélectionnées
-\end{enumerate} 
+\item[-] String : Type de Case
+\item[-] Int : Case de type "heat" (utilisée pour la heat map qui sera détaillée plus loin)
+\item[-] List :Liste des objectifs de la case
+\item[-] List :Liste des valeurs possibles de la case
+\item[-] List :Liste des valeures Contraintes
+\item[-] List :Cases sélectionnées
+\end{enumerate}
+Ici nous avous voulu tirer parti de la flexibilité que python a à l'égard de la gestion des types en ne créant qu'une seule variable pour grille
 
 \subsubsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
 
-Le fichier $Heat$\_$Mapping$\_$Logic.py$ contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera colorée. \\
+Le fichier $Heat$\_$Mapping$\_$Logic.py$ contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera claire. \\
 Pour ce faire, dans le tableau une valeur sera attribuée en fonction du nombre de cases libres dans chaque lignes de la grille. Cette valeur est un poids, plus elle est élevée et plus la case sera colorée sur l'interface graphique.  \\ \\
 
 Le fichier est constitué des fonctions suivantes : \\
@@ -110,20 +109,19 @@ Le fichier est constitué des fonctions suivantes : \\
 
 \item[]$heat$\_$Mapping$\_$Column$ : même fonctionnement que la fonction ci-dessus mais parcours dans le sens des colonnes. \\
 
-\item[]$Set$\_$Heat$\_$Mapping$ : permet de définir le poids de bases et de retourner le Kakuro coloré.\\
+\item[]$Set$\_$Heat$\_$Mapping$ : permet d'appeller les 2 fonctions, de set le poids de bases et de retourner le Kakuro avec une heat map.\\
 \end{itemize}
 
 \subsubsection{Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}
-Le fichier $Possible$\_$Values$\_$Mapping$\_$Logic.py$ permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides la recommandation de chiffres à placer. \\ \\
-C'est l'un des fichier le plus important car il contient la fonction qui permet de charger la ressource sums.pkl. \\ \\
+Le fichier $Possible$\_$Values$\_$Mapping$\_$Logic.py$ permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides les recommandations de chiffres à placer. \\ \\
 
-Les fonctions $objective$\_$Propagation$\_$Row$ et $objective$\_$Propagation$\_$Row$ permettent de parcourir la grille (verticalement et horizontalement) et permettent d'attribuer des valeurs dans le Kakuro en fonction des lignes. \\
+Les fonctions $objective$\_$Propagation$\_$Row$ et $objective$\_$Propagation$\_$Row$ permettent de parcourir la grille (verticalement et horizontalement) et permettent d'attribuer à chaque cases jouables des objectif et contraintes de jeu pour le calcul des valeures possibles. \\
 Ces deux fonctions sont executées par la methode $set$\_$Objective$\_$Propagation$. \\ \\
-Quant à la méthode $findCommonNumberForLenght$, elle permet de créer deux tableaux constitué des solutions possibles à la résolution d'une ligne de Kakuro et ce en parcourant la grille horizontalement et verticalement. Cette méthode est appelée dans $set$\_$Possible$\_$Values$\_$Mapping$. 
+Quant à la méthode $findCommonNumberForLenght$, elle permet de créer deux sets constitué des solutions possibles à la résolution d'une case en prenant en compte les objectifs et longueurs de chaque contraintes. \\ \\ Le tout étant appelé dans $set$\_$Possible$\_$Values$\_$Mapping$ retournant un kakuro avec toutes les valeures possibles attribuées à chaque cases. 
 
-\subsubsection{Saving$\_$Logic : le fichier de sauvegarde}
+\subsubsection{Saving$\_$Logic : la gestion de sauvegardes}
 Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro serait impossible car c'est ce fichier qui permet de les gérer. \\
-Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$.  \\
+Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$, qui est simplement un dump mémoire de l'objet voulut.  \\
 Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\
 La méthode $push$\_$Save$ permet d'écrire un fichier au format $.pkl$ du nom de $save.pkl$. \\ \\
 La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante : \\
@@ -246,24 +244,19 @@ Les widgets permettent de créer des portions de code plus facilement implément
 
 \subsubsection{Content$\_$Button$\_$Widget}
 Ce widget est utilisé pour les boutons au sein des cases servant à selectionner des valeurs à jouer. Il permet aussi de créer les contraintes. C'est le widget qui gère le contenu des cases au sein des grilles et est donc un widget particulièrement important. \\ \\
-La méthode $change$\_$Content$ permet de créer les boutons au sein des cases ainsi que de cacher un bouton si il est sélectionné.   \\
-Dans le fonctionnent, si un bouton est séléctionné alors la valeur ne peut pas être présente dans la ligne, on va donc utiliser les méthodes de propagation qui vont permettre de retirer la valeur dans toute la ligne afin qu'elle ne soit jouable qu'une fois.
+Dans le fonctionnent, la méthode $change$\_$Content$ gère tout ,si un ContentButon est séléctionné alors la valeur ne peut pas être présente dans la ligne, on va donc utiliser les méthodes de propagation qui vont permettre de retirer la valeur dans toute la ligne afin qu'elle ne soit jouable qu'une fois et rahoute le boutons à liste des boutons préssés, quand l'utilisateur désélectionne le bouton, l'inverse se passe , propagation de la libération de contraintes, on retire le bouton actuel de la liste des boutons préssés. 
 \\
-
-
 
 
 \newpage
 \subsubsection{Divided$\_$Label$\_$Widget}
 
-Ce widget sert à créer les neuf boutons au sein d'une case, ils sont tous crées au préalable et seront affichés ou non en fonction des lignes de jeu par le code qui utilisera ces boutons en question. \\
-Ce widget est court et relativement simple et ne contient qu'un constructeur, il est crée pour être appelé dans le code des fenêtres. 
+Ce widget sert à créer au miaximum neuf ContentButtons au sein d'une case représentant au les coups possibles et seront affichés ou non en fonction des lignes des contraintes de jeu imposées par l'utilisateur . \\
+Ce widget est court, relativement simple et ne contient que peu de logique,juste le calcul de l'ensemble des valeures possibles moins celui des contraintes et une recherche dans la liste des valeures préssées si des boutons ont étaient là aussi sélectionnés par l'utilisateur. 
 
 \subsubsection{Loader$\_$Button$\_$Widget}
 
-les $LoaderButtons$ sont générés dans la fenêtre $Loader$\_$Window.py$ et servent à charger le nom d'un fichier au format $.pkl$ récupérer à la suite d'un apel de la fonction $get_All_Saves$ et à l'afficher dans un bouton sur la page de chargement de grilles. \\
-Tout comme le widget $DividedLabel$, celui ci est aussi très court et n'est utilisé que dans $Loader$\_$Window.py$.
-
+Les $LoaderButtons$ sont générés dans la fenêtre $Loader$\_$Window.py$ et servent à charger un fichier au format $.pkl$ dans le programme pour l'utiliser dans le solver.Utiliser de pair avec la fonction $get_All_Saves$ pour créer un LoaderButton pour chaque fichier de sauvegarde trouvés. \\
 
 
 \subsubsection{Morphing$\_$Label}
@@ -279,7 +272,6 @@ Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier $Save$\_
 
 \section{Le logiciel dans son ensemble}
 
-Le logiciel est donc contistué du back-end, toute la partie "calcul et travail" et du front-end, la partie affichage. \\
 Voici un exemple d'utilisation du logiciel : si un utilisateur veut résoudre une grille de Kakuro il peut lancer le logiciel et entrer dans l'éditeur de grilles, après avoir spécifié la taille de sa grille il peut commencer à l'éditer. Une fois cela fait il peut enregistrer sa grille et mettre la sauvegarde au format $.pkl$ dans le dossier $Save$. \\ Une fois cela fait il peut désormais utiliser le logiciel pour charger son Kakuro et l'utiliser pour s'aider à résoudre sa grille grâce à la heat map et aux indications de coups à jouer. 
 
 \section{Améliorations possibles}

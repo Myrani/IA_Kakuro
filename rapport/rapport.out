@@ -5,7 +5,7 @@
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Grid\137Logic: la cr\351ation de la grille}{subsection.3.1}% 5
 \BOOKMARK [3][-]{subsubsection.3.1.2}{Heat\137Mapping\137Logic : coloration d'une grille}{subsection.3.1}% 6
 \BOOKMARK [3][-]{subsubsection.3.1.3}{Possible\137Values\137Mapping\137Logic : guide du remplissage des cases}{subsection.3.1}% 7
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Saving\137Logic : le fichier de sauvegarde}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Saving\137Logic : la gestion de sauvegardes}{subsection.3.1}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Ressources}{section.3}% 9
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Dictionnaire des sommes}{subsection.3.2}% 10
 \BOOKMARK [1][-]{section.4}{Conception du programme : Front-end}{}% 11

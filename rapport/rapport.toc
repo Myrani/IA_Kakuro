@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Grid$\_$Logic: la création de la grille}{2}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Heat$\_$Mapping$\_$Logic : coloration d'une grille}{3}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}{4}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Saving$\_$Logic : le fichier de sauvegarde}{4}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4}Saving$\_$Logic : la gestion de sauvegardes}{4}{subsubsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.2}Ressources}{5}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Dictionnaire des sommes}{5}{subsubsection.3.2.1}%
 \contentsline {section}{\numberline {4}Conception du programme : Front-end}{6}{section.4}%
