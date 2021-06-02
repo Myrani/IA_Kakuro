@@ -141,10 +141,10 @@ L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette derni�
 Voici la liste de ces fenêtres : \\
 
 \begin{enumerate}
-\item[-] Une fenêtre d'accueil permettant de sélectionner une grille  \\
-\item[-] Une fenêtre de jeu permettant d'avoir accès aux options d'aide à la résolution de la grille de Kakuro que l'on aura sélectionné. \\
-\item[-] Une fenêtre de création de grille qui permettra de créer et sauvegarder sa propre grille de Kakuro. \\
-Enfin, c'est dans la partie $Front$\_$End$ que l'on trouve les dossiers de sauvegardes, à savoir $Save$ et $Save$\_$Creator$\_$Result$. \\
+	\item[-] Une fenêtre d'accueil permettant de sélectionner une grille  \\
+	\item[-] Une fenêtre de jeu permettant d'avoir accès aux options d'aide à la 				résolution de la grille de Kakuro que l'on aura sélectionné. \\
+	\item[-] Une fenêtre de création de grille qui permettra de créer et sauvegarder sa 		propre grille de Kakuro. \\
+	Enfin, c'est dans la partie $Front$\_$End$ que l'on trouve les dossiers de 					sauvegardes, à savoir $Save$ et $Save$\_$Creator$\_$Result$. \\
 \end{enumerate}
 
 Pour ce qui est du style de l'interface graphique nous avons opté pour un design simple et sombre (pour préserver le confort des yeux) qui permet de se concentrer sur la grille et les fonctionnalités proposées. On a donc une palette de couleurs allant du gris foncé au gris clair et du orange pastel pour la heat map.
@@ -154,10 +154,10 @@ Pour ce qui est du style de l'interface graphique nous avons opté pour un desig
 $Main$\_$Window.py$ est le fichier qui va permettre d'initialiser l'interface graphique. Il importe le back-end ainsi que toues les windows et évidement les modules nécessaires au bon fonctionnement de $PyQt$. \\  \\
 Dans cette classe il y a quatres grandes méthodes : \\
 \begin{enumerate}
-\item[-] $\_$init$\_$ 
-\item[-] startSolverWindow  
-\item[-] startCreatorWindow 
-\item[-] startLoaderWindow \\
+	\item[-] $\_$init$\_$ 
+	\item[-] startSolverWindow  
+	\item[-] startCreatorWindow 
+	\item[-] startLoaderWindow \\
 \end{enumerate}
 Voici les détails de ces méthodes : \\ \\
 La méthode $\_$init$\_$ permet de paramétrer l'interface graphique et d'appeler le back-end. On y trouves les paramètres les plus importants comme la taille de la fenêtre, l'appel du dictionnaire et de la grille de Kakuro, les paramètres de styles généraux ainsi que le lancement de la fenetre $LoaderWindow$. \\ \\
@@ -176,10 +176,10 @@ L'affichage de la fenêtre est simple : en tête un menu permettant de choisir o
 
 Pour ce qui est du code au sein de $Solver$\_$Window.py$, il est agencé de la manière suivante : \\ 
 \begin{itemize}
-\item[-] Un constructeur 
-\item[-] Une fonction d'initialisation de la fenêtre qui appelle les widgets nécessaires
-\item[-] Une méthode $createMenuLayout$ qui permet de créer le menu de la tête de fenêtre
-\item[-] Ainsi que la plus grosse méthode : $createKakuroSolverLayout$ qui permet de créer la grille centrale et d'y interagir. \\
+	\item[-] Un constructeur 
+	\item[-] Une fonction d'initialisation de la fenêtre qui appelle les widgets 				nécessaires
+	\item[-] Une méthode $createMenuLayout$ qui permet de créer le menu de la tête de 			fenêtre
+	\item[-] Ainsi que la plus grosse méthode : $createKakuroSolverLayout$ qui permet de 		créer la grille centrale et d'y interagir. \\
 \end{itemize}
 
 $createKakuroSolverLayout$ est la méthode qui permet l'affichage de la grille au milieu de la fenêtre et qui permet d'appeler les fonctions d'aide fournies par le back-end. \\
@@ -197,13 +197,13 @@ Une fois cela fait, lorsque l'on clique sur le bouton, la méthode $loadDefaultK
 
 \subsection{Creator$\_$Window}
 
-Parlons à présent du fichier $Creator_Window.py$. Son nom l'indique : il sert à créer la fenêtre d'édition de grille ainsi que la sauvegarde de la grille créée. C'est une fenêtre importante car elle permet à l'utilisateur de créer ses propres grilles de Kakuro afin de s'aider sur les exemples concrets. \\ \\
+Parlons à présent du fichier $Creator$\_$Window.py$. Son nom l'indique : il sert à créer la fenêtre d'édition de grille ainsi que la sauvegarde de la grille créée. C'est une fenêtre importante car elle permet à l'utilisateur de créer ses propres grilles de Kakuro afin de s'aider sur les exemples concrets. \\ \\
 La fenêtre se présente de la façon suivante : 
 
 \begin{enumerate}
-	\item[-] Une grille de bouton servant à créer le Kakuro (des flèches permettent d'alterner entre case non jouable, jouable, ou case d'instructions).
+	\item[-] Une grille de bouton servant à créer le Kakuro (des flèches permettent 			d'alterner entre case non jouable, jouable, ou case d'instructions).
 	\item[-] Le choix de la dimension de la grille
-	\item[-] Deux boutons : un vers la fenêtre d'aide à la résolutions de grilles et un autre permettant de sauvegarder la grille crée. \\
+	\item[-] Deux boutons : un vers la fenêtre d'aide à la résolutions de grilles et un 		autre permettant de sauvegarder la grille crée. \\
 \end{enumerate}
 \newpage 
 
@@ -212,26 +212,86 @@ Il y en a 5 : \\
 
 \begin{enumerate}
 	\item[-] Un constructeur qui permet de définir les paramètres de base de la fenêtre.
-	\item[-] Une fonction $init$\_$UI$ qui permet de créer l'intérieur de la fenêtre : 		styles, création de $VBox$, $layouts$ ainsi que l'affichage de la fenêtre
+	\item[-] Une fonction $init$\_$UI$ qui permet de créer l'intérieur de la fenêtre : 			styles, création de $VBox$, $layouts$ ainsi que l'affichage de la fenêtre
 	\item[-] $create$\_$meneu$\_$layout$ qui permet de créer le menu du bas.
 	\item[-] $update$\_$creator$\_$kakuro$\_$dimensions$ qui gère le changement de taille 		de la grille
 	\item[-] $create$\_$kakuro$\_$creator$\_$layout$ gère quant à elle la création de la grille d'édition (grâce au widget $Morphing$\_$Label$, détaillé plus loin).
 \end{enumerate}
+\newpage 
+
+
 
 \subsection{Widgets utilisés}
+Dans cette dernière partie dédiée au code source, nous allons aborder les widgets utilisés par les windows du front-end. \\
+Les widgets permettent de créer des portions de code facilement implémentable dans les windows ce qui rend le code moins lourd et permet de mieux le diviser. \\ \\
+Il y a quatre widgets que nous avons utilisé et qui vont être expliqués plus loin : \\
+
+\begin{enumerate}
+	\item[-] $Content$\_$Button$\_$Widget.py$
+	\item[-] $Divided$\_$Label$\_$Widget.py$
+	\item[-] $Loader$\_$Button$\_$Widget.py$
+	\item[-] $Morphing$\_$Label.py$ \\
+\end{enumerate}
+
+Voici leur utilité.
 \subsubsection{Content$\_$Button$\_$Widget}
+Ce widget est utilisé pour les boutons au sein des cases servant à selectionner des valeurs à jouer. Il permet aussi de créer les contraintes. C'est le widget qui gère le contenu des cases au sein des grilles et est donc un widget particulièrement important. \\ \\
+La méthode $change$\_$Content$ permet de créer les boutons au sein des cases ainsi que de cacher un bouton si il est sélectionné.   \\
+Dans le fonctionnent, si un bouton est séléctionné alors la valeur ne peut pas être présente dans la ligne, on va donc utiliser les méthodes de propagation qui vont permettre de retirer la valeur dans toute la ligne afin qu'elle ne soit jouable qu'une fois.
+\\
+
+
+
+
+\newpage
 \subsubsection{Divided$\_$Label$\_$Widget}
+
+Ce widget sert à créer les neuf boutons au sein d'une case, ils sont tous crées au préalable et seront affichés ou non en fonction des lignes de jeu par le code qui utilisera ces boutons en question. \\
+Ce widget est court et relativement simple et ne contient qu'un constructeur, il est crée pour être appelé dans le code des fenêtres. 
+
 \subsubsection{Loader$\_$Button$\_$Widget}
+
+$Loader$\_$Button$\_$Widget$ est utilisé dans la fenêtre $Loader$\_$Window.py$ et sert à charger le nom d'un fichier au format $.pkl$ et à l'afficher dans un bouton sur la page de chargement de grilles. \\
+Tout comme le widget $Divided$\_$Label$\_$Widget$, celui ci est aussi très court et n'est utilisé que dans $Loader$\_$Window.py$.
+
+
+
 \subsubsection{Morphing$\_$Label}
+
+Le dernier widget est $Morphing$\_$Label.py$, il permet de créer des cases dans la creator window. \\
+
+Il permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
+Le constructeur permet de spécifier les paramètres des cases : taille, contenu et type. La méthode $updateCaseType$ permet de changer le type de la case et d'alterner entre les trois types.
+
 \subsection{Dossiers de sauvegardes}
 
+Pour ce qui est des dossiers de sauvegarde, il y en a deux:  le dossier $Save$ qui contient les sauvegardes à utiliser et le dossier $Save$\_$Creator$\_$Result$ qui contient les nouvelles sauvegardes crées. \\
+Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier $Save$\_$Creator$\_$Result$ vers $Save$.
+
 \section{Le logiciel dans son ensemble}
+
+Le logiciel est donc contitué du back-end, toute la partie "calcul et travail" et du front-end, la partie affichage. \\
+Voici un exemple d'utilisation du logiciel : si un utilisateur veut résoudre une grille de Kakuro il peut lancer le logiciel et entrer dans l'éditeur de grilles, après avoir spécifié la taille de sa grille il peut commencer à l'éditer. Une fois cela fait il peut enregistrer sa grille et mettre la sauvegarde au format $.pkl$ dans le dossier $Save$. \\ Une fois cela fait il peut désormais utiliser le logiciel pour charger son Kakuro et l'utiliser pour s'aider à résoudre sa grille grâce à la heat map et aux indications de coups à jouer. 
+
 \section{Améliorations possibles}
 
+Le logiciel n'est pas parfait et certaines fonctionnalité n'ont pas été implémentées par manque de temps. \\
+Voici une liste de fonctionnalités qui auraient trouvés leur place au sein de ce logiciel : \\
 
+\begin{enumerate}
+	\item[-] Simplification du système de sauvegarde
+	\item[-] Choix du nom du fichier sauvegardé
+	\item[-] Une résolution automatique d'une grille de Kakuro afin de se corriger
+	\item[-] Amélioration du système de recommandation. 
+	\item[-] Amélioration de l'interface
+\end{enumerate}
+
+\newpage
 \section{Annexes}
 
-
+\begin{figure}
+	
+\end{figure}
 
 \end{document}
 
