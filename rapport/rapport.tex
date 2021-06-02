@@ -78,7 +78,7 @@ La partie Logic contient les fonctions du logiciel et la partie Ressources conti
  
 
 \subsection{Grid$\_$Logic: la création de la grille}
-Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de créer la grille de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
+Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de gérer la création des grilles de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
 La méthode $grid$\_$Maker$\_$Creator$ permet de créer une grille vide et la rempli avec une liste d'instructions. \\
 Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
 \newpage
@@ -185,7 +185,7 @@ Pour ce qui est du code au sein de $Solver$\_$Window.py$, il est agencé de la m
 
 $createKakuroSolverLayout$ est la méthode qui permet l'affichage de la grille au milieu de la fenêtre et qui permet d'appeler les fonctions d'aide fournies par le back-end. \\
 Elle permet d'afficher la grille, d'afficher la heat map et de fournir les valeurs possibles dans les cases à jouer. Cette méthode contient aussi les styles de la grille et de la heat map. \\
-Pour cette dernière nous avons utilisé un code couleur assez subtil : le $rgba$, ce dernière nous permet de gérer les traditionnelles valeurs rouge, vert, bleu mais aussi l'opacité des couleurs, ce dernier paramètre est particulièrement utile lors de l'utilisation de la heat map car on peut profiter du poids de chaque case pour adapter l'opacité de la couleur et donc l'intensité de la heat map. \\ 
+Pour cette dernière nous avons utilisé le format $rgba$ pour la palette graphique, ce dernière nous permet de gérer les traditionnelles valeurs rouge, vert, bleu mais aussi de gérer l'opacité des teintes, ce dernier paramètre est particulièrement utile lors de l'utilisation de la heat map car on peut profiter du poids de chaque case pour adapter l'opacité de la couleur et donc l'intensité de la heat map. \\ 
 
 \newpage
 
@@ -259,19 +259,19 @@ Tout comme le widget $Divided$\_$Label$\_$Widget$, celui ci est aussi très cour
 
 \subsubsection{Morphing$\_$Label}
 
-Le dernier widget est $Morphing$\_$Label.py$, il permet de créer des cases dans la creator window. \\
+Le dernier widget est $Morphing$\_$Label$,est une case . \\
 
 Il permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
 Le constructeur permet de spécifier les paramètres des cases : taille, contenu et type. La méthode $updateCaseType$ permet de changer le type de la case et d'alterner entre les trois types.
 
 \subsection{Dossiers de sauvegardes}
 
-Pour ce qui est des dossiers de sauvegarde, il y en a deux:  le dossier $Save$ qui contient les sauvegardes à utiliser et le dossier $Save$\_$Creator$\_$Result$ qui contient les nouvelles sauvegardes crées. \\
-Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier $Save$\_$Creator$\_$Result$ vers $Save$.
+Pour ce qui est des dossiers de sauvegarde, il y en a deux:  le dossier $Save$ qui contient les sauvegardes seront accèssible par le programme en lecture et le dossier $Save$\_$Creator$\_$Result$ qui contient les nouvelles sauvegardes crées par l'interface de créateur de kakuros. \\
+Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier $Save$\_$Creator$\_$Result$ vers $Save$ et éventuellement la renommée.
 
 \section{Le logiciel dans son ensemble}
 
-Le logiciel est donc contitué du back-end, toute la partie "calcul et travail" et du front-end, la partie affichage. \\
+Le logiciel est donc contistué du back-end, toute la partie "calcul et travail" et du front-end, la partie affichage. \\
 Voici un exemple d'utilisation du logiciel : si un utilisateur veut résoudre une grille de Kakuro il peut lancer le logiciel et entrer dans l'éditeur de grilles, après avoir spécifié la taille de sa grille il peut commencer à l'éditer. Une fois cela fait il peut enregistrer sa grille et mettre la sauvegarde au format $.pkl$ dans le dossier $Save$. \\ Une fois cela fait il peut désormais utiliser le logiciel pour charger son Kakuro et l'utiliser pour s'aider à résoudre sa grille grâce à la heat map et aux indications de coups à jouer. 
 
 \section{Améliorations possibles}
@@ -280,11 +280,10 @@ Le logiciel n'est pas parfait et certaines fonctionnalité n'ont pas été impl�
 Voici une liste de fonctionnalités qui auraient trouvés leur place au sein de ce logiciel : \\
 
 \begin{enumerate}
-	\item[-] Simplification du système de sauvegarde
-	\item[-] Choix du nom du fichier sauvegardé
-	\item[-] Une résolution automatique d'une grille de Kakuro afin de se corriger
-	\item[-] Amélioration du système de recommandation. 
-	\item[-] Amélioration de l'interface
+	\item[-] Rajout d'options dans le système de sauvegarde
+	\item[-] Une résolution automatique d'une grille de Kakuro afin de se corriger (sort du thème donc non implémenter)
+	\item[-] Amélioration du système de recommandation et nouveaux filtres
+	\item[-] Amélioration de l'interface graphique
 \end{enumerate}
 
 \newpage

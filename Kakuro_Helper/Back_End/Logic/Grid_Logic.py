@@ -45,7 +45,7 @@ def grid_Maker__Default(x, y, liste_Instructions):
     # Génération de la grille
     grid = []
     for x in range(0, x):
-        grid.append([["#|#", 0, [], []] for y in range(0, y)])
+        grid.append([["#|#", 0, [], [], [], []] for y in range(0, y)])
 
     # Application des instructions
     if len(liste_Instructions) > 0:
