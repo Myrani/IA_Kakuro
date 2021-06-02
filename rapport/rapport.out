@@ -7,18 +7,19 @@
 \BOOKMARK [3][-]{subsubsection.3.1.3}{Possible\137Values\137Mapping\137Logic : guide du remplissage des cases}{subsection.3.1}% 7
 \BOOKMARK [3][-]{subsubsection.3.1.4}{Saving\137Logic : le fichier de sauvegarde}{subsection.3.1}% 8
 \BOOKMARK [2][-]{subsection.3.2}{Ressources}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Conception du programme : Front-end}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{Fen\352tres}{section.4}% 11
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Main\137Window : La base de L'UI}{subsection.4.1}% 12
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Solver\137Window : la fen\352tre principale}{subsection.4.1}% 13
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Loader\137Window : page de chargement de grilles}{subsection.4.1}% 14
-\BOOKMARK [3][-]{subsubsection.4.1.4}{Creator\137Window}{subsection.4.1}% 15
-\BOOKMARK [2][-]{subsection.4.2}{Widgets Personnalis\351s}{section.4}% 16
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Content\137Button\137Widget}{subsection.4.2}% 17
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Divided\137Label\137Widget}{subsection.4.2}% 18
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Loader\137Button\137Widget}{subsection.4.2}% 19
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Morphing\137Label}{subsection.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.3}{Dossiers de sauvegardes}{section.4}% 21
-\BOOKMARK [1][-]{section.5}{Le logiciel dans son ensemble}{}% 22
-\BOOKMARK [1][-]{section.6}{Am\351liorations possibles}{}% 23
-\BOOKMARK [1][-]{section.7}{Annexes}{}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Dictionnaire des sommes}{subsection.3.2}% 10
+\BOOKMARK [1][-]{section.4}{Conception du programme : Front-end}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Fen\352tres}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Main\137Window : La base de L'UI}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Solver\137Window : la fen\352tre principale}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Loader\137Window : page de chargement de grilles}{subsection.4.1}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Creator\137Window}{subsection.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Widgets Personnalis\351s}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Content\137Button\137Widget}{subsection.4.2}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Divided\137Label\137Widget}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Loader\137Button\137Widget}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Morphing\137Label}{subsection.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.3}{Dossiers de sauvegardes}{section.4}% 22
+\BOOKMARK [1][-]{section.5}{Le logiciel dans son ensemble}{}% 23
+\BOOKMARK [1][-]{section.6}{Am\351liorations possibles}{}% 24
+\BOOKMARK [1][-]{section.7}{Annexes}{}% 25

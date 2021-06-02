@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JUN 2021 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JUN 2021 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,7 +342,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./ressources/logo-unicaen.jpg, id=100, 1080.035pt x 609.27625pt>
+<./ressources/logo-unicaen.jpg, id=104, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 22.
@@ -568,17 +568,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 124.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
@@ -593,310 +593,310 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Overfull \hbox (8.60541pt too wide) in paragraph at lines 140--141
+\T1/cmr/m/n/12 Pendant la création du fichier $\OML/cmm/m/it/12 Possible[]alues
+[]apping[]ogic$\T1/cmr/m/n/12 , nous nous sommes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Overfull \hbox (6.30801pt too wide) in paragraph at lines 142--143
+[]\T1/cmr/m/n/12 Le fichiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est don
+c un dictionnaires python de toutes les nombres
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
-
- []
-
-[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 161.
+(hyperref)                removing `math shift' on input line 164.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 161.
+(hyperref)                removing `math shift' on input line 164.
 
 
-Overfull \hbox (18.28947pt too wide) in paragraph at lines 163--164
+Overfull \hbox (18.28947pt too wide) in paragraph at lines 166--167
 $\OML/cmm/m/it/12 Main$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Window:py$ \T1/cmr/m/n
 /12 est le fichier qui va permettre d'initialiser la fenêtre principale
  []
 
 
-Overfull \hbox (10.31609pt too wide) in paragraph at lines 163--164
-\T1/cmr/m/n/12 pas supporté avec l'achitecture de base, c'est un initialisant u
-n widget "Central"
- []
-
-
-Overfull \hbox (4.7689pt too wide) in paragraph at lines 163--164
-\T1/cmr/m/n/12 qu'on viendra override, puis ré-affchier que nous sommes arrivés
- à une interface
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
-Overfull \hbox (1.47113pt too wide) in paragraph at lines 170--172
+Overfull \hbox (1.47113pt too wide) in paragraph at lines 173--175
 \T1/cmr/m/n/12 La méthode $[]$init$[]$ permet de paramétrer l'interface graphiq
 ue et d'instancier
  []
 
 
-Overfull \hbox (33.28835pt too wide) in paragraph at lines 170--172
+Overfull \hbox (33.28835pt too wide) in paragraph at lines 173--175
 \T1/cmr/m/n/12 les paramètres de styles généraux ainsi que le premièr apel à mé
 thode d'instanciation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
-Overfull \hbox (14.41429pt too wide) in paragraph at lines 173--174
+Overfull \hbox (14.41429pt too wide) in paragraph at lines 176--177
 []$\OML/cmm/m/it/12 startSolverWindow$\T1/cmr/m/n/12 , $\OML/cmm/m/it/12 startC
 reatorWindow$ \T1/cmr/m/n/12 et $\OML/cmm/m/it/12 startLoaderWindow$\T1/cmr/m/n
 /12 , comme
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 183.
 
 
-Overfull \hbox (15.6677pt too wide) in paragraph at lines 182--184
+Overfull \hbox (15.6677pt too wide) in paragraph at lines 185--187
 \T1/cmr/m/n/12 Si l'on ne devait garder qu'une seule fenêtre pour ce logiciel, 
 ce serait evidemment
  []
 
 
-Overfull \hbox (23.32343pt too wide) in paragraph at lines 182--184
+Overfull \hbox (23.32343pt too wide) in paragraph at lines 185--187
 \T1/cmr/m/n/12 la fenêtre $\OML/cmm/m/it/12 Solver$\T1/cmr/m/n/12 _$\OML/cmm/m/
 it/12 Window$\T1/cmr/m/n/12 . En effet il s'agit de la fenêtre centrale de l'ap
 plication,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Overfull \hbox (15.99657pt too wide) in paragraph at lines 188--189
+Overfull \hbox (15.99657pt too wide) in paragraph at lines 191--192
 []\T1/cmr/m/n/12 Une fonction d'initialisation de la fenêtre qui appelle les wi
 dgets nécessaires 
  []
 
 
-Overfull \hbox (11.2486pt too wide) in paragraph at lines 189--190
+Overfull \hbox (11.2486pt too wide) in paragraph at lines 192--193
 []\T1/cmr/m/n/12 Une méthode $\OML/cmm/m/it/12 createMenuLayout$ \T1/cmr/m/n/12
  qui permet de créer le menu de sélection
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Overfull \hbox (2.25476pt too wide) in paragraph at lines 193--196
+Overfull \hbox (2.25476pt too wide) in paragraph at lines 196--199
 \T1/cmr/m/n/12 Pour cette dernière nous avons utilisé le format $\OML/cmm/m/it/
 12 rgba$ \T1/cmr/m/n/12 pour la palette graphique,
  []
 
 
-Overfull \hbox (17.88661pt too wide) in paragraph at lines 193--196
+Overfull \hbox (17.88661pt too wide) in paragraph at lines 196--199
 \T1/cmr/m/n/12 mais aussi de gérer l'opacité des teintes, ce dernier paramètre 
 est particulièrement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
+
+ []
+
+[8]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 202.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 202.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 209.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 209.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 [9]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 199.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
-
- []
-
-[11]
-Overfull \hbox (29.14221pt too wide) in paragraph at lines 233--236
+Overfull \hbox (29.14221pt too wide) in paragraph at lines 236--239
 \T1/cmr/m/n/12 Les widgets permettent de créer des portions de code plus facile
 ment implémentable
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 247.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 244.
+(hyperref)                removing `math shift' on input line 247.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
-[12]
+[11]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
+(hyperref)                removing `math shift' on input line 257.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
+(hyperref)                removing `math shift' on input line 262.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
+(hyperref)                removing `math shift' on input line 262.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
+(hyperref)                removing `math shift' on input line 262.
 
 
-Overfull \hbox (4.38823pt too wide) in paragraph at lines 261--263
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 262.
+
+
+Overfull \hbox (4.38823pt too wide) in paragraph at lines 264--266
 \T1/cmr/m/n/12 les $\OML/cmm/m/it/12 LoaderButtons$ \T1/cmr/m/n/12 sont générés
  dans la fenêtre $\OML/cmm/m/it/12 Loader$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Win
 dow:py$ \T1/cmr/m/n/12 et servent
@@ -904,53 +904,57 @@ dow:py$ \T1/cmr/m/n/12 et servent
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 269.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `math shift' on input line 269.
 
 
-Overfull \hbox (2.44093pt too wide) in paragraph at lines 268--271
+Overfull \hbox (2.44093pt too wide) in paragraph at lines 271--274
 \T1/cmr/m/n/12 La méthode $\OML/cmm/m/it/12 updateCaseType$ \T1/cmr/m/n/12 reli
 ée au deux boutons dans la barre de sélection
  []
 
 
-Overfull \hbox (67.17726pt too wide) in paragraph at lines 274--276
+Overfull \hbox (67.17726pt too wide) in paragraph at lines 277--279
 \T1/cmr/m/n/12 Pour utiliser une sauvegarde crée il faut donc la déplacer du do
 ssier $\OML/cmm/m/it/12 Save$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Creator$\T1/cmr/
 m/n/12 _$\OML/cmm/m/it/12 Result$
  []
 
-[13]
-Overfull \hbox (14.45822pt too wide) in paragraph at lines 284--286
+[12]
+Overfull \hbox (14.45822pt too wide) in paragraph at lines 287--289
 \T1/cmr/m/n/12 Le logiciel n'est pas parfait et certaines fonctionnalité n'ont 
 pas été implémentées
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
-[14] 
+[13] 
 AED: lastpage setting LastPage
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+[14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 523C606FA0D5CF4506A9662CD987B170;1904.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
+(rerunfilecheck)             Checksum: 941037664C0A4702436C6610F2EA2F9F;1987.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 9003 strings out of 483140
- 135825 string characters out of 5965150
- 578709 words of memory out of 5000000
- 23846 multiletter control sequences out of 15000+600000
+ 9004 strings out of 483140
+ 135858 string characters out of 5965150
+ 578712 words of memory out of 5000000
+ 23847 multiletter control sequences out of 15000+600000
  542599 words of font info for 43 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  50i,7n,51p,574b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -964,10 +968,10 @@ crm2488.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (17 pages, 198559 bytes).
+Output written on rapport.pdf (16 pages, 200195 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
+ 530 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  45 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

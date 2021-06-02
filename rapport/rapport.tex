@@ -126,7 +126,6 @@ Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro se
 Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$.  \\
 Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\
 La méthode $push$\_$Save$ permet d'écrire un fichier au format $.pkl$ du nom de $save.pkl$. \\ \\
-\newpage
 La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante : \\
 \begin{enumerate}
 \item[-] Vérifie si un fichier "save" est disponible\\
@@ -136,7 +135,11 @@ La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante
 
 $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichiers présents dans le dossier $Saves$.
 \subsection{Ressources}
+\subsubsection{Dictionnaire des sommes}
 
+Pendant la création du fichier $Possible_Values_Mapping_Logic$, nous nous sommes heurté à un choix, chercher et résoudre les valeures possibles au cas par cas, au besoin, ou créer un fichier contenant toutes les solutions possibles et le loader dans au chargement du programme et au vu des gains de temps; se fut la solution adoptée.\\
+
+Le fichiers $Sums.pkl$ est donc un dictionnaires python de toutes les nombres pouvants être créer avec des chiffres de 1 à 9 sans redondance, pour ca génération nous sommes restés sur une approche naive, mais fonctionnant, étant pas plus neccéssaire dans le programme nous n'avons pas chercher à multi- process/threader les calculs.
 
 
 
@@ -146,8 +149,8 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 \section{Conception du programme : Front-end}
 \subsection{Fenêtres}
 Dans notre logiciel, le front-end sert d'interface homme-machine afin de proposer une grille simple et de permettre à l'utilisateur d'interagir avec cette dernière via des boutons notamment. \\ \\
-L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette dernière est divisée en plusieurs fenêtres (constituées de widgets) (que l'on appellera windows, de leur nom en anglais et dans les fichiers) et qui permettront d'exécuter des tâches spécifiques que nous détaillerons plus loin. \\ \\
-Voici la liste de ces fenêtres : \\
+L'interface graphique a été réalisée grâce à la librairie $PyQt5$. Cette dernière est divisée en plusieurs fenêtres ,constituées de widgets, que l'on appellera windows, de leur nom en anglais et dans les fichiers et qui permettront d'exécuter des tâches spécifiques. \\ \\
+Voici la liste : \\
 
 \begin{enumerate}
 	\item[-] Une fenêtre d'accueil permettant de sélectionner une grille  \\
@@ -160,7 +163,7 @@ Pour ce qui est du style de l'interface graphique nous avons opté pour un desig
 \newpage
 \subsubsection{Main$\_$Window : La base de L'UI}
 
-$Main$\_$Window.py$ est le fichier qui va permettre d'initialiser la fenêtre principale qui contiendra toutes les variables importantes du côté back-end pour la session actuelle et hébergera aussi la logique de navigation entre chaque fenêtre, en effet ,sous PyQt5, le changement dynamique d'une fenêtre n'est pas supporté avec l'achitecture de base, c'est un initialisant un widget "Central" qu'on viendra override, puis ré-affchier que nous sommes arrivés à une interface dynamiqe. \\
+$Main$\_$Window.py$ est le fichier qui va permettre d'initialiser la fenêtre principale qui contiendra toutes les variables importantes du côté back-end pour la session actuelle et hébergera aussi la logique de navigation entre chaque fenêtre, en effet ,sous PyQt5, le changement dynamique du contenu d'une fenêtre n'est pas supporté avec l'achitecture de base, c'est en initialisant un widget "Central" qu'on viendra override, puis ré-affchier que nous sommes arrivés à une interface dynamiqe. \\
 \begin{enumerate}
 	\item[-] $\_$init$\_$ 
 	\item[-] startSolverWindow  
