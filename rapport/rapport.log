@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  1 JUN 2021 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 12:25
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -389,7 +389,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./ressources/logo-unicaen.jpg, id=67, 1080.035pt x 609.27625pt>
+<./ressources/logo-unicaen.jpg, id=71, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 20.
@@ -742,6 +742,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
+[8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 191.
@@ -751,25 +752,52 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 191.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 192.
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 192.
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+
+ []
+
+
+Overfull \hbox (1.66586pt too wide) in paragraph at lines 217--218
+[]$\OML/cmm/m/it/12 update$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 creator$\T1/cmr/m/
+n/12 _$\OML/cmm/m/it/12 kakuro$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 dimensions$ \T
+1/cmr/m/n/12 qui gère le chan-ge-ment de taille
+ []
 
 
 AED: lastpage setting LastPage
-[8] [9] (rapport.aux)
+[10] (rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 1F6BC3FBA0775AFC16395288EAB71E8E;3338.
+(rerunfilecheck)             Checksum: 612D38F6225025720ED0F3C973F1F33F;3652.
  ) 
 Here is how much of TeX's memory you used:
- 12582 strings out of 479334
- 190578 string characters out of 2857084
- 684214 words of memory out of 3000000
- 29861 multiletter control sequences out of 15000+200000
- 415369 words of font info for 50 fonts, out of 3000000 for 9000
+ 12580 strings out of 479334
+ 190557 string characters out of 2857084
+ 684204 words of memory out of 3000000
+ 29859 multiletter control sequences out of 15000+200000
+ 414604 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,7n,79p,487b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
@@ -777,15 +805,15 @@ Here is how much of TeX's memory you used:
 0\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Miste/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (11 pages, 208012 bytes).
+/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Miste/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Miste/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on rapport.pdf (12 pages, 220028 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -80,14 +80,14 @@ Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de créer l
 La méthode $grid$\_$Maker$\_$Creator$ permet de créer une grille vide et la rempli avec une liste d'instructions. \\
 Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
 \newpage
-Il y a six types de case : \\ \\
+Il y a six éléments stockés dans une case : \\ \\
 \begin{enumerate}
-\item[] Case jouable/non jouable
-\item[] Case de type "heat" (utilisée pour la heat map qui sera détaillée plus loin)
-\item[] Liste des objectifs de la case
-\item[] Liste des valeurs possibles de la case
-\item[] Liste des valeures Contraintes
-\item[] Case sélectionnée
+\item[-] Case jouable/non jouable
+\item[-] Case de type "heat" (utilisée pour la heat map qui sera détaillée plus loin)
+\item[-] Liste des objectifs de la case
+\item[-] Liste des valeurs possibles de la case
+\item[-] Liste des valeures Contraintes
+\item[-] Cases sélectionnées
 \end{enumerate} 
 
 \subsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
@@ -186,10 +186,39 @@ $createKakuroSolverLayout$ est la méthode qui permet l'affichage de la grille a
 Elle permet d'afficher la grille, d'afficher la heat map et de fournir les valeurs possibles dans les cases à jouer. Cette méthode contient aussi les styles de la grille et de la heat map. \\
 Pour cette dernière nous avons utilisé un code couleur assez subtil : le $rgba$, ce dernière nous permet de gérer les traditionnelles valeurs rouge, vert, bleu mais aussi l'opacité des couleurs, ce dernier paramètre est particulièrement utile lors de l'utilisation de la heat map car on peut profiter du poids de chaque case pour adapter l'opacité de la couleur et donc l'intensité de la heat map. \\ 
 
+\newpage
 
+\subsection{Loader$\_$Window, page de chargement de grilles}
 
-\subsection{Loader$\_$Window}
+Le fichier $Loader$\_$Window$ correspond à la page de chargement de grilles, cette page est une fenêtre très simple permettant de sélectionner la grille de Kakuro souhaitée : celle par défaut qui sert de démonstration au logiciel ou bien un Kakuro que l'on aura sauvegardé. \\ \\
+La window est simplement constituée d'une boite "box" dans laquelle se trouve un bouton du nom du fichier à charger. Celui-ci dépend de ce que la fonction $createSelectionMenu$ va renvoyer. \\
+En effet, celle-ci va parcourir les sauvegardes et créer des boutons en fonctions de celles-ci. Si aucune sauvegarde n'est trouvée alors un bouton ramenant vers la grille de base est crée. 
+Une fois cela fait, lorsque l'on clique sur le bouton, la méthode $loadDefaultKakuro$ s'exécute et charge le Kakuro de base.
+
 \subsection{Creator$\_$Window}
+
+Parlons à présent du fichier $Creator_Window.py$. Son nom l'indique : il sert à créer la fenêtre d'édition de grille ainsi que la sauvegarde de la grille créée. C'est une fenêtre importante car elle permet à l'utilisateur de créer ses propres grilles de Kakuro afin de s'aider sur les exemples concrets. \\ \\
+La fenêtre se présente de la façon suivante : 
+
+\begin{enumerate}
+	\item[-] Une grille de bouton servant à créer le Kakuro (des flèches permettent d'alterner entre case non jouable, jouable, ou case d'instructions).
+	\item[-] Le choix de la dimension de la grille
+	\item[-] Deux boutons : un vers la fenêtre d'aide à la résolutions de grilles et un autre permettant de sauvegarder la grille crée. \\
+\end{enumerate}
+\newpage 
+
+Voici les fonctions présentes dans le fichier $Creator_Window.py$ \\
+Il y en a 5 : \\
+
+\begin{enumerate}
+	\item[-] Un constructeur qui permet de définir les paramètres de base de la fenêtre.
+	\item[-] Une fonction $init$\_$UI$ qui permet de créer l'intérieur de la fenêtre : 		styles, création de $VBox$, $layouts$ ainsi que l'affichage de la fenêtre
+	\item[-] $create$\_$meneu$\_$layout$ qui permet de créer le menu du bas.
+	\item[-] $update$\_$creator$\_$kakuro$\_$dimensions$ qui gère le changement de taille 		de la grille
+	\item[-] $create$\_$kakuro$\_$creator$\_$layout$ gère quant à elle la création de la grille d'édition (grâce au widget $Morphing$\_$Label$, détaillé plus loin).
+\end{enumerate}
+
+\subsection{Widgets utilisés}
 \subsection{Dossiers de sauvegardes}
 
 \section{Le logiciel dans son ensemble}
