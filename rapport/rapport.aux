@@ -25,36 +25,39 @@
 \babel@aux{french}{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Guide d'utilisation du programme}{1}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Conception du programme : Back-end}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logique}{2}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Grid$\_$Logic: la création de la grille}{2}{subsubsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Heat$\_$Mapping$\_$Logic : coloration d'une grille}{3}{subsubsection.3.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}{4}{subsubsection.3.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Saving$\_$Logic : la gestion de sauvegardes}{4}{subsubsection.3.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Ressources}{5}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Dictionnaire des sommes}{5}{subsubsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conception du programme : Front-end}{6}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Fenêtres}{6}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Main$\_$Window : La base de L'UI}{7}{subsubsection.4.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Solver$\_$Window : la fenêtre principale}{8}{subsubsection.4.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Loader$\_$Window : page de chargement de grilles}{9}{subsubsection.4.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.4}Creator$\_$Window}{9}{subsubsection.4.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Widgets Personnalisés}{11}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Content$\_$Button$\_$Widget}{11}{subsubsection.4.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Divided$\_$Label$\_$Widget}{12}{subsubsection.4.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Loader$\_$Button$\_$Widget}{12}{subsubsection.4.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Morphing$\_$Label}{12}{subsubsection.4.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Dossiers de sauvegardes}{12}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Le logiciel dans son ensemble}{13}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Améliorations possibles}{13}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Annexes}{14}{section.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces La fenêtre d'accueil.\relax }}{15}{figure.caption.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces La fenêtre d'aide à la résolution de grilles.\relax }}{16}{figure.caption.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces L'affichage des valeurs à jouer.\relax }}{17}{figure.caption.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces L'affichage de la heat map.\relax }}{18}{figure.caption.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Il est possible de combiner la heat map et l'affichage des valeurs.\relax }}{19}{figure.caption.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces La fenêtre d'édition de grilles de Kakuro.\relax }}{20}{figure.caption.7}\protected@file@percent }
-\newlabel{LastPage}{{}{20}{}{page.20}{}}
-\xdef\lastpage@lastpage{20}
-\xdef\lastpage@lastpageHy{20}
-\gdef \@abspage@last{22}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Architecture logique de l'application}{2}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Interactions des fenêtres.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Interactions refresh.\relax }}{2}{figure.caption.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conception du programme : Back-end}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Logique}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Grid$\_$Logic: la création de la grille}{3}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Heat$\_$Mapping$\_$Logic : coloration d'une grille}{4}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}{5}{subsubsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.4}Saving$\_$Logic : la gestion de sauvegardes}{5}{subsubsection.4.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ressources}{6}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Dictionnaire des sommes}{6}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conception du programme : Front-end}{7}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Fenêtres}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Main$\_$Window : La base de L'UI}{8}{subsubsection.5.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Solver$\_$Window : la fenêtre principale}{9}{subsubsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Loader$\_$Window : page de chargement de grilles}{10}{subsubsection.5.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.4}Creator$\_$Window}{10}{subsubsection.5.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Widgets Personnalisés}{12}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Content$\_$Button$\_$Widget}{12}{subsubsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Divided$\_$Label$\_$Widget}{13}{subsubsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Loader$\_$Button$\_$Widget}{13}{subsubsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Morphing$\_$Label}{13}{subsubsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Dossiers de sauvegardes}{13}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Le logiciel dans son ensemble}{14}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Améliorations possibles}{14}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Annexes}{15}{section.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces La fenêtre d'accueil.\relax }}{16}{figure.caption.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces La fenêtre d'aide à la résolution de grilles.\relax }}{17}{figure.caption.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces L'affichage des valeurs à jouer.\relax }}{18}{figure.caption.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces L'affichage de la heat map.\relax }}{19}{figure.caption.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Il est possible de combiner la heat map et l'affichage des valeurs.\relax }}{20}{figure.caption.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces La fenêtre d'édition de grilles de Kakuro.\relax }}{21}{figure.caption.9}\protected@file@percent }
+\newlabel{LastPage}{{}{21}{}{page.21}{}}
+\xdef\lastpage@lastpage{21}
+\xdef\lastpage@lastpageHy{21}
+\gdef \@abspage@last{23}

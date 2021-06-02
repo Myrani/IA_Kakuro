@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 22:28
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -389,7 +389,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./ressources/logo-unicaen.jpg, id=103, 1080.035pt x 609.27625pt>
+<./ressources/logo-unicaen.jpg, id=107, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 22.
@@ -436,161 +436,84 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 \newpage
+l.74 \newpage
               [1]
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+<./ressources/diagramme2.png, id=157, 1206.5075pt x 394.47375pt>
+File: ./ressources/diagramme2.png Graphic file (type png)
+<use ./ressources/diagramme2.png>
+Package pdftex.def Info: ./ressources/diagramme2.png  used on input line 80.
+(pdftex.def)             Requested size: 390.0pt x 127.51024pt.
+<./ressources/diagramme1.png, id=158, 684.5575pt x 343.2825pt>
+File: ./ressources/diagramme1.png Graphic file (type png)
+<use ./ressources/diagramme1.png>
+Package pdftex.def Info: ./ressources/diagramme1.png  used on input line 87.
+(pdftex.def)             Requested size: 342.27791pt x 171.64082pt.
+ [2 <./ressources/diagramme2.png> <./ressources/diagramme1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 84.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 101.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
+(hyperref)                removing `math shift' on input line 101.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-
-Overfull \hbox (4.59656pt too wide) in paragraph at lines 115--115
-[]\T1/cmr/bx/n/12 Possible$[]$Values$[]$Mapping$[]$Logic : guide du rem-plis-sa
-ge des
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 [3]
-Overfull \hbox (18.83904pt too wide) in paragraph at lines 118--121
-[]\T1/cmr/m/n/12 Les fonc-tions $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\O
-ML/cmm/m/it/12 Propagation$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$ \T1/cmr/m/n/1
-2 et $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Propagation$
-\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$
- []
-
-
-Overfull \hbox (11.82301pt too wide) in paragraph at lines 118--121
-\T1/cmr/m/n/12 Ces deux fonc-tions sont exe-cu-tées par la me-thode $\OML/cmm/m
-/it/12 set$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Objective$\T1/cmr/m/n/12 _$\OML/cm
-m/m/it/12 Propagation$\T1/cmr/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 122.
+(hyperref)                removing `math shift' on input line 117.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 122.
+(hyperref)                removing `math shift' on input line 117.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--128
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--128
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
@@ -599,44 +522,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
+
+Overfull \hbox (4.59656pt too wide) in paragraph at lines 132--132
+[]\T1/cmr/bx/n/12 Possible$[]$Values$[]$Mapping$[]$Logic : guide du rem-plis-sa
+ge des
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Overfull \hbox (18.83904pt too wide) in paragraph at lines 135--138
+[]\T1/cmr/m/n/12 Les fonc-tions $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\O
+ML/cmm/m/it/12 Propagation$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$ \T1/cmr/m/n/1
+2 et $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Propagation$
+\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$
+ []
+
+
+Overfull \hbox (11.82301pt too wide) in paragraph at lines 135--138
+\T1/cmr/m/n/12 Ces deux fonc-tions sont exe-cu-tées par la me-thode $\OML/cmm/m
+/it/12 set$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Objective$\T1/cmr/m/n/12 _$\OML/cm
+m/m/it/12 Propagation$\T1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
 
  []
 
 
-Overfull \hbox (6.30801pt too wide) in paragraph at lines 140--141
-[]\T1/cmr/m/n/12 Le fi-chiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est do
-nc un dic-tion-naires py-thon de toutes les nombres
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
@@ -646,81 +626,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
+Overfull \hbox (6.30801pt too wide) in paragraph at lines 157--158
+[]\T1/cmr/m/n/12 Le fi-chiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est do
+nc un dic-tion-naires py-thon de toutes les nombres
  []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 179.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 179.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Overfull \hbox (13.8922pt too wide) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+
+Overfull \hbox (13.8922pt too wide) in paragraph at lines 191--192
 []$\OML/cmm/m/it/12 startSolverWindow$\T1/cmr/m/n/12 , $\OML/cmm/m/it/12 startC
 reatorWindow$ \T1/cmr/m/n/12 et $\OML/cmm/m/it/12 startLoaderWindow$\T1/cmr/m/n
 /12 , comme
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 181.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 181.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
@@ -730,133 +713,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--192
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 [8]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 200.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--206
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 207.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 207.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 217.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
  []
 
 
-Overfull \hbox (1.66586pt too wide) in paragraph at lines 226--227
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+Overfull \hbox (1.66586pt too wide) in paragraph at lines 243--244
 []$\OML/cmm/m/it/12 update$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 creator$\T1/cmr/m/
 n/12 _$\OML/cmm/m/it/12 kakuro$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 dimensions$ \T
 1/cmr/m/n/12 qui gère le chan-ge-ment de taille
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 245.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--249
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--249
-
- []
-
 [11]
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-
-Overfull \hbox (4.70374pt too wide) in paragraph at lines 254--256
-\T1/cmr/m/n/12 Ce wid-get est court, re-la-ti-ve-ment simple et ne contient que
- peu de lo-gique,juste
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
@@ -871,61 +812,131 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 262.
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 262.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
+ []
+
+[12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Overfull \hbox (4.70374pt too wide) in paragraph at lines 271--273
+\T1/cmr/m/n/12 Ce wid-get est court, re-la-ti-ve-ment simple et ne contient que
+ peu de lo-gique,juste
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 279.
+
 [13]
-<./ressources/acceuil.png, id=205, 528.47438pt x 626.34pt>
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
+
+ []
+
+[14]
+<./ressources/acceuil.png, id=219, 528.47438pt x 626.34pt>
 File: ./ressources/acceuil.png Graphic file (type png)
 <use ./ressources/acceuil.png>
-Package pdftex.def Info: ./ressources/acceuil.png  used on input line 296.
+Package pdftex.def Info: ./ressources/acceuil.png  used on input line 312.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
-<./ressources/helperSide.png, id=206, 528.47438pt x 626.34pt>
+<./ressources/helperSide.png, id=220, 528.47438pt x 626.34pt>
 File: ./ressources/helperSide.png Graphic file (type png)
 <use ./ressources/helperSide.png>
-Package pdftex.def Info: ./ressources/helperSide.png  used on input line 303.
+Package pdftex.def Info: ./ressources/helperSide.png  used on input line 319.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
-<./ressources/valPoss.png, id=207, 528.47438pt x 626.34pt>
+<./ressources/valPoss.png, id=221, 528.47438pt x 626.34pt>
 File: ./ressources/valPoss.png Graphic file (type png)
 <use ./ressources/valPoss.png>
-Package pdftex.def Info: ./ressources/valPoss.png  used on input line 310.
+Package pdftex.def Info: ./ressources/valPoss.png  used on input line 326.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
-<./ressources/heatmap.png, id=208, 528.47438pt x 626.34pt>
+<./ressources/heatmap.png, id=222, 528.47438pt x 626.34pt>
 File: ./ressources/heatmap.png Graphic file (type png)
 <use ./ressources/heatmap.png>
-Package pdftex.def Info: ./ressources/heatmap.png  used on input line 317.
+Package pdftex.def Info: ./ressources/heatmap.png  used on input line 333.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
-<./ressources/aideMax.png, id=209, 528.47438pt x 626.34pt>
+<./ressources/aideMax.png, id=223, 528.47438pt x 626.34pt>
 File: ./ressources/aideMax.png Graphic file (type png)
 <use ./ressources/aideMax.png>
-Package pdftex.def Info: ./ressources/aideMax.png  used on input line 324.
+Package pdftex.def Info: ./ressources/aideMax.png  used on input line 340.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
-<./ressources/creator.png, id=210, 528.47438pt x 626.34pt>
+<./ressources/creator.png, id=224, 528.47438pt x 626.34pt>
 File: ./ressources/creator.png Graphic file (type png)
 <use ./ressources/creator.png>
-Package pdftex.def Info: ./ressources/creator.png  used on input line 331.
+Package pdftex.def Info: ./ressources/creator.png  used on input line 347.
 (pdftex.def)             Requested size: 390.0pt x 462.2228pt.
  
 AED: lastpage setting LastPage
-[14] [15 <./ressources/acceuil.png>] [16 <./ressources/helperSide.png>]
-[17 <./ressources/valPoss.png>] [18 <./ressources/heatmap.png>] [19 <./ressourc
-es/aideMax.png>] [20 <./ressources/creator.png>] (rapport.aux)
+[15] [16 <./ressources/acceuil.png>] [17 <./ressources/helperSide.png>]
+[18 <./ressources/valPoss.png>] [19 <./ressources/heatmap.png>] [20 <./ressourc
+es/aideMax.png>] [21 <./ressources/creator.png>] (rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: EDB7F14F5DC714E973F34D5C0FA28DF9;4940.
+(rerunfilecheck)             Checksum: 9557E1AC12837D088AFBBAB6EA3139B0;5178.
  ) 
 Here is how much of TeX's memory you used:
- 12652 strings out of 479334
- 192067 string characters out of 2857084
- 687459 words of memory out of 3000000
- 29900 multiletter control sequences out of 15000+200000
+ 12669 strings out of 479334
+ 192462 string characters out of 2857084
+ 688459 words of memory out of 3000000
+ 29911 multiletter control sequences out of 15000+200000
  413691 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,7n,79p,585b,1114s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc
-1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+ <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1440.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\eccc1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecrm1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecbx1200.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Miste\AppData\Local\MiKTeX\fonts/pk/
@@ -935,9 +946,9 @@ eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Miste/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Mi
 ste/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (22 pages, 329428 bytes).
+Output written on rapport.pdf (23 pages, 350508 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 600 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
