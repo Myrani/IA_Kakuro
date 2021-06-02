@@ -8,7 +8,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{subfig}
-
+\usepackage{hyperref}
 
 
 \begin{document}
@@ -56,6 +56,8 @@
 
 
 \section{Introduction}
+\textbf{Github du projet :} \href{https://github.com/Myrani/IA_Kakuro}https://github.com/Myrani/IA$\_$Kakuro \\ \\
+
 Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
 Pour réaliser ce projet, nous avons choisi le langage Python, permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenter avec cette librairie, nous avons fait un gain de temps majeur sur le temps de dévellopement avec ces choix.
@@ -71,22 +73,20 @@ Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kaku
   $ python3 Main.py
 \end{lstlisting}
 
-\newpage
+\section{Architecture logique du projet}
 
-\section{Architecture logique de l'application}
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=\textwidth]{./ressources/diagramme2.png} 
-  \end{center}
-  \caption{Interactions des fenêtres.}
+\begin{figure}[h]
+\includegraphics[scale=0.40]{./ressources/Diagramme2.png}
+\caption{Intéractions logiques des fenêtres}
+\label{fig:x cubed graph}
 \end{figure}
 
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[scale=0.5]{./ressources/diagramme1.png} 
-  \end{center}
-  \caption{Interactions refresh.}
+\vspace{3cm}
+
+\begin{figure}[h]
+\includegraphics[scale=0.45]{./ressources/Diagramme1.png}
+\caption{Logique de refresh}
+\label{fig:x cubed graph}
 \end{figure}
 
 \newpage
@@ -306,6 +306,7 @@ Voici une liste de fonctionnalités qui auraient trouvés leur place au sein de 
 
 \newpage
 \section{Annexes}
+
 
 
 \begin{figure}[ht]
