@@ -50,7 +50,7 @@
 \thispagestyle{empty}
 \setcounter{page}{0}
 \newpage
-
+\renewcommand{\contentsname}{Table des matières}
 \tableofcontents
 \newpage
 
@@ -58,13 +58,19 @@
 \section{Introduction}
 Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
-Pour réaliser ce projet, nous avons choisi de l'écrire en Python, langage que nous maitrisions et qui nous offre un large panel de possibilités que cela soit pour réaliser les différentes fonctions dont nous avions besoin mais aussi pour les choix d'interfaces graphiques que nous avions à notre disposition grâce à ce langage. 
-\section{Utilisation du programme}
+Pour réaliser ce projet, nous avons choisi Python, langage permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenter avec cette librairie, nous avons fait un gain de temps majeur sur le temps de dévellopement avec ces choix.
+\section{Guide d'utilisation du programme}
+Afin d'éxecuter le logiciel il faut avoir installé :
+\begin{enumerate}
+\item[-] Python 3.8 ou +
+\item[-] La Librairie Pickle
+\item[-] La Librairie PyQt 5
+\end{enumerate} 
 Pour utiliser notre programme, vous pouvez vous rendre dans le répertoire $Kakuro$\_$Helper$ et lancer la commande :
 \begin{lstlisting}[language=bash]
   $ python3 Main.py
 \end{lstlisting}
-Afin d'éxecuter le logiciel il faut avoir installé Python 3 sur sa machine ainsi que PyQt5 et pickle, l'interface graphique que nous avons utilisés. Si ces dépendances sont installées, le logiciel devrait fonctionner sur Linux, Winwows et Mac Os.
+
 
 \newpage
 \section{Conception du programme : Back-end}
@@ -76,8 +82,8 @@ Le back-end est constitué de deux sous parties : la partie Logic et les Ressour
 La partie Logic contient les fonctions du logiciel et la partie Ressources contient, comme son nom l'indique, les ressources nécessaires au bon fonctionnement du back-end (dictionnaire des sommes).
 
  
-
-\subsection{Grid$\_$Logic: la création de la grille}
+\subsection{Logique}
+\subsubsection{Grid$\_$Logic: la création de la grille}
 Le fichier $Grid$\_$Logic.py$ est le fichier Python qui va permettre de gérer la création des grilles de Kakuro. \\ La grille est générée de façon assez classique : il s'agit de listes dans lesquels on trouve d'autres listes. \\
 La méthode $grid$\_$Maker$\_$Creator$ permet de créer une grille vide et la rempli avec une liste d'instructions. \\
 Dans notre logiciel, une grille classique est constituée de six fois six cases, soit trente-six cases. Chaque case est en fait un tableau on a donc trente-six tableaux. \\
@@ -92,7 +98,7 @@ Il y a six éléments stockés dans une case : \\ \\
 \item[-] Cases sélectionnées
 \end{enumerate} 
 
-\subsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
+\subsubsection{Heat$\_$Mapping$\_$Logic : coloration d'une grille}
 
 Le fichier $Heat$\_$Mapping$\_$Logic.py$ contient les fonctions qui vont nous permettre de réaliser une "heat map". Il s'agit de la coloration de la grille qui va permettre de mettre en avant certaines cases en fonction de leur potentiel. Concrètement, plus une case est intéressante à jouer plus elle sera colorée. \\
 Pour ce faire, dans le tableau une valeur sera attribuée en fonction du nombre de cases libres dans chaque lignes de la grille. Cette valeur est un poids, plus elle est élevée et plus la case sera colorée sur l'interface graphique.  \\ \\
@@ -107,7 +113,7 @@ Le fichier est constitué des fonctions suivantes : \\
 \item[]$Set$\_$Heat$\_$Mapping$ : permet de définir le poids de bases et de retourner le Kakuro coloré.\\
 \end{itemize}
 
-\subsection{Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}
+\subsubsection{Possible$\_$Values$\_$Mapping$\_$Logic : guide du remplissage des cases}
 Le fichier $Possible$\_$Values$\_$Mapping$\_$Logic.py$ permet de créer le système de recommandation de coups à jouer. C'est ce qui permet d'afficher dans des cases vides la recommandation de chiffres à placer. \\ \\
 C'est l'un des fichier le plus important car il contient la fonction qui permet de charger la ressource sums.pkl. \\ \\
 
@@ -115,7 +121,7 @@ Les fonctions $objective$\_$Propagation$\_$Row$ et $objective$\_$Propagation$\_$
 Ces deux fonctions sont executées par la methode $set$\_$Objective$\_$Propagation$. \\ \\
 Quant à la méthode $findCommonNumberForLenght$, elle permet de créer deux tableaux constitué des solutions possibles à la résolution d'une ligne de Kakuro et ce en parcourant la grille horizontalement et verticalement. Cette méthode est appelée dans $set$\_$Possible$\_$Values$\_$Mapping$. 
 
-\subsection{Saving$\_$Logic : le fichier de sauvegarde}
+\subsubsection{Saving$\_$Logic : le fichier de sauvegarde}
 Sans le fichier $Saving$\_$Logic.py$ la sauvegarde et le chargement de Kakuro serait impossible car c'est ce fichier qui permet de les gérer. \\
 Le code utilise le module pickle pour ce faire et utilise des fichiers au format $.pkl$.  \\
 Il y a deux méthodes de chargement : $load$\_$Default$\_$Save$ qui va permettre de charger un fichier du nom de "save.pkl". On ne peut pas choisir de fichier en particulier. La deuxième méthode de chargement (très similaire) est $load$\_$Kakuro$\_$From$\_$File$, qui prend en argument le nom d'un fichier et qui l'ouvre. \\
@@ -129,7 +135,7 @@ La méthode $dynamic$\_$Load$ permet de charger un fichier de la façon suivante
 \end{enumerate}
 
 $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichiers présents dans le dossier $Saves$.
-
+\subsection{Ressources}
 
 
 
@@ -138,6 +144,7 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 
 \newpage
 \section{Conception du programme : Front-end}
+\subsection{Fenêtres}
 Dans notre logiciel, le front-end sert d'interface homme-machine afin de proposer une grille simple et de permettre à l'utilisateur d'interagir avec cette dernière via des boutons notamment. \\ \\
 L'interface graphique a été réalisée grâce à l'outil $PyQt5$. Cette dernière est divisée en plusieurs fenêtres (constituées de widgets) (que l'on appellera windows, de leur nom en anglais et dans les fichiers) et qui permettront d'exécuter des tâches spécifiques que nous détaillerons plus loin. \\ \\
 Voici la liste de ces fenêtres : \\
@@ -151,7 +158,7 @@ Voici la liste de ces fenêtres : \\
 
 Pour ce qui est du style de l'interface graphique nous avons opté pour un design simple et sombre (pour préserver le confort des yeux) qui permet de se concentrer sur la grille et les fonctionnalités proposées. On a donc une palette de couleurs allant du gris foncé au gris clair et du orange pastel pour la heat map.
 \newpage
-\subsection{Main$\_$Window : La base de L'UI}
+\subsubsection{Main$\_$Window : La base de L'UI}
 
 $Main$\_$Window.py$ est le fichier qui va permettre d'initialiser la fenêtre principale qui contiendra toutes les variables importantes du côté back-end pour la session actuelle et hébergera aussi la logique de navigation entre chaque fenêtre, en effet ,sous PyQt5, le changement dynamique d'une fenêtre n'est pas supporté avec l'achitecture de base, c'est un initialisant un widget "Central" qu'on viendra override, puis ré-affchier que nous sommes arrivés à une interface dynamiqe. \\
 \begin{enumerate}
@@ -170,7 +177,7 @@ Le fichier $Main$\_$Window.py$ est donc la base de l'interface graphique, nous a
 
 
 
-\subsection{Solver$\_$Window : la fenêtre principale}
+\subsubsection{Solver$\_$Window : la fenêtre principale}
 
 Si l'on ne devait garder qu'une seule fenêtre pour ce logiciel, ce serait evidemment la fenêtre $Solver$\_$Window$. En effet il s'agit de la fenêtre centrale de l'application, celle qui propose les outils d'aide à la résolution de grilles de Kakuro. \\
 L'affichage de la fenêtre est simple : en tête un menu permettant de choisir ou non l'affichage de la heat map et/ou des valeurs possible ainsi que la possibilité de charger un autre Kakuro et de se rendre sur la page de création de grilles. \\ \\
@@ -189,14 +196,14 @@ Pour cette dernière nous avons utilisé le format $rgba$ pour la palette graphi
 
 \newpage
 
-\subsection{Loader$\_$Window, page de chargement de grilles}
+\subsubsection{Loader$\_$Window : page de chargement de grilles}
 
 Le fichier $Loader$\_$Window$ correspond à la page de chargement de grilles, cette page est une fenêtre très simple permettant de sélectionner la grille de Kakuro souhaitée : celle par défaut qui sert de démonstration au logiciel ou bien un Kakuro que l'on aura sauvegardé. \\ \\
 La window est simplement constituée d'une boite "box" dans laquelle se trouve un bouton du nom du fichier à charger. Celui-ci dépend de ce que la fonction $createSelectionMenu$ va renvoyer. \\
 En effet, celle-ci va parcourir les sauvegardes et créer des boutons en fonctions de celles-ci. Si aucune sauvegarde n'est trouvée alors un bouton ramenant vers la grille de base est crée. 
 Une fois cela fait, lorsque l'on clique sur le bouton, la méthode $loadDefaultKakuro$ s'exécute et charge le Kakuro de base.
 
-\subsection{Creator$\_$Window}
+\subsubsection{Creator$\_$Window}
 
 Parlons à présent du fichier $Creator$\_$Window.py$. Son nom l'indique : il sert à créer la fenêtre d'édition de grille ainsi que la sauvegarde de la grille créée. C'est une fenêtre importante car elle permet à l'utilisateur de créer ses propres grilles de Kakuro afin de s'aider sur les exemples concrets. \\ \\
 La fenêtre se présente de la façon suivante : 
@@ -222,19 +229,18 @@ Il y en a 5 : \\
 
 
 
-\subsection{Widgets utilisés}
-Dans cette dernière partie dédiée au code source, nous allons aborder les widgets utilisés par les windows du front-end. \\
-Les widgets permettent de créer des portions de code facilement implémentable dans les windows ce qui rend le code moins lourd et permet de mieux le diviser. \\ \\
-Il y a quatre widgets que nous avons utilisé et qui vont être expliqués plus loin : \\
+\subsection{Widgets Personnalisés}
+Dans cette dernière partie dédiée au code source, nous allons aborder les widgets que nous avons du créer pour par les windows du front-end. \\
+Les widgets permettent de créer des portions de code plus facilement implémentable dans les fenêtres, ce qui rend le code moins lourd, plus lisible et facilite la maintenance de l'application. \\ \\
+ La liste: \\
 
 \begin{enumerate}
-	\item[-] $Content$\_$Button$\_$Widget.py$
-	\item[-] $Divided$\_$Label$\_$Widget.py$
-	\item[-] $Loader$\_$Button$\_$Widget.py$
-	\item[-] $Morphing$\_$Label.py$ \\
+	\item[-] $ContentButton$
+	\item[-] $DividedLabel$
+	\item[-] $LoaderButton$
+	\item[-] $MorphingLabel$ \\
 \end{enumerate}
 
-Voici leur utilité.
 \subsubsection{Content$\_$Button$\_$Widget}
 Ce widget est utilisé pour les boutons au sein des cases servant à selectionner des valeurs à jouer. Il permet aussi de créer les contraintes. C'est le widget qui gère le contenu des cases au sein des grilles et est donc un widget particulièrement important. \\ \\
 La méthode $change$\_$Content$ permet de créer les boutons au sein des cases ainsi que de cacher un bouton si il est sélectionné.   \\
@@ -252,17 +258,16 @@ Ce widget est court et relativement simple et ne contient qu'un constructeur, il
 
 \subsubsection{Loader$\_$Button$\_$Widget}
 
-$Loader$\_$Button$\_$Widget$ est utilisé dans la fenêtre $Loader$\_$Window.py$ et sert à charger le nom d'un fichier au format $.pkl$ et à l'afficher dans un bouton sur la page de chargement de grilles. \\
-Tout comme le widget $Divided$\_$Label$\_$Widget$, celui ci est aussi très court et n'est utilisé que dans $Loader$\_$Window.py$.
+les $LoaderButtons$ sont générés dans la fenêtre $Loader$\_$Window.py$ et servent à charger le nom d'un fichier au format $.pkl$ récupérer à la suite d'un apel de la fonction $get_All_Saves$ et à l'afficher dans un bouton sur la page de chargement de grilles. \\
+Tout comme le widget $DividedLabel$, celui ci est aussi très court et n'est utilisé que dans $Loader$\_$Window.py$.
 
 
 
 \subsubsection{Morphing$\_$Label}
 
-Le dernier widget est $Morphing$\_$Label$,est une case . \\
-
-Il permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
-Le constructeur permet de spécifier les paramètres des cases : taille, contenu et type. La méthode $updateCaseType$ permet de changer le type de la case et d'alterner entre les trois types.
+Le dernier widget est $Morphing$\_$Label$,il représente une case du créateur de kakuro,elle permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
+Le constructeur permet de spécifier les paramètres des cases : taille, contenu et type.  \\
+La méthode $updateCaseType$ reliée au deux boutons dans la barre de sélection  permet de changer le type de la case dans le kakuro Créateur back-end et de re-dessiner la kakuro créateur mis-à jour .
 
 \subsection{Dossiers de sauvegardes}
 
