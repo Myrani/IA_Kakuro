@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 12:30
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -389,7 +389,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./ressources/logo-unicaen.jpg, id=71, 1080.035pt x 609.27625pt>
+<./ressources/logo-unicaen.jpg, id=87, 1080.035pt x 609.27625pt>
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 20.
@@ -787,16 +787,72 @@ n/12 _$\OML/cmm/m/it/12 kakuro$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 dimensions$ \T
  []
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 222.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 223.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+
 AED: lastpage setting LastPage
 [10] (rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 612D38F6225025720ED0F3C973F1F33F;3652.
+(rerunfilecheck)             Checksum: DA770A4E6FB5A7686DB71E41489A68B3;4320.
  ) 
 Here is how much of TeX's memory you used:
- 12580 strings out of 479334
- 190557 string characters out of 2857084
- 684204 words of memory out of 3000000
- 29859 multiletter control sequences out of 15000+200000
+ 12588 strings out of 479334
+ 190717 string characters out of 2857084
+ 686207 words of memory out of 3000000
+ 29863 multiletter control sequences out of 15000+200000
  414604 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,7n,79p,487b,1110s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -811,9 +867,9 @@ ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Miste/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Miste/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Miste/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (12 pages, 220028 bytes).
+Output written on rapport.pdf (12 pages, 225150 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
