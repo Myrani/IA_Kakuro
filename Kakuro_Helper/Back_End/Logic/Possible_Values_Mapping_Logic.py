@@ -83,7 +83,7 @@ def objective_Propagation_Column(kakuro):
                     final_List.append(current_List)
                     current_List = []
 
-    # Attribution des valeures dans le Kakuro
+    # Attribution des valeures dans le Kakuro : Objectif de la cases , contrainte de longueur
     for space in final_List:
         for case in space:
             kakuro[case[0]][case[1]][2].append([case[2], len(space)])
@@ -101,14 +101,14 @@ def findCommonNumberForLength(dictionnaire_Des_Sommes, specs):
     set_One = []  # Futur set des solutions pour la contrainte de Ligne
     set_Two = []  # Futur set des solutions pour la contrainte de Colonnes
     print(set_One == [])
-    # Tri des solutions possibles en fonction des de cases à remplir : Ligne
+    # Tri des solutions possibles en fonction des de cases à remplir : ligne OU colonne
     if len(specs) == 1:
         for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
             if len(combinaison_First) == specs[0][1]:
                 for el in combinaison_First:
                     set_One.append(el)
 
-    # Tri des solutions possibles en fonction des de cases à remplir : Colonne
+    # Tri des solutions possibles en fonction des de cases à remplir : ligne ET colonne
     elif len(specs) > 1:
 
         for combinaison_First in dictionnaire_Des_Sommes[int(specs[0][0])]:
@@ -126,17 +126,21 @@ def findCommonNumberForLength(dictionnaire_Des_Sommes, specs):
     set_Two = set(set_Two)
 
     # Retourne la jointure des 2 Sets, Donc les éléments communs au 2 ensembles de solutions !
+    # ligne et colonne
     if set_One != set([]) and set_Two != set([]):
-        print(set_One)
-        print(set_Two)
-        print("Case Double specs", set_One & set_Two)
+        # print(set_One)
+        # print(set_Two)
+        #print("Case Double specs", set_One & set_Two)
         return set_One & set_Two
-
+    # ligne
     elif set_One != [] and set_Two == set([]):
-        print("Case solo specs", set_One)
+        #print("Case solo specs", set_One)
         return set_One
+    # possible traitement d'un failstate ...
     else:
         return []
+
+# Démarre la propagation dans le kakuro
 
 
 def set_Possible_Values_Mapping(kakuro):

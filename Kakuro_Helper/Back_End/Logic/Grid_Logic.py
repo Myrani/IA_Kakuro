@@ -1,7 +1,7 @@
 # Ficher Relatif à la création de la grille backend
 
 
-# Remplissage intelligent des espaces jouables de la gille
+# Remplissage intelligent des espaces jouables de la gille , évite d'avoir à définir tous les espaces vides en instruction suplémentaires
 def grid_Smart_Filler(grid):
     # Change les characters à modifier en fonction de la case actuel au besoin
     for line in grid:
@@ -40,6 +40,7 @@ def grid_Maker__Creator(x, y, liste_Instructions):
     return grid_Smart_Filler(grid)
 
 
+# étant Call si aucun fichier de sauvergarde n'est présent
 def grid_Maker__Default(x, y, liste_Instructions):
     # Génération de la grille
     grid = []
@@ -72,6 +73,7 @@ def terminalPrintFullRaw(kakuro):
         print("")
 
 
+# Affiche toutes les informations back-end de la grille , avec une output stylisée
 def terminalPrintFull(kakuro):
     for line in kakuro:
         for case in line:

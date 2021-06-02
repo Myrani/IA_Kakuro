@@ -89,7 +89,7 @@ def extract_user_kakuro(kakuro):
     kakuroToSave = []
     for x in range(0, len(kakuro)):
         # 0              1       2                                3                                    4                                5
-        # Type de case , Heat , Liste des objectifs de la case , valeurs possible pour les objectifs , Liste des valeures Contraintes , Cases Pressed
+        # Type de case , Heat , Liste des objectifs de la case , valeurs possible pour les objectifs , Liste des valeures Contraintes , Cases étant selectionnées
         kakuroToSave.append([[kakuro[x][y][1], 0, [], [], [], []]
                             for y in range(0, len(kakuro[x]))])
 
