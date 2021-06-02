@@ -135,7 +135,7 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 \subsection{Ressources}
 \subsubsection{Dictionnaire des sommes}
 
-Pendant la création du fichier $Possible_Values_Mapping_Logic$, nous nous sommes heurté à un choix, chercher et résoudre les valeures possibles au cas par cas, au besoin, ou créer un fichier contenant toutes les solutions possibles et le loader dans au chargement du programme et au vu des gains de temps; se fut la solution adoptée.\\
+Pendant la création du fichier $Possible$\_$Values$\_$Mapping$\_$Logic$, nous nous sommes heurté à un choix, chercher et résoudre les valeures possibles au cas par cas, au besoin, ou créer un fichier contenant toutes les solutions possibles et le loader dans au chargement du programme et au vu des gains de temps; se fut la solution adoptée.\\
 
 Le fichiers $Sums.pkl$ est donc un dictionnaires python de toutes les nombres pouvants être créer avec des chiffres de 1 à 9 sans redondance, pour ca génération nous sommes restés sur une approche naive, mais fonctionnant, étant pas plus neccéssaire dans le programme nous n'avons pas chercher à multi- process/threader les calculs.
 
@@ -216,7 +216,7 @@ La fenêtre se présente de la façon suivante :
 \end{enumerate}
 \newpage 
 
-Voici les fonctions présentes dans le fichier $Creator_Window.py$ \\
+Voici les fonctions présentes dans le fichier $Creator$\_$Window.py$ \\
 Il y en a 5 : \\
 
 \begin{enumerate}
@@ -261,14 +261,14 @@ Les $LoaderButtons$ sont générés dans la fenêtre $Loader$\_$Window.py$ et se
 
 \subsubsection{Morphing$\_$Label}
 
-Le dernier widget est $Morphing$\_$Label$,il représente une case du créateur de kakuro,elle permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
+Le dernier widget est $Morphing$\_$Label$, il représente une case du créateur de kakuro,elle permet d'alterner entre case jouable, non jouable et d'instruction dans la grille de la fenêtre de création. \\
 Le constructeur permet de spécifier les paramètres des cases : taille, contenu et type.  \\
 La méthode $updateCaseType$ reliée au deux boutons dans la barre de sélection  permet de changer le type de la case dans le kakuro Créateur back-end et de re-dessiner la kakuro créateur mis-à jour .
 
 \subsection{Dossiers de sauvegardes}
 
 Pour ce qui est des dossiers de sauvegarde, il y en a deux:  le dossier $Save$ qui contient les sauvegardes seront accèssible par le programme en lecture et le dossier $Save$\_$Creator$\_$Result$ qui contient les nouvelles sauvegardes crées par l'interface de créateur de kakuros. \\
-Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier $Save$\_$Creator$\_$Result$ vers $Save$ et éventuellement la renommée.
+Pour utiliser une sauvegarde crée il faut donc la déplacer du dossier \\ $Save$\_$Creator$\_$Result$ vers $Save$ et éventuellement la renommer.
 
 \section{Le logiciel dans son ensemble}
 
@@ -288,6 +288,8 @@ Voici une liste de fonctionnalités qui auraient trouvés leur place au sein de 
 
 \newpage
 \section{Annexes}
+
+
 
 \begin{figure}
 	
