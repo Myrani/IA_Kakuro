@@ -1,223 +1,184 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.25)  2 JUN 2021 22:28
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JUN 2021 22:09
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 entering extended mode
-**./rapport.tex
-(rapport.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> xparse <2020-03-03>
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**rapport.tex
+(./rapport.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@section=\count180
-\c@subsection=\count181
-\c@subsubsection=\count182
-\c@paragraph=\count183
-\c@subparagraph=\count184
-\c@figure=\count185
-\c@table=\count186
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/01/26 3.53 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/01/26 3.53 Babel common definitions
-\babel@savecnt=\count187
-\U@D=\dimen139
-\l@babelnohyphens=\language79
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 572.
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2020/02/14 3.40 Nil language
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
+\bbl@dirlevel=\count176
 )
-\bbl@dirlevel=\count188
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
-df
-Language: french 2020/10/10 v3.5l French support from the babel system
-Package babel Info: \l@acadian = using hyphenrules for french
-(babel)             (\language22) on input line 91.
-Package babel Info: \l@canadien = using hyphenrules for french
-(babel)             (\language22) on input line 92.
-\FB@nonchar=\count189
-Package babel Info: Making : an active character on input line 430.
-Package babel Info: Making ; an active character on input line 431.
-Package babel Info: Making ! an active character on input line 432.
-Package babel Info: Making ? an active character on input line 433.
-\FBguill@level=\count190
-\FBold@everypar=\toks17
-\FB@Mht=\dimen140
-\mc@charclass=\count191
-\mc@charfam=\count192
-\mc@charslot=\count193
-\std@mcc=\count194
-\dec@mcc=\count195
-\listindentFB=\dimen141
-\descindentFB=\dimen142
-\labelindentFB=\dimen143
-\labelwidthFB=\dimen144
-\leftmarginFB=\dimen145
-\parindentFFN=\dimen146
-\FBfnindent=\dimen147
+\l@nil=\language5
 ))
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen148
-\Hy@linkcounter=\count196
-\Hy@pagecounter=\count197
- (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen136
+\Hy@linkcounter=\count177
+\Hy@pagecounter=\count178
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
-atches.def
-File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
-nguages
-)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count198
- (C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+\Hy@SavedSpaceFactor=\count179
+\pdfmajorversion=\count180
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count199
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count181
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen149
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen137
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count266
-\Field@Width=\dimen150
-\Fld@charsize=\dimen151
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+\Fld@menulength=\count182
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count267
-\c@Item=\count268
-\c@Hfootnote=\count269
+\Hy@abspage=\count183
+\c@Item=\count184
+\c@Hfootnote=\count185
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
-with kernel methods
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count270
-\c@bookmark@seq@number=\count271
+\Fld@listcount=\count186
+\c@bookmark@seq@number=\count187
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -225,97 +186,97 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen152
-\Gin@req@width=\dimen153
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count272
-\lst@gtempboxa=\box47
-\lst@token=\toks19
-\lst@length=\count273
-\lst@currlwidth=\dimen154
-\lst@column=\count274
-\lst@pos=\count275
-\lst@lostspace=\dimen155
-\lst@width=\dimen156
-\lst@newlines=\count276
-\lst@lineno=\count277
-\lst@maxwidth=\dimen157
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count188
+\lst@gtempboxa=\box45
+\lst@token=\toks17
+\lst@length=\count189
+\lst@currlwidth=\dimen142
+\lst@column=\count190
+\lst@pos=\count191
+\lst@lostspace=\dimen143
+\lst@width=\dimen144
+\lst@newlines=\count192
+\lst@lineno=\count193
+\lst@maxwidth=\dimen145
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count278
-\lst@skipnumbers=\count279
-\lst@framebox=\box48
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count194
+\lst@skipnumbers=\count195
+\lst@framebox=\box46
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen158
-\captionmargin@=\dimen159
-\captionwidth=\dimen160
-\caption@tempdima=\dimen161
-\caption@indent=\dimen162
-\caption@parindent=\dimen163
-\caption@hangindent=\dimen164
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen146
+\captionmargin@=\dimen147
+\captionwidth=\dimen148
+\caption@tempdima=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
 Package caption Info: Standard document class detected.
-Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count280
-\c@continuedfloat=\count281
+\c@caption@flags=\count196
+\c@continuedfloat=\count197
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
-\c@KVtest=\count282
+\c@KVtest=\count198
 \sf@farskip=\skip50
-\sf@captopadj=\dimen165
+\sf@captopadj=\dimen153
 \sf@capskip=\skip51
 \sf@nearskip=\skip52
-\c@subfigure=\count283
-\c@subfigure@save=\count284
-\c@lofdepth=\count285
-\c@subtable=\count286
-\c@subtable@save=\count287
-\c@lotdepth=\count288
+\c@subfigure=\count199
+\c@subfigure@save=\count266
+\c@lofdepth=\count267
+\c@subtable=\count268
+\c@subtable@save=\count269
+\c@lotdepth=\count270
 \sf@top=\skip53
 \sf@bottom=\skip54
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box49
-) (rapport.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count271
+\l__pdf_internal_box=\box47
+)
+(./rapport.aux)
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -334,29 +295,24 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \degres on input line 14.
-LaTeX Info: Redefining \dots on input line 14.
-LaTeX Info: Redefining \up on input line 14.
+\AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring OFF on input line 14.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count290
+\c@section@level=\count272
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
 LaTeX Info: Redefining \nameref on input line 14.
- (rapport.out) (rapport.out)
+
+(./rapport.out) (./rapport.out)
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
@@ -364,32 +320,37 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 14.
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen166
-\scratchbox=\box50
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen167
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks21
-)
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+\scratchcounter=\count273
+\scratchdimen=\dimen154
+\scratchbox=\box49
+\nofMPsegments=\count274
+\nofMParguments=\count275
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count276
+\MPscratchDim=\dimen155
+\MPnumerator=\count277
+\makeMPintoPDFobject=\count278
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-)
-\c@lstlisting=\count297
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count279
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
+<<<<<<< HEAD
 <./ressources/logo-unicaen.jpg, id=107, 1080.035pt x 609.27625pt>
+=======
+<./ressources/logo-unicaen.jpg, id=104, 1080.035pt x 609.27625pt>
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 File: ./ressources/logo-unicaen.jpg Graphic file (type jpg)
 <use ./ressources/logo-unicaen.jpg>
 Package pdftex.def Info: ./ressources/logo-unicaen.jpg  used on input line 22.
@@ -407,8 +368,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 24.
 [1
 
-{C:/Users/Miste/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./ressources/lo
-go-unicaen.jpg>] (rapport.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ressources/logo-UNICAEN.
+jpg>] (./rapport.toc
+Overfull \hbox (11.93504pt too wide) in paragraph at lines 8--8
+ [][] [][]\T1/cmr/m/n/12 Possible$[]$Values$[]$Mapping$[]$Logic : guide du remp
+lissage 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
 
@@ -427,11 +394,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-(C:\Users\Miste\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -459,12 +426,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--98
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 101.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 101.
+=======
+Overfull \hbox (3.82043pt too wide) in paragraph at lines 77--81
+\T1/cmr/m/n/12 sauvegrdes du logiciel et la partie Ressources contient les ress
+ources nécessaires
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 84.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 84.
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
@@ -477,6 +459,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 117.
 
@@ -491,6 +474,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 117.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 119--121
@@ -522,7 +521,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
+[3]
 
+<<<<<<< HEAD
 Overfull \hbox (4.59656pt too wide) in paragraph at lines 132--132
 []\T1/cmr/bx/n/12 Possible$[]$Values$[]$Mapping$[]$Logic : guide du rem-plis-sa
 ge des
@@ -551,6 +552,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 132.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
@@ -562,6 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
+<<<<<<< HEAD
 [4]
 Overfull \hbox (18.83904pt too wide) in paragraph at lines 135--138
 []\T1/cmr/m/n/12 Les fonc-tions $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\O
@@ -575,6 +601,27 @@ Overfull \hbox (11.82301pt too wide) in paragraph at lines 135--138
 \T1/cmr/m/n/12 Ces deux fonc-tions sont exe-cu-tées par la me-thode $\OML/cmm/m
 /it/12 set$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Objective$\T1/cmr/m/n/12 _$\OML/cm
 m/m/it/12 Propagation$\T1/cmr/m/n/12 . 
+=======
+
+Overfull \hbox (18.83904pt too wide) in paragraph at lines 118--121
+[]\T1/cmr/m/n/12 Les fonctions $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\OM
+L/cmm/m/it/12 Propagation$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$ \T1/cmr/m/n/12
+ et $\OML/cmm/m/it/12 objective$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Propagation$\
+T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Row$
+ []
+
+
+Overfull \hbox (20.1708pt too wide) in paragraph at lines 118--121
+\T1/cmr/m/n/12 permettent de parcourir la grille (verticalement et horizontalem
+ent) et permettent
+ []
+
+
+Overfull \hbox (11.82301pt too wide) in paragraph at lines 118--121
+\T1/cmr/m/n/12 Ces deux fonctions sont executées par la methode $\OML/cmm/m/it/
+12 set$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Objective$\T1/cmr/m/n/12 _$\OML/cmm/m/
+it/12 Propagation$\T1/cmr/m/n/12 . 
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
  []
 
 
@@ -588,6 +635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--138
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 139.
 
@@ -597,16 +645,50 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 140--145
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 122.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 122.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 140--145
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--129
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
@@ -621,11 +703,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (6.30801pt too wide) in paragraph at lines 157--158
 []\T1/cmr/m/n/12 Le fi-chiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est do
 nc un dic-tion-naires py-thon de toutes les nombres
@@ -633,21 +720,49 @@ nc un dic-tion-naires py-thon de toutes les nombres
 
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 166--169
+=======
+Overfull \hbox (0.8363pt too wide) in paragraph at lines 139--140
+\T1/cmr/m/n/12 Pendant la création du fichier $\OML/cmm/m/it/12 Possible$\T1/cm
+r/m/n/12 _$\OML/cmm/m/it/12 Values$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Mapping$\T
+1/cmr/m/n/12 _$\OML/cmm/m/it/12 Logic$\T1/cmr/m/n/12 , nous nous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 166--169
+=======
+Overfull \hbox (6.30801pt too wide) in paragraph at lines 141--142
+[]\T1/cmr/m/n/12 Le fichiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est don
+c un dictionnaires python de toutes les nombres
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 166--169
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
@@ -657,12 +772,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 [7]
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 179.
 
@@ -672,47 +797,105 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 163.
+
+
+Overfull \hbox (18.28947pt too wide) in paragraph at lines 165--166
+$\OML/cmm/m/it/12 Main$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Window:py$ \T1/cmr/m/n
+/12 est le fichier qui va permettre d'initialiser la fenêtre principale
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 188--190
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 188--190
+=======
+Overfull \hbox (1.47113pt too wide) in paragraph at lines 172--174
+\T1/cmr/m/n/12 La méthode $[]$init$[]$ permet de paramétrer l'interface graphiq
+ue et d'instancier
+ []
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
+
+Overfull \hbox (33.28835pt too wide) in paragraph at lines 172--174
+\T1/cmr/m/n/12 les paramètres de styles généraux ainsi que le premièr apel à mé
+thode d'instanciation
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 188--190
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (13.8922pt too wide) in paragraph at lines 191--192
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+
+Overfull \hbox (14.41429pt too wide) in paragraph at lines 175--176
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 []$\OML/cmm/m/it/12 startSolverWindow$\T1/cmr/m/n/12 , $\OML/cmm/m/it/12 startC
 reatorWindow$ \T1/cmr/m/n/12 et $\OML/cmm/m/it/12 startLoaderWindow$\T1/cmr/m/n
 /12 , comme
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 198.
 
@@ -722,25 +905,70 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--202
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 182.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 182.
+
+
+Overfull \hbox (15.6677pt too wide) in paragraph at lines 184--186
+\T1/cmr/m/n/12 Si l'on ne devait garder qu'une seule fenêtre pour ce logiciel, 
+ce serait evidemment
+ []
+
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+Overfull \hbox (23.32343pt too wide) in paragraph at lines 184--186
+\T1/cmr/m/n/12 la fenêtre $\OML/cmm/m/it/12 Solver$\T1/cmr/m/n/12 _$\OML/cmm/m/
+it/12 Window$\T1/cmr/m/n/12 . En effet il s'agit de la fenêtre centrale de l'ap
+plication,
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 [8]
 Underfull \hbox (badness 10000) in paragraph at lines 203--204
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+ []
+
+
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
+=======
+Overfull \hbox (15.99657pt too wide) in paragraph at lines 190--191
+[]\T1/cmr/m/n/12 Une fonction d'initialisation de la fenêtre qui appelle les wi
+dgets nécessaires 
+ []
 
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+Overfull \hbox (11.2486pt too wide) in paragraph at lines 191--192
+[]\T1/cmr/m/n/12 Une méthode $\OML/cmm/m/it/12 createMenuLayout$ \T1/cmr/m/n/12
+ qui permet de créer le menu de sélection
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
@@ -756,10 +984,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--223
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 
+Overfull \hbox (2.25476pt too wide) in paragraph at lines 195--198
+\T1/cmr/m/n/12 Pour cette dernière nous avons utilisé le format $\OML/cmm/m/it/
+12 rgba$ \T1/cmr/m/n/12 pour la palette graphique,
+ []
+
+
+Overfull \hbox (17.88661pt too wide) in paragraph at lines 195--198
+\T1/cmr/m/n/12 mais aussi de gérer l'opacité des teintes, ce dernier paramètre 
+est particulièrement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+ []
+
+[8]
+
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 224.
 
@@ -769,20 +1019,51 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 226--228
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 [10]
 Underfull \hbox (badness 10000) in paragraph at lines 236--238
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 208.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 208.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
+
+<<<<<<< HEAD
 Overfull \hbox (1.66586pt too wide) in paragraph at lines 243--244
 []$\OML/cmm/m/it/12 update$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 creator$\T1/cmr/m/
 n/12 _$\OML/cmm/m/it/12 kakuro$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 dimensions$ \T
@@ -791,20 +1072,41 @@ n/12 _$\OML/cmm/m/it/12 kakuro$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 dimensions$ \T
 
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 251--254
+=======
+ []
+
+[10]
+Overfull \hbox (29.14221pt too wide) in paragraph at lines 235--238
+\T1/cmr/m/n/12 Les widgets permettent de créer des portions de code plus facile
+ment implémentable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 251--254
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 262.
 
@@ -819,19 +1121,51 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 262.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--266
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
-
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 263--266
+=======
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+Overfull \hbox (19.34114pt too wide) in paragraph at lines 247--250
+\T1/cmr/m/n/12 Dans le fonctionnent, la méthode $\OML/cmm/m/it/12 change$\T1/cm
+r/m/n/12 _$\OML/cmm/m/it/12 Content$ \T1/cmr/m/n/12 gère tout ,si un ContentBut
+on
+ []
+
+
+<<<<<<< HEAD
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 [12]
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 269.
 
@@ -856,25 +1190,83 @@ Overfull \hbox (4.70374pt too wide) in paragraph at lines 271--273
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 274.
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Overfull \hbox (4.96478pt too wide) in paragraph at lines 255--257
+\T1/cmr/m/n/12 Ce widget est court, relativement simple et ne contient que peu 
+de logique,juste
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 258.
+
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 258.
+
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 274.
+=======
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 258.
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 274.
+=======
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 258.
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 274.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
+=======
+
+Overfull \hbox (8.46503pt too wide) in paragraph at lines 260--261
+\T1/cmr/m/n/12 Les $\OML/cmm/m/it/12 LoaderButtons$ \T1/cmr/m/n/12 sont générés
+ dans la fenêtre $\OML/cmm/m/it/12 Loader$\T1/cmr/m/n/12 _$\OML/cmm/m/it/12 Win
+dow:py$ \T1/cmr/m/n/12 et servent
+ []
+
+
+Overfull \hbox (3.51534pt too wide) in paragraph at lines 260--261
+\T1/cmr/m/n/12 solver.Utiliser de pair avec la fonction $\OML/cmm/m/it/12 get[]
+ll[]aves$ \T1/cmr/m/n/12 pour créer un LoaderButton
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 
  []
 
 
+<<<<<<< HEAD
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 279.
 
@@ -951,4 +1343,99 @@ PDF statistics:
  600 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Overfull \hbox (2.44093pt too wide) in paragraph at lines 265--268
+\T1/cmr/m/n/12 La méthode $\OML/cmm/m/it/12 updateCaseType$ \T1/cmr/m/n/12 reli
+ée au deux boutons dans la barre de sélection
+ []
+
+[12]
+Overfull \hbox (14.45822pt too wide) in paragraph at lines 280--282
+\T1/cmr/m/n/12 Le logiciel n'est pas parfait et certaines fonctionnalité n'ont 
+pas été implémentées
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+[13]
+<./ressources/acceuil.png, id=207, 528.47438pt x 626.34pt>
+File: ./ressources/acceuil.png Graphic file (type png)
+<use ./ressources/acceuil.png>
+Package pdftex.def Info: ./ressources/acceuil.png  used on input line 297.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+<./ressources/helperSide.png, id=208, 528.47438pt x 626.34pt>
+File: ./ressources/helperSide.png Graphic file (type png)
+<use ./ressources/helperSide.png>
+Package pdftex.def Info: ./ressources/helperSide.png  used on input line 304.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+<./ressources/valPoss.png, id=209, 528.47438pt x 626.34pt>
+File: ./ressources/valPoss.png Graphic file (type png)
+<use ./ressources/valPoss.png>
+Package pdftex.def Info: ./ressources/valPoss.png  used on input line 311.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+<./ressources/heatmap.png, id=210, 528.47438pt x 626.34pt>
+File: ./ressources/heatmap.png Graphic file (type png)
+<use ./ressources/heatmap.png>
+Package pdftex.def Info: ./ressources/heatmap.png  used on input line 318.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+<./ressources/aideMax.png, id=211, 528.47438pt x 626.34pt>
+File: ./ressources/aideMax.png Graphic file (type png)
+<use ./ressources/aideMax.png>
+Package pdftex.def Info: ./ressources/aideMax.png  used on input line 325.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+<./ressources/creator.png, id=212, 528.47438pt x 626.34pt>
+File: ./ressources/creator.png Graphic file (type png)
+<use ./ressources/creator.png>
+Package pdftex.def Info: ./ressources/creator.png  used on input line 332.
+(pdftex.def)             Requested size: 390.0pt x 462.2228pt.
+ 
+AED: lastpage setting LastPage
+[14] [15 <./ressources/acceuil.png>] [16 <./ressources/helperside.png>]
+[17 <./ressources/valPoss.png>] [18 <./ressources/heatmap.png>] [19 <./ressourc
+es/aideMax.png>] [20 <./ressources/creator.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+ (./rapport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: E355CBC88E8CC039893EBB29D30AC7DB;1988.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 337.
+ ) 
+Here is how much of TeX's memory you used:
+ 9054 strings out of 483140
+ 136939 string characters out of 5965150
+ 578714 words of memory out of 5000000
+ 23879 multiletter control sequences out of 15000+600000
+ 542599 words of font info for 43 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 50i,7n,51p,574b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.60
+0pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.
+600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx120
+0.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
+728.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m1440.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm2488.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on rapport.pdf (22 pages, 287003 bytes).
+PDF statistics:
+ 567 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 9480a6f9a668be298c4a12bcdefd150c1809351b
 

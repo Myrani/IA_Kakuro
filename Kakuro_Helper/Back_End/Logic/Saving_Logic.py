@@ -70,11 +70,6 @@ def dynamic_Load():
 # Partie de logique de la fenêtre de création
 
 
-def load_Sums():
-    with open('Back_End/Ressources/sums.pkl', 'rb') as sums:
-        return pickle.load(sums)
-
-
 def push_Creator(kakuro):
     print(os.getcwd())
     modifiedKakuro = extract_user_kakuro(kakuro)

@@ -1,4 +1,4 @@
-\babel@toc {french}{}
+\babel@toc {nil}{}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {section}{\numberline {2}Guide d'utilisation du programme}{1}{section.2}%
 \contentsline {section}{\numberline {3}Architecture logique de l'application}{2}{section.3}%
