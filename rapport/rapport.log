@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JUN 2021 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  7 JUN 2021 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -638,12 +638,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-
-Overfull \hbox (6.30801pt too wide) in paragraph at lines 158--159
-[]\T1/cmr/m/n/12 Le fichiers $\OML/cmm/m/it/12 Sums:pkl$ \T1/cmr/m/n/12 est don
-c un dictionnaires python de toutes les nombres
- []
-
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 167--170
 
@@ -1038,7 +1032,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
 Here is how much of TeX's memory you used:
  9072 strings out of 483140
  137353 string characters out of 5965150
- 578959 words of memory out of 5000000
+ 578939 words of memory out of 5000000
  23891 multiletter control sequences out of 15000+600000
  542599 words of font info for 43 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1053,9 +1047,9 @@ crm2488.600pk> </home/myrani/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (23 pages, 306903 bytes).
+Output written on rapport.pdf (23 pages, 307143 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
+ 590 PDF objects out of 1000 (max. 8388607)
  271 compressed objects within 3 object streams
  60 named destinations out of 1000 (max. 500000)
  254 words of extra memory for PDF output out of 10000 (max. 10000000)

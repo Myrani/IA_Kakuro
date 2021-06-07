@@ -58,9 +58,9 @@
 \section{Introduction}
 \textbf{Github du projet :} \href{https://github.com/Myrani/IA_Kakuro}https://github.com/Myrani/IA$\_$Kakuro \\ \\
 
-Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Jpaon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
+Le \textbf{Kakuro} est un jeu logique semblable aux mots croisés. Le jeu est originaire du Japon où sa popularité est immense. Le jeu est similaire aux mots fléchés dans lesquels une même combinaison de chiffres ne peut être utilisé deux fois dans la même grille. Bien que le jeu ne soit parvenu en France que vers les années 2004 et 2005 dans le sillage du sudoku, le jeu reste connu depuis longtemps. \\ \\ Source : Wikipedia \\ \\
 Le but de ce projet est de créer un logiciel permettant de fournir une aide à la résolution de grilles de kakuro, il ne s'agit pas de proposer une résolution automatique mais de fournir des outils à un joueur afin qu'il résolve de lui même une grille de jeu. \\\ \\
-Pour réaliser ce projet, nous avons choisi le langage Python, permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenter avec cette librairie, nous avons fait un gain de temps majeur sur le temps de dévellopement avec ces choix.
+Pour réaliser ce projet, nous avons choisi le langage Python, permettant de créer un livrable plus rapidement, et nous offrant un large panel de possibilitées pour la création d'interfaces graphiques, nous avons opté pour PyQt5, étant déjà expérimenté avec cette librairie nous avons fait un gaint majeur sur le temps de développement.
 \section{Guide d'utilisation du programme}
 Afin d'éxecuter le logiciel il faut avoir installé :
 \begin{enumerate}
@@ -153,9 +153,9 @@ $get$\_$All$\_$Saves$ permet quand à elle de renvoyer les nom de tous les fichi
 \subsection{Ressources}
 \subsubsection{Dictionnaire des sommes}
 
-Pendant la création du fichier $Possible$\_$Values$\_$Mapping$\_$Logic$, nous nous sommes heurté à un choix, chercher et résoudre les valeures possibles au cas par cas, au besoin, ou créer un fichier contenant toutes les solutions possibles et le loader dans au chargement du programme et au vu des gains de temps; se fut la solution adoptée.\\
+Pendant la création du fichier $Possible$\_$Values$\_$Mapping$\_$Logic$, nous nous sommes heurtés à un choix, chercherles valeures possibles au cas par cas, au besoin, ou créer un fichier contenant toutes les solutions possibles et le charger au lancement du programme, au vu des gains de temps; se fut la solution adoptée.\\
 
-Le fichiers $Sums.pkl$ est donc un dictionnaires python de toutes les nombres pouvants être créer avec des chiffres de 1 à 9 sans redondance, pour ca génération nous sommes restés sur une approche naive, mais fonctionnant, étant pas plus neccéssaire dans le programme nous n'avons pas chercher à multi- process/threader les calculs.
+Le fichiers $Sums.pkl$ est donc un dictionnaire python de tout les nombres et solutions correspondantes pouvants être créés avec des chiffres de 1 à 9 sans redondance, pour la génération nous sommes restés sur une approche naïve mais fonctionnant, n'étant pas dynamique dans le programme, nous n'avons pas chercher à multi-process/threader les calculs.
 
 
 
