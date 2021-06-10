@@ -10,7 +10,7 @@ def heat_Mapping_Row(kakuro, weigth):
 
         # Attribution des poids en fonction du nombres de cases libres dans chaque ligne ; dans le [1] de les cases correspondantes du kakuro
         for spot in free_spots:
-            kakuro[spot[0]][spot[1]][1] += weigth/len(free_spots)  # à opti
+            kakuro[spot[0]][spot[1]][1] += weigth/len(free_spots)
 
     return kakuro
 
@@ -30,14 +30,14 @@ def heat_Mapping_Column(kakuro, weigth):
                 # Attribution des poids en fonction du nombres de cases libres dans chaque colonne ; dans le [1] de les cases correspondantes du kakuro
                 for spot in free_spots:
                     kakuro[spot[0]][spot[1]][1] += weigth / \
-                        len(free_spots)  # à opti
+                        len(free_spots)
 
                 free_spots = []
 
         if len(free_spots) != 0:
             for spot in free_spots:
                 kakuro[spot[0]][spot[1]][1] += weigth / \
-                    len(free_spots)  # à opti
+                    len(free_spots)
 
             free_spots = []
 
