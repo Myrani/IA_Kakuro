@@ -29,7 +29,9 @@ def grid_Maker__Creator(x, y, liste_Instructions):
     # Génération de la grille
     grid = []
     for x in range(0, x):
-        grid.append([["#|#", "#|#", []] for y in range(0, y)])
+
+        # 0: Type de Cases , 1: Valeur de la case en question  // évite d'avoir à faire de analyses de cas ...
+        grid.append([["#|#", "#|#"] for y in range(0, y)])
 
     # Application des instructions
     if len(liste_Instructions) > 0:

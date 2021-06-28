@@ -1,0 +1,3 @@
+Refaire le back-end de la grille pour éviter de se trimbaler juste un dump mémoire.
+Transformer l'élément de grille en objet et reformatter le code en fonction.
+
