@@ -210,13 +210,16 @@ def objective_Propagation_Column__Refactored(kakuro, objectives):
 
             # S'assure que nous sommes bien dans le cas d'une colonne de contrainte
             if kakuro[j][i] != "#|#" and kakuro[j][i] != "H|#" and kakuro[j][i] != " | ":
+                print(kakuro[j][i])
+
                 # Extrait l'objectif et le met dans la variable de propagation
                 current_Objective = kakuro[j][i].split("|")[0]
+                print("Current objective :", current_Objective)
                 if current_List != []:
                     final_List.append(current_List)
                     current_List = []
             # Cas d'une case jouable -> stockage de l'objectif en cour de propagation si il est Set
-            elif kakuro[j][i][0] == " | " and current_Objective != None:
+            elif kakuro[j][i] == " | " and current_Objective != None:
 
                 current_List.append([j, i, current_Objective])
 
@@ -242,9 +245,6 @@ def set_Objective_Propagation__Refactored(kakuro):
                       for y in range(0, len(kakuro))]
 
     return objective_Propagation_Row__Refactored(kakuro, objective_Propagation_Column__Refactored(kakuro, objectives_map))
-
-
-# Refactor
 
 
 def findCommonNumberForLength__Refactored(dictionnaire_Des_Sommes, specs):

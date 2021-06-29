@@ -31,9 +31,9 @@ class DividedLabel(QtWidgets.QWidget):
         self.labelLayout.setContentsMargins(0, 0, 0, 0)
 
         self.label.setLayout(self.labelLayout)
-
-        self.possibleSetValues = set(
-            [value for value in possibleValues if value not in constraints])
+        print(possibleValues)
+        self.possibleSetValues = [
+            value for value in possibleValues if value not in constraints]
         # Rempli le minilabel avec un chiffre si c'est une solution possible , sinon le laisse vide
         cpt = 1
         for i in range(0, 3):

@@ -16,7 +16,8 @@ class SolverWindow(QtWidgets.QWidget):
 
         print(self.parentWidget().filterSettings)
         # Setup des paramêtres basique de la fenêtre principale
-        self.kakuro = kakuro
+        self.grid = kakuro
+        self.kakuro = kakuro.grid
         self.dictionnaire = dictionnaire_Des_Sommes
         self.filterSettings = filterSettings
         self.title = 'Kakuro Helper'
@@ -111,7 +112,7 @@ class SolverWindow(QtWidgets.QWidget):
                 # Changement du contenu de la case en fonction des values [0] et [1] du modèle backend
 
                 # Cas des Cases Void
-                if kakuro[x][y][0] == "#|#" or kakuro[x][y][0] == "H|#":
+                if kakuro[x][y] == "#|#" or kakuro[x][y] == "H|#":
                     label = QtWidgets.QLabel(self)
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
@@ -120,19 +121,19 @@ class SolverWindow(QtWidgets.QWidget):
                         "background-color : rgba(20,20,20,210);border-style: solid; border-width: 1px; border-color: rgba(34,34,34,255); border-radius: 7px;")
 
                 # Cas des Cases jouables
-                elif kakuro[x][y][0] == " | ":
+                elif kakuro[x][y] == " | ":
 
                     # On passe en argument les valeurs trouvées par le mapping des values possibles stockées dans le back-end
                     if "Possible Values" in self.filterSettings:
                         label = Divided_Label_Widget.DividedLabel(
-                            kakuro[x][y][3], kakuro[x][y][4], kakuro[x][y][5], x, y)
+                            self.grid.possibleValuesMap[x][y], self.grid.constraintsMap[x][y], self.grid.selectedsMap[x][y], x, y)
                     else:
                         label = QtWidgets.QLabel("")
 
                     # Couleur d'arrière plan en fonction du heatmapping stocké en [1]
                     if "Heat Map" in self.filterSettings:
                         label.setStyleSheet(
-                            "background-color : rgba(255,80,0,"+str(int(kakuro[x][y][1]))+"); border-radius: 7px;")
+                            "background-color : rgba(255,80,0,"+str(int(self.grid.heatMap[x][y]))+"); border-radius: 7px;")
                         layout.addWidget(label, x, y)  # Rajout à la Grid
                     else:
                         label.setStyleSheet(
@@ -141,7 +142,7 @@ class SolverWindow(QtWidgets.QWidget):
                 # Cas des cases de contraintes du Kakuro
                 else:
                     label = QtWidgets.QLabel(
-                        kakuro[x][y][0].replace("|", "\\").replace("H", "#"))
+                        kakuro[x][y].replace("|", "\\").replace("H", "#"))
                     label.setAlignment(QtCore.Qt.AlignCenter)
                     layout.addWidget(label, x, y)
 

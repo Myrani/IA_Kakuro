@@ -11,8 +11,10 @@ class SolverGrid():
         self.objectivesMap = set_Objective_Propagation__Refactored(self.grid)
         self.possibleValuesMap = set_Possible_Values_Mapping__Refactored(
             self.grid, self.objectivesMap)
-        self.constraints = []
-        self.selected = []
+        self.constraintsMap = [[[] for x in range(0, len(self.grid))]
+                               for y in range(0, len(self.grid[0]))]
+        self.selectedsMap = [[[] for x in range(0, len(self.grid))]
+                             for y in range(0, len(self.grid[0]))]
 
     def printKakuro(self):
         print("|| Current kakuro")
@@ -39,8 +41,24 @@ class SolverGrid():
         print("\n")
 
     def printPossibleValuesMap(self):
-        print("|| Possibles Values")
+        print("|| Current Possible Values")
         for line in self.possibleValuesMap:
+            for case in line:
+                print("|"+str(case), end="|")
+            print("")
+        print("\n")
+
+    def printConstraintsMap(self):
+        print("|| Current Constraints")
+        for line in self.constraintsMap:
+            for case in line:
+                print("|"+str(case), end="|")
+            print("")
+        print("\n")
+
+    def printSelectedsMap(self):
+        print("|| Current Selected Values")
+        for line in self.selectedsMap:
             for case in line:
                 print("|"+str(case), end="|")
             print("")
@@ -51,6 +69,8 @@ class SolverGrid():
         self.printHeatMap()
         self.printObjectivesMap()
         self.printPossibleValuesMap()
+        self.printConstraintsMap()
+        self.printSelectedsMap()
 
 
 class CreatorGrid():

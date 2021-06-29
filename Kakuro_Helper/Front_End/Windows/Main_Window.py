@@ -36,7 +36,6 @@ class MainWindow(QtWidgets.QMainWindow):
             self.startLoaderWindow)
         self.solverWindow.menuGroupBox.children()[-1].clicked.connect(
             self.startCreatorWindow)
-        terminalPrintFullRaw(self.solverKakuro)
         self.show()
 
     def startCreatorWindow(self):

@@ -30,7 +30,7 @@ class ContentButton(QtWidgets.QPushButton):
         if not self.selected:
 
             # rajoute le bouton à la liste des values préssées sur cette case
-            self.kakuro_solver_ref[self.x][self.y][5].append(
+            self.kakuro_solver_ref.selectedsMap[self.x][self.y].append(
                 int(self.content))
 
             # Propage la contrainte sur les cases voisines concernées
@@ -40,7 +40,7 @@ class ContentButton(QtWidgets.QPushButton):
         if self.selected:
 
             # enlève le bouton de la liste des cases préssée sur cette case
-            self.kakuro_solver_ref[self.x][self.y][5].remove(
+            self.kakuro_solver_ref.selectedsMap[self.x][self.y].remove(
                 int(self.content))
             # Propage la libération sur les case voisines concernées
             self.start_remove_constraint_propagation(
@@ -52,9 +52,9 @@ class ContentButton(QtWidgets.QPushButton):
         # Permet d'handle les sorties de grille si une case jouable se trouve sur un bord du Kakuro
         try:
             # Vérifie le la case actuelle est une case jouable sinon fini la récursivité
-            if kakuro[x][y][0] == " | ":
+            if kakuro.grid[x][y] == " | ":
                 # le rajoute une contrainte dans la liste de contrainte de la case actuelle
-                kakuro[x][y][4].append(constraint)
+                kakuro.constraintsMap[x][y].append(constraint)
                 # Poursuit la récursivité
                 self.propagate_add_constraint_up(kakuro, x-1, y, constraint)
             # La récursivité de ce côté est donc terminée, on trigger la fin de récursivité
@@ -67,8 +67,8 @@ class ContentButton(QtWidgets.QPushButton):
 
     def propagate_add_constraint_down(self, kakuro, x, y, constraint):
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].append(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].append(constraint)
                 self.propagate_add_constraint_down(kakuro, x+1, y, constraint)
             else:
                 return None
@@ -78,8 +78,8 @@ class ContentButton(QtWidgets.QPushButton):
 
     def propagate_add_constraint_rigth(self, kakuro, x, y, constraint):
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].append(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].append(constraint)
                 self.propagate_add_constraint_rigth(kakuro, x, y+1, constraint)
             else:
                 return None
@@ -90,8 +90,8 @@ class ContentButton(QtWidgets.QPushButton):
     def propagate_add_constraint_left(self, kakuro, x, y, constraint):
 
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].append(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].append(constraint)
                 self.propagate_add_constraint_left(kakuro, x, y-1, constraint)
             else:
                 return None
@@ -113,8 +113,8 @@ class ContentButton(QtWidgets.QPushButton):
     # Propage en haut
     def propagate_remove_constraint_up(self, kakuro,  x, y, constraint):
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].remove(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].remove(constraint)
                 self.propagate_remove_constraint_up(kakuro, x-1, y, constraint)
             else:
                 return None
@@ -124,8 +124,8 @@ class ContentButton(QtWidgets.QPushButton):
 
     def propagate_remove_constraint_down(self, kakuro, x, y, constraint):
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].remove(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].remove(constraint)
                 self.propagate_remove_constraint_down(
                     kakuro, x+1, y, constraint)
             else:
@@ -136,8 +136,8 @@ class ContentButton(QtWidgets.QPushButton):
     # Propage à droite
     def propagate_remove_constraint_rigth(self, kakuro, x, y, constraint):
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].remove(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].remove(constraint)
                 self.propagate_remove_constraint_rigth(
                     kakuro, x, y+1, constraint)
             else:
@@ -149,8 +149,8 @@ class ContentButton(QtWidgets.QPushButton):
     def propagate_remove_constraint_left(self, kakuro, x, y, constraint):
 
         try:
-            if kakuro[x][y][0] == " | ":
-                kakuro[x][y][4].remove(constraint)
+            if kakuro.grid[x][y] == " | ":
+                kakuro.constraintsMap[x][y].remove(constraint)
                 self.propagate_remove_constraint_left(
                     kakuro, x, y-1, constraint)
             else:
