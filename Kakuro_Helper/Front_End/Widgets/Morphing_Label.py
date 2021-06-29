@@ -15,7 +15,7 @@ class Morphing_Label(QtWidgets.QWidget):
                            "rgba(34,34,34,255)", "rgba(15,80,60,255)"]
         self.caseTypes = ["#|#", " | ", "X|X"]
         # Changement de l'index en fonction de la valeur trouvé dans le kakuro back-end
-        self.currentState = self.caseTypes.index(kakuro[x][y][0])
+        self.currentState = self.caseTypes.index(kakuro[x][y])
         # + Stockage des indices de la case actuelle
         self.x = x
         self.y = y
@@ -23,14 +23,14 @@ class Morphing_Label(QtWidgets.QWidget):
         # en fonction du contenu du kakuro backend
         self.container = QtWidgets.QGroupBox(self)
         self.container.setStyleSheet(
-            "background-color: "+self.caseColors[self.caseTypes.index(kakuro[x][y][0])]+";")
+            "background-color: "+self.caseColors[self.caseTypes.index(kakuro[x][y])]+";")
         self.container.setGeometry(QtCore.QRect(0, 0, 150, 150))
         self.layout = QtWidgets.QVBoxLayout(self.container)
         self.setLayout(self.layout)
 
         # Box Permettant l'entrée de contraintes par l'utilisateur
 
-        if self.nativeParentWidget().creatorKakuro[self.x][self.y][0] == 'X|X':
+        if self.nativeParentWidget().creatorKakuro.types[self.x][self.y] == 'X|X':
 
             self.inputMenu = QtWidgets.QGroupBox(self)
             self.inputMenuLayout = QtWidgets.QHBoxLayout()
@@ -40,7 +40,7 @@ class Morphing_Label(QtWidgets.QWidget):
             # Recupère les values qui vont rempir les palces holder des QLineEdits qui récupère les inputs
             try:
                 displaySplit = self.nativeParentWidget(
-                ).creatorKakuro[self.x][self.y][1].split("|")
+                ).creatorKakuro.values[self.x][self.y].split("|")
                 print(displaySplit)
             except Exception as e:
                 print(e)
@@ -127,15 +127,15 @@ class Morphing_Label(QtWidgets.QWidget):
         # se trouvant dans la MainWindow
         if userInput != None:
             self.nativeParentWidget(
-            ).creatorKakuro[self.x][self.y][0] = self.caseTypes[self.currentState]
+            ).creatorKakuro.types[self.x][self.y] = self.caseTypes[self.currentState]
             self.nativeParentWidget(
-            ).creatorKakuro[self.x][self.y][1] = userInput
+            ).creatorKakuro.values[self.x][self.y] = userInput
 
         else:
             self.nativeParentWidget(
-            ).creatorKakuro[self.x][self.y][0] = self.caseTypes[self.currentState]
+            ).creatorKakuro.types[self.x][self.y] = self.caseTypes[self.currentState]
             self.nativeParentWidget(
-            ).creatorKakuro[self.x][self.y][1] = self.caseTypes[self.currentState]
+            ).creatorKakuro.values[self.x][self.y] = self.caseTypes[self.currentState]
         # Refresh la page et activant la fonction de création de PageCreateur de MainWindow !
 
         self.nativeParentWidget().startCreatorWindow()

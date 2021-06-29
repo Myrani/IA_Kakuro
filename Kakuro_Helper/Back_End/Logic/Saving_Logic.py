@@ -71,17 +71,11 @@ def dynamic_Load():
 
 
 def push_Creator(kakuro):
-    # print(os.getcwd())
-    modifiedKakuro = extract_user_kakuro(kakuro)
-    # terminalPrintFullRaw(modifiedKakuro)
-    mofifiedKakuro = set_Heat_Mapping(modifiedKakuro)
-    # terminalPrintFullRaw(modifiedKakuro)
-    modifiedKakuro = set_Objective_Propagation(modifiedKakuro)
-    # terminalPrintFullRaw(modifiedKakuro)
-    mofifiedKakuro = set_Possible_Values_Mapping(modifiedKakuro)
-    # terminalPrintFullRaw(modifiedKakuro)
-    with open(os.getcwd()+'/Save_Creator_Result/save.pkl', 'wb') as save_instruction:
-        pickle.dump(modifiedKakuro, save_instruction)
+    kakuro.printAll()
+    with open(os.getcwd()+'/Save_Creator_Result/save.pkl', 'wb') as file:
+        pickle.dump(kakuro, file)
+
+    print("Saved !")
 
     return None
 

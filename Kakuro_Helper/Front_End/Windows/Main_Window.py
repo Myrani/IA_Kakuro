@@ -4,6 +4,7 @@ from PyQt5 import QtWidgets
 
 from Back_End.Logic.Grid_Logic import grid_Maker__Creator, terminalPrintFullRaw
 from Back_End.Logic.Saving_Logic import get_All_Saves
+from Back_End.Logic.Grids import CreatorGrid
 
 from Front_End.Windows import Creator_Window, Main_Window, Solver_Window, Loader_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
@@ -15,8 +16,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.solverKakuro = []
         self.creatorKakuroDimensions = [7, 7]
-        self.creatorKakuro = grid_Maker__Creator(
-            self.creatorKakuroDimensions[0], self.creatorKakuroDimensions[1], [])
+        self.creatorKakuro = CreatorGrid(
+            self.creatorKakuroDimensions[0], self.creatorKakuroDimensions[1])
         self.filterSettings = []
         self.dictionnaire = dictionnaire
         self.setGeometry(10, 10, 700, 800)

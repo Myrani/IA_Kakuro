@@ -15,9 +15,9 @@ class CreatorWindow(QtWidgets.QWidget):
     def __init__(self, kakuro, parent=None):
         super(CreatorWindow, self).__init__(parent)
 
-        terminalPrintFull(kakuro)
         # Setup des paramêtres basique de la fenêtre principale
-        self.kakuro = kakuro
+        self.grid = kakuro
+        self.kakuro = kakuro.types
         self.title = ''
         self.left = 10
         self.top = 10
@@ -27,7 +27,8 @@ class CreatorWindow(QtWidgets.QWidget):
 
     def init_UI(self, kakuro):
 
-        self.setStyleSheet("text-align: center; color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: solid; border-width: 2px; border-color: rgba(45,45,45,255); border-radius: 7px")
+        self.setStyleSheet(
+            "text-align: center; color: rgba(200, 200, 200, 255); background-color: rgba(34,34,34,255); border-style: solid; border-width: 2px; border-color: rgba(45,45,45,255); border-radius: 7px")
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
@@ -83,7 +84,7 @@ class CreatorWindow(QtWidgets.QWidget):
         solver_To_creator_BTN = QtWidgets.QPushButton("To Helper's Side", self)
 
         saveKakuro.clicked.connect(lambda: push_Creator(
-            self.nativeParentWidget().creatorKakuro))
+            self.grid.GenerateSolverGrid()))
 
         menuLayout.addWidget(self.menuWidthSelection, 0, 0, 2, 2)
         menuLayout.addWidget(saveKakuro, 2, 0, 3, 1)
@@ -95,7 +96,7 @@ class CreatorWindow(QtWidgets.QWidget):
         x = int(x)
         y = int(y)
         self.nativeParentWidget().creatorKakuroDimensions = [x, y]
-        self.nativeParentWidget().creatorKakuro = grid_Maker__Creator(x, y, [])
+        self.nativeParentWidget().creatorKakuro.grid = grid_Maker__Creator(x, y, [])
         self.nativeParentWidget().startCreatorWindow()
 
     def create_kakuro_creator_layout(self, kakuro):
