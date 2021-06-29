@@ -2,11 +2,11 @@ import pickle
 import os
 
 from Back_End.Logic.Heat_Mapping_Logic import *
-from Back_End.Logic.Possible_Values_Mapping_Logic import set_Objective_Propagation, set_Possible_Values_Mapping
 from Back_End.Logic.Grid_Logic import *
-
+from Back_End.Logic.Grids import *
 
 # Fonction pour load le dictionnaire de sommes
+
 
 def load_Sums():
     with open('Back_End/Ressources/sums.pkl', 'rb') as sums:
@@ -55,12 +55,9 @@ def dynamic_Load():
     if grille == None:
 
         print("[Default Loading] : No save found, creating a preset Kakuro")
-        kakuro_projet = grid_Maker__Default(8, 8, [[0, 2, "11|#"], [0, 3, "4|#"], [1, 1, "14|5"], [1, 4, "10|#"], [2, 0, "#|17"], [2, 5, "3|#"],
-                                                   [3, 0, "#|6"], [3, 3, "3|4"], [3, 6, "H|#"], [4, 1, "#|10"], [4, 6, "H|#"], [5, 2, "#|3"], [5, 5, "H|#"], [6, 3, "H|#"], [6, 4, "H|#"]])
-        kakuro_projet = set_Heat_Mapping(kakuro_projet)
-        kakuro_projet = set_Objective_Propagation(kakuro_projet)
+        creator = CreatorGrid(7, 7)
 
-        return kakuro_projet
+        return creator.GenerateSolverGrid()
 
     # Sinon le renvoie !
     elif isinstance(grille, list):
@@ -78,17 +75,6 @@ def push_Creator(kakuro):
     print("Saved !")
 
     return None
-
-
-def extract_user_kakuro(kakuro):
-    kakuroToSave = []
-    for x in range(0, len(kakuro)):
-        # 0              1       2                                3                                    4                                5
-        # Type de case , Heat , Liste des objectifs de la case , valeurs possible pour les objectifs , Liste des valeures Contraintes , Cases étant selectionnées
-        kakuroToSave.append([[kakuro[x][y][1], 0, [], [], [], []]
-                            for y in range(0, len(kakuro[x]))])
-
-    return kakuroToSave
 
 
 # Partie logique de la fenêtre de Load du kakuro
