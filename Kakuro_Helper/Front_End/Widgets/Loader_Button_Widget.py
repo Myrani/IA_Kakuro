@@ -4,15 +4,15 @@ from PyQt5 import QtGui
 
 import sys
 
-from Back_End.Logic.Saving_Logic import load_Kakuro_From_File
+from Back_End.Logic.Saving_Logic import Datahandler
 
 
 class LoaderButton(QtWidgets.QPushButton):
 
     # Init avec la sauvegarde du nom de sauvegarde , Impossible en utilisant des Lambda dans la LoaderWindow
-    def __init__(self, filename, parent=None):
+    def __init__(self, filename, datahandler, parent=None):
         super().__init__(parent)
-
+        self.datahandler = datahandler
         self.filename = filename
         self.button = QtWidgets.QPushButton(
             self.filename.replace(".pkl", ""), self)
@@ -22,4 +22,4 @@ class LoaderButton(QtWidgets.QPushButton):
 
     def loadKakuro(self):
         # Va Override le kakuroSolver de la MainWindow
-        self.nativeParentWidget().solverKakuro = load_Kakuro_From_File(self.filename)
+        self.nativeParentWidget().solverKakuro = self.datahandler.loadKakuroFromFile(self.filename)

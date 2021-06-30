@@ -3,7 +3,6 @@ from PyQt5 import QtCore
 from PyQt5 import QtGui
 
 from Front_End.Widgets.Content_Button_Widget import ContentButton
-from Back_End.Logic.Grid_Logic import terminalPrintFull
 
 
 class DividedLabel(QtWidgets.QWidget):

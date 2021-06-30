@@ -7,8 +7,6 @@ from PyQt5 import QtGui
 from Front_End.Windows import Creator_Window, Main_Window, Solver_Window
 from Front_End.Widgets import Content_Button_Widget, Divided_Label_Widget, Morphing_Label
 
-from Back_End.Logic.Grid_Logic import terminalPrintFull
-
 
 class SolverWindow(QtWidgets.QWidget):
     def __init__(self, kakuro, dictionnaire_Des_Sommes, filterSettings, parent=None):
