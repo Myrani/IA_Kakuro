@@ -7,7 +7,7 @@ What do you need ?
 
 How to use it ?
 
-  Just execute the Main.py into the kakuro Helper file and you're set to go !
+  Just execute the Main.py into the kakuro Helper directory and you're set to go !
   
 
 
